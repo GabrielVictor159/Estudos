@@ -9,5 +9,5 @@ Uma partição logica é um grupo lógico entre os itens.
 
 <h1>Chave de Partição</h1> 
 
-Uma chave de partição é o mecanismo que utilizamos para acessar uma partição.
+Uma chave de partição é o mecanismo que utilizamos para acessar uma partição, ele é definido por uma propriedade dos itens e o container usara para criar conjunto de dados.
 ![[Pasted image 20240630013202.png]]

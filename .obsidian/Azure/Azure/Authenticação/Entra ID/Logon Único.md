@@ -1,0 +1,1 @@
+O Entra Id traz a possibilidade de login único para os usuários de forma que você tem apenas um usuário para todos os serviços vinculados no seu Azure e o usuário só tem que se autenticar uma única vez ao usar os serviços.

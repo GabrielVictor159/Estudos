@@ -1,1 +1,2 @@
 [[Cosmos DB]]
+[[Entra Id]]

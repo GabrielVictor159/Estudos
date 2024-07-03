@@ -4,9 +4,10 @@
 [[Replicação]]
 [[NoSQL]]
 [[Particionamento]]
-[[O que é]]
+[[Cosmos DB/O que é]]
 [[Api's suportadas]]
 [[Codigos]]
+[[Feed de Notificações]]
 
 
 

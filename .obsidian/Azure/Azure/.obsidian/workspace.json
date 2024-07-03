@@ -18,8 +18,29 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "328cc534879e7c38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cosmos DB/Codigos/Codigos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f833ba8ee7b04a17",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +106,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cosmos DB/Replicação.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +122,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cosmos DB/Replicação.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +143,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Cosmos DB/Replicação.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,34 +163,51 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ba0e75d791afd427",
+  "active": "f833ba8ee7b04a17",
   "lastOpenFiles": [
-    "Cosmos DB/Provisionamento.md",
-    "Cosmos DB/Particionamento.md",
-    "Cosmos DB/O que é.md",
-    "Cosmos DB/NoSQL.md",
+    "images/Pasted image 20240703051843.png",
+    "images/Pasted image 20240703071142.png",
+    "images/Pasted image 20240703072000.png",
+    "images/Pasted image 20240703072553.png",
+    "images/Pasted image 20240703072626.png",
+    "Authenticação/Entra ID/Entra Id.md",
+    "Authenticação/Entra ID/Serviços/Serviços.md",
+    "Authenticação/Entra ID/Serviços/Users (Usuários).md",
+    "Authenticação/Entra ID/Serviços/Roles (funções).md",
+    "Authenticação/Entra ID/Serviços/Groups (Grupos).md",
+    "Authenticação/Entra ID/Serviços/App Registration (Registro de Aplicativos).md",
+    "Authenticação/Entra ID/Plataforma de Identidade.md",
+    "Authenticação/Entra ID/Logon Único.md",
+    "images/Pasted image 20240703072557.png",
+    "images/Pasted image 20240703072240.png",
+    "images/Pasted image 20240703071217.png",
+    "Authenticação/Entra ID/Interface.md",
+    "Authenticação/Entra ID/Locatário (Tenant Id).md",
+    "images/Pasted image 20240703070807.png",
+    "images/Pasted image 20240703065639.png",
+    "images/Pasted image 20240703065553.png",
+    "Authenticação/Entra ID/O que é.md",
+    "Authenticação/Entra ID/Serviços",
+    "Azure.md",
+    "Authenticação/Entra ID",
+    "Authenticação",
+    "Cosmos DB/Codigos/Pre-gatilhos e Pos-gatilhos.md",
     "Cosmos DB/Cosmos DB.md",
-    "Cosmos DB/Api's suportadas.md",
-    "Cosmos DB/Replicação.md",
-    "images/Pasted image 20240630095644.png",
-    "images/Pasted image 20240630095603.png",
-    "create a link.md",
-    "Welcome.md",
-    "Sem título.md",
-    "images/Pasted image 20240630095634.png",
-    "Cosmos DB/Consistência.md",
-    "Cosmos DB/Migração de banco de dados.md",
-    "images/Pasted image 20240630012434.png",
+    "Cosmos DB/Feed de Notificações.md",
+    "Cosmos DB/Codigos/Codigos.md",
+    "Cosmos DB/Codigos/Exemplos.md",
+    "Cosmos DB/NoSQL.md",
+    "Cosmos DB/Particionamento.md",
+    "Cosmos DB/Codigos/Item.md",
+    "Cosmos DB/Codigos/Contêiner.md",
+    "Cosmos DB/Codigos/Cliente.md",
+    "Cosmos DB/Codigos/CLI.md",
+    "Cosmos DB/Codigos/Banco de dados.md",
+    "Cosmos DB/Codigos/Funções Armazenadas.md",
+    "Cosmos DB/Codigos",
     "images",
     "Cosmos DB/Sem título",
-    "images/Pasted image 20240630064108.png",
-    "images/Pasted image 20240630063811.png",
-    "images/Pasted image 20240630063525.png",
-    "images/Pasted image 20240630063158.png",
-    "images/Pasted image 20240630062928.png",
-    "images/Pasted image 20240630062609.png",
     "Cosmos DB/Sem título.canvas",
-    "Cosmos DB",
-    "2024-04-15.md"
+    "Cosmos DB"
   ]
 }

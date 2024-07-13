@@ -6,8 +6,10 @@
 [[Particionamento]]
 [[Cosmos DB/O que é]]
 [[Api's suportadas]]
-[[Codigos]]
+[[Cosmos DB/Codigos/Codigos]]
 [[Feed de Notificações]]
+[[Consistência]]
+
 
 
 

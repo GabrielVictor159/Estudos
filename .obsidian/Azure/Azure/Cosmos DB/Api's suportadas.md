@@ -10,7 +10,7 @@ O Cosmos DB oferece diversas apis:
 Essa é a api padrão do Cosmos DB e armazena dados no formato de <strong>documento</strong> JSON, é a AOU mais controlada e com maior suporte do Azure.
 
 <h1>API MongoDB</h1>
-Armazena dados no formato de <strong>documentos</strong>, por meio do formato <strong>BSON</strong>, utiliza o mesmo padrão de transmissão do MongoDB mas não utiliza o mesmo codigo.
+Armazena dados no formato de <strong>documentos</strong>, por meio do formato <strong>BSON</strong>, utiliza o mesmo padrão de transmissão do MongoDB mas não utiliza o mesmo código.
 
 <h1>API PostgresSQL</h1>
 É a api do Cosmos DB que fornece suporte ao PostgresSQL para atuar em qualquer escala, utiliza o padrão relacional.

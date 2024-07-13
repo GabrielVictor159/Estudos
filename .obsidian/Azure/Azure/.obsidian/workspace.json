@@ -35,8 +35,12 @@
             "id": "f833ba8ee7b04a17",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Authenticação/Entra ID/Locatário (Tenant Id).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ],
@@ -106,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Authenticação/Entra ID/Locatário (Tenant Id).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Authenticação/Entra ID/Locatário (Tenant Id).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Authenticação/Entra ID/Locatário (Tenant Id).md"
+              }
             }
           }
         ]
@@ -165,45 +173,46 @@
   },
   "active": "f833ba8ee7b04a17",
   "lastOpenFiles": [
-    "images/Pasted image 20240703051843.png",
-    "images/Pasted image 20240703071142.png",
-    "images/Pasted image 20240703072000.png",
-    "images/Pasted image 20240703072553.png",
-    "images/Pasted image 20240703072626.png",
-    "Authenticação/Entra ID/Entra Id.md",
-    "Authenticação/Entra ID/Serviços/Serviços.md",
+    "Authenticação/Entra ID/Entidades de serviço.md",
+    "Authenticação/Entra ID/Codigos/Codigos.md",
     "Authenticação/Entra ID/Serviços/Users (Usuários).md",
+    "Authenticação/Entra ID/Codigos",
+    "Authenticação/Entra ID/Serviços/Serviços.md",
     "Authenticação/Entra ID/Serviços/Roles (funções).md",
     "Authenticação/Entra ID/Serviços/Groups (Grupos).md",
     "Authenticação/Entra ID/Serviços/App Registration (Registro de Aplicativos).md",
     "Authenticação/Entra ID/Plataforma de Identidade.md",
-    "Authenticação/Entra ID/Logon Único.md",
-    "images/Pasted image 20240703072557.png",
-    "images/Pasted image 20240703072240.png",
-    "images/Pasted image 20240703071217.png",
-    "Authenticação/Entra ID/Interface.md",
-    "Authenticação/Entra ID/Locatário (Tenant Id).md",
-    "images/Pasted image 20240703070807.png",
-    "images/Pasted image 20240703065639.png",
-    "images/Pasted image 20240703065553.png",
     "Authenticação/Entra ID/O que é.md",
-    "Authenticação/Entra ID/Serviços",
-    "Azure.md",
-    "Authenticação/Entra ID",
-    "Authenticação",
-    "Cosmos DB/Codigos/Pre-gatilhos e Pos-gatilhos.md",
+    "Authenticação/Entra ID/Logon Único.md",
+    "Authenticação/Entra ID/Locatário (Tenant Id).md",
+    "Authenticação/Entra ID/Interface.md",
+    "Authenticação/Entra ID/Entra Id.md",
     "Cosmos DB/Cosmos DB.md",
+    "Cosmos DB/Api's suportadas.md",
+    "Cosmos DB/Consistência.md",
+    "Pasted image 20240713143115.png",
+    "Pasted image 20240713142933.png",
+    "Pasted image 20240713142739.png",
+    "Pasted image 20240713142427.png",
+    "Pasted image 20240713142410.png",
+    "Pasted image 20240713142235.png",
+    "Pasted image 20240713041105.png",
     "Cosmos DB/Feed de Notificações.md",
-    "Cosmos DB/Codigos/Codigos.md",
+    "Cosmos DB/Codigos/Banco de dados.md",
+    "Cosmos DB/Codigos/Pre-gatilhos e Pos-gatilhos.md",
+    "Cosmos DB/Codigos/Funções Armazenadas.md",
     "Cosmos DB/Codigos/Exemplos.md",
-    "Cosmos DB/NoSQL.md",
-    "Cosmos DB/Particionamento.md",
-    "Cosmos DB/Codigos/Item.md",
     "Cosmos DB/Codigos/Contêiner.md",
+    "Cosmos DB/Codigos/Codigos.md",
     "Cosmos DB/Codigos/Cliente.md",
     "Cosmos DB/Codigos/CLI.md",
-    "Cosmos DB/Codigos/Banco de dados.md",
-    "Cosmos DB/Codigos/Funções Armazenadas.md",
+    "Cosmos DB/Provisionamento.md",
+    "images/Pasted image 20240703051843.png",
+    "images/Pasted image 20240703071142.png",
+    "images/Pasted image 20240703072000.png",
+    "Authenticação/Entra ID/Serviços",
+    "Authenticação/Entra ID",
+    "Authenticação",
     "Cosmos DB/Codigos",
     "images",
     "Cosmos DB/Sem título",

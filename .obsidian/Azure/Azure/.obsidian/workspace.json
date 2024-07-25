@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cosmos DB/Codigos/Codigos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f833ba8ee7b04a17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Authenticação/Entra ID/Locatário (Tenant Id).md",
+                "file": "Soluções de serviços/Azure Functions/Azure Function.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Authenticação/Entra ID/Locatário (Tenant Id).md",
+                "file": "Soluções de serviços/Azure Functions/Azure Function.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Authenticação/Entra ID/Locatário (Tenant Id).md",
+                "file": "Soluções de serviços/Azure Functions/Azure Function.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Authenticação/Entra ID/Locatário (Tenant Id).md"
+                "file": "Soluções de serviços/Azure Functions/Azure Function.md"
               }
             }
           }
@@ -171,52 +159,54 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "f833ba8ee7b04a17",
+  "active": "328cc534879e7c38",
   "lastOpenFiles": [
-    "Authenticação/Entra ID/Entidades de serviço.md",
-    "Authenticação/Entra ID/Codigos/Codigos.md",
-    "Authenticação/Entra ID/Serviços/Users (Usuários).md",
-    "Authenticação/Entra ID/Codigos",
-    "Authenticação/Entra ID/Serviços/Serviços.md",
-    "Authenticação/Entra ID/Serviços/Roles (funções).md",
-    "Authenticação/Entra ID/Serviços/Groups (Grupos).md",
-    "Authenticação/Entra ID/Serviços/App Registration (Registro de Aplicativos).md",
-    "Authenticação/Entra ID/Plataforma de Identidade.md",
-    "Authenticação/Entra ID/O que é.md",
-    "Authenticação/Entra ID/Logon Único.md",
-    "Authenticação/Entra ID/Locatário (Tenant Id).md",
-    "Authenticação/Entra ID/Interface.md",
+    "Soluções de serviços/Serviço de Aplicativos/Serviço de aplicativos.md",
+    "Soluções de serviços/Serviço de Aplicativos/Autenticação.md",
+    "Soluções de serviços/Serviço de Aplicativos/Slots de implantação.md",
+    "Soluções de serviços/Serviço de Aplicativos/Configurações do serviço de aplicativo.md",
+    "Soluções de serviços/Serviço de Aplicativos/Criação de um App Service.md",
+    "Soluções de serviços/Serviço de Aplicativos/Escalonamento Horizontal.md",
+    "Soluções de serviços/Serviço de Aplicativos/Logs.md",
+    "Soluções de serviços/Serviço de Aplicativos/Planos de Serviço.md",
+    "Pasted image 20240724035935.png",
+    "Pasted image 20240724035211.png",
+    "Pasted image 20240724035158.png",
+    "Pasted image 20240724033052.png",
+    "images/Pasted image 20240722045309.png",
+    "images/Pasted image 20240722045205.png",
+    "Cosmos DB/Replicação.md",
+    "images/Pasted image 20240722043413.png",
+    "images/Pasted image 20240722043307.png",
+    "Pasted image 20240722043248.png",
+    "images/Pasted image 20240722043218.png",
+    "Soluções de container/Soluções de container.md",
+    "Soluções de container/AKS/Serviço de Kubernetes do Azure (AKS).md",
+    "Soluções de container/ACR/Registro de Container do Azure (ACR).md",
+    "Soluções de container/ACI/Instâncias de Container do Azure (ACI).md",
+    "Azure.md",
+    "Soluções de container/ACR",
+    "Armazenamento de Blobs/Armazenamento de Blobs.md",
+    "Soluções de serviços/Soluções de serviços.md",
+    "Soluções de container/ACI",
+    "Soluções de container/AKS",
+    "Soluções de container",
+    "Soluções de serviços/Azure Static Pages/Azure Static Pages.md",
+    "Soluções de serviços/Azure Functions/Azure Function.md",
+    "Armazenamento de Blobs",
+    "Soluções de serviços/Azure Static Pages",
+    "Soluções de serviços/Azure Functions",
+    "Soluções de serviços/Serviço de Aplicativos",
+    "Soluções de serviços",
     "Authenticação/Entra ID/Entra Id.md",
-    "Cosmos DB/Cosmos DB.md",
-    "Cosmos DB/Api's suportadas.md",
-    "Cosmos DB/Consistência.md",
-    "Pasted image 20240713143115.png",
-    "Pasted image 20240713142933.png",
-    "Pasted image 20240713142739.png",
-    "Pasted image 20240713142427.png",
-    "Pasted image 20240713142410.png",
-    "Pasted image 20240713142235.png",
-    "Pasted image 20240713041105.png",
-    "Cosmos DB/Feed de Notificações.md",
+    "Authenticação/Entra ID/Entidades.md",
+    "Authenticação/Entra ID/Assinaturas de Acesso Compartilhado (SAS).md",
+    "Authenticação/Entra ID/Microsoft Graph.md",
+    "Authenticação/Entra ID/Plataforma de Identidade.md",
     "Cosmos DB/Codigos/Banco de dados.md",
     "Cosmos DB/Codigos/Pre-gatilhos e Pos-gatilhos.md",
-    "Cosmos DB/Codigos/Funções Armazenadas.md",
-    "Cosmos DB/Codigos/Exemplos.md",
-    "Cosmos DB/Codigos/Contêiner.md",
-    "Cosmos DB/Codigos/Codigos.md",
-    "Cosmos DB/Codigos/Cliente.md",
-    "Cosmos DB/Codigos/CLI.md",
-    "Cosmos DB/Provisionamento.md",
-    "images/Pasted image 20240703051843.png",
-    "images/Pasted image 20240703071142.png",
-    "images/Pasted image 20240703072000.png",
-    "Authenticação/Entra ID/Serviços",
-    "Authenticação/Entra ID",
-    "Authenticação",
-    "Cosmos DB/Codigos",
-    "images",
-    "Cosmos DB/Sem título",
-    "Cosmos DB/Sem título.canvas",
-    "Cosmos DB"
+    "Cosmos DB/Codigos/Item.md",
+    "Authenticação/Entra ID/Sem título",
+    "Cosmos DB/Sem título.canvas"
   ]
 }

@@ -1,0 +1,7 @@
+[[Escalonamento Horizontal]]
+[[Planos de Serviço]]
+[[Autenticação]]
+[[Configurações do serviço de aplicativo]]
+[[Criação de um App Service]]
+[[Logs]]
+[[Slots de implantação]]

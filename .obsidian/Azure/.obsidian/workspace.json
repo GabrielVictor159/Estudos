@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Azure/Cosmos DB/Provisionamento.md",
+                "file": "Azure/Armazenamento de Blobs/Site estático.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Azure/Cosmos DB/Provisionamento.md",
+                "file": "Azure/Armazenamento de Blobs/Site estático.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Azure/Cosmos DB/Provisionamento.md",
+                "file": "Azure/Armazenamento de Blobs/Site estático.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Azure/Cosmos DB/Provisionamento.md"
+                "file": "Azure/Armazenamento de Blobs/Site estático.md"
               }
             }
           }
@@ -148,6 +148,18 @@
   },
   "active": "2ac7143966ecb3d8",
   "lastOpenFiles": [
+    "Azure/Armazenamento de Blobs/Níveis de Acesso.md",
+    "Azure/Armazenamento de Blobs/Site estático.md",
+    "Azure/Armazenamento de Blobs/Armazenamento de Blobs.md",
+    "Azure/Armazenamento de Blobs/Tipos de Blobs.md",
+    "Azure/Armazenamento de Blobs/Codigos/Contêiner.md",
+    "Azure/Armazenamento de Blobs/Codigos/Codigos.md",
+    "Azure/Armazenamento de Blobs/Codigos/Cliente.md",
+    "Azure/Armazenamento de Blobs/Codigos/Blobs.md",
+    "Azure/Armazenamento de Blobs/O que é.md",
+    "Azure/Armazenamento de Blobs/Redundância de Zona.md",
+    "Azure/Armazenamento de Blobs/Data Lake Storage Gen 2/Data Lake Storage Gen 2.md",
+    "Azure/Cosmos DB/Provisionamento.md",
     "Azure/Cosmos DB/Replicação.md",
     "Azure/Cosmos DB/Particionamento.md",
     "Azure/Cosmos DB/O que é.md",
@@ -164,8 +176,6 @@
     "Azure/Cosmos DB/Codigos/Funções Armazenadas",
     "Azure/Cosmos DB/Codigos/Cliente.md",
     "Azure/Cosmos DB/Codigos/Contêiner.md",
-    "Azure/Cosmos DB/Codigos/Item.md",
-    "Azure/Cosmos DB/Provisionamento.md",
     "Azure/Cosmos DB/Codigos"
   ]
 }

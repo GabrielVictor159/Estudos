@@ -1,6 +1,6 @@
-[[Cliente]]
+[[Cosmos DB/Codigos/Cliente]]
 [[Banco de dados]]
-[[Contêiner]]
+[[Cosmos DB/Codigos/Contêiner]]
 [[Item]]
 [[CLI]]
 [[Funções Armazenadas]]

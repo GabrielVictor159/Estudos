@@ -1,0 +1,5 @@
+[[Soluções de serviços/Azure Static Pages/O que é|O que é]]
+[[API]]
+[[Soluções de serviços/Azure Static Pages/Autenticação|Autenticação]]
+[[Implantação]]
+[[Recursos]]

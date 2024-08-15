@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cosmos DB/Replicação.md",
+                "file": "Armazenamento de Blobs/Níveis de Acesso.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,16 +23,11 @@
             "id": "328cc534879e7c38",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Soluções de serviços/Azure Functions/Azure Function.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Soluções de serviços/Azure Functions/Azure Function.md",
+                "file": "Armazenamento de Blobs/Níveis de Acesso.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Soluções de serviços/Azure Functions/Azure Function.md",
+                "file": "Armazenamento de Blobs/Níveis de Acesso.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Soluções de serviços/Azure Functions/Azure Function.md"
+                "file": "Armazenamento de Blobs/Níveis de Acesso.md"
               }
             }
           }
@@ -159,54 +154,54 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "328cc534879e7c38",
+  "active": "ba0e75d791afd427",
   "lastOpenFiles": [
-    "Soluções de serviços/Serviço de Aplicativos/Serviço de aplicativos.md",
-    "Soluções de serviços/Serviço de Aplicativos/Autenticação.md",
+    "Armazenamento de Blobs/Armazenamento de Blobs.md",
+    "Armazenamento de Blobs/Redundância de Zona.md",
+    "Armazenamento de Blobs/O que é.md",
+    "Armazenamento de Blobs/Níveis de Acesso.md",
+    "Armazenamento de Blobs/Codigos/Contêiner.md",
+    "Armazenamento de Blobs/Codigos/Codigos.md",
+    "Armazenamento de Blobs/Codigos/Cliente.md",
+    "Armazenamento de Blobs/Codigos/Blobs.md",
+    "Armazenamento de Blobs/Tipos de Blobs.md",
+    "Armazenamento de Blobs/Data Lake Storage Gen 2/Data Lake Storage Gen 2.md",
+    "Armazenamento de Blobs/Data Lake Storage Gen 2",
+    "Soluções de serviços/Azure Static Pages/Recursos.md",
+    "Soluções de serviços/Azure Static Pages/O que é.md",
+    "Soluções de serviços/Azure Static Pages/Implantação.md",
+    "Soluções de serviços/Azure Static Pages/Azure Static Pages.md",
+    "Soluções de serviços/Azure Static Pages/Autenticação.md",
+    "Soluções de serviços/Azure Static Pages/API.md",
     "Soluções de serviços/Serviço de Aplicativos/Slots de implantação.md",
-    "Soluções de serviços/Serviço de Aplicativos/Configurações do serviço de aplicativo.md",
-    "Soluções de serviços/Serviço de Aplicativos/Criação de um App Service.md",
-    "Soluções de serviços/Serviço de Aplicativos/Escalonamento Horizontal.md",
-    "Soluções de serviços/Serviço de Aplicativos/Logs.md",
+    "Soluções de serviços/Serviço de Aplicativos/Serviço de aplicativos.md",
     "Soluções de serviços/Serviço de Aplicativos/Planos de Serviço.md",
-    "Pasted image 20240724035935.png",
-    "Pasted image 20240724035211.png",
-    "Pasted image 20240724035158.png",
+    "Soluções de serviços/Serviço de Aplicativos/Logs.md",
+    "Soluções de serviços/Serviço de Aplicativos/Escalonamento Horizontal.md",
+    "Soluções de serviços/Serviço de Aplicativos/Criação de um App Service.md",
+    "Soluções de serviços/Serviço de Aplicativos/Autenticação.md",
+    "Soluções de serviços/Serviço de Aplicativos/Configurações do serviço de aplicativo.md",
+    "Authenticação/Entra ID/Codigos/Codigos.md",
+    "Authenticação/Entra ID/Serviços/Users (Usuários).md",
+    "Armazenamento de Blobs/Codigos",
+    "images/Pasted image 20240814045754.png",
+    "images/Pasted image 20240812022328.png",
+    "images/Pasted image 20240724035158.png",
+    "images/Pasted image 20240724035935.png",
+    "images/Pasted image 20240724035211.png",
     "Pasted image 20240724033052.png",
     "images/Pasted image 20240722045309.png",
     "images/Pasted image 20240722045205.png",
-    "Cosmos DB/Replicação.md",
     "images/Pasted image 20240722043413.png",
     "images/Pasted image 20240722043307.png",
-    "Pasted image 20240722043248.png",
-    "images/Pasted image 20240722043218.png",
-    "Soluções de container/Soluções de container.md",
-    "Soluções de container/AKS/Serviço de Kubernetes do Azure (AKS).md",
-    "Soluções de container/ACR/Registro de Container do Azure (ACR).md",
-    "Soluções de container/ACI/Instâncias de Container do Azure (ACI).md",
-    "Azure.md",
     "Soluções de container/ACR",
-    "Armazenamento de Blobs/Armazenamento de Blobs.md",
-    "Soluções de serviços/Soluções de serviços.md",
     "Soluções de container/ACI",
     "Soluções de container/AKS",
     "Soluções de container",
-    "Soluções de serviços/Azure Static Pages/Azure Static Pages.md",
-    "Soluções de serviços/Azure Functions/Azure Function.md",
     "Armazenamento de Blobs",
     "Soluções de serviços/Azure Static Pages",
     "Soluções de serviços/Azure Functions",
     "Soluções de serviços/Serviço de Aplicativos",
-    "Soluções de serviços",
-    "Authenticação/Entra ID/Entra Id.md",
-    "Authenticação/Entra ID/Entidades.md",
-    "Authenticação/Entra ID/Assinaturas de Acesso Compartilhado (SAS).md",
-    "Authenticação/Entra ID/Microsoft Graph.md",
-    "Authenticação/Entra ID/Plataforma de Identidade.md",
-    "Cosmos DB/Codigos/Banco de dados.md",
-    "Cosmos DB/Codigos/Pre-gatilhos e Pos-gatilhos.md",
-    "Cosmos DB/Codigos/Item.md",
-    "Authenticação/Entra ID/Sem título",
     "Cosmos DB/Sem título.canvas"
   ]
 }

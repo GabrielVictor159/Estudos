@@ -9,7 +9,7 @@ Para acessar recursos no Entra um Locatario precisa ser representado por uma ent
 
 <ul>
 <li><strong>Aplicativo:</strong>Essa é a representação local de uma entidade de serviço.</li>
-<li><strong>Identidade Gerenciada:</strong>É uma identidade automática gerenciada no Entra ID que os aplicativos utilizam para se conectarem as recursos sem precisar gerenciar credênciais.</li>
+<li><strong>Identidade Gerenciada:</strong>É uma identidade automática gerenciada no Entra ID que os aplicativos utilizam para se conectarem a recursos sem precisar gerenciar credênciais.</li>
 <li><strong>Aplicativo:</strong>Representa um aplicativo criado antes dos registros de aplicativo</li>
 </ul>
 

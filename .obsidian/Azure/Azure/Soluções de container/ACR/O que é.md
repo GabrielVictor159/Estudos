@@ -1,0 +1,1 @@
+O Registro de Contêiner do Azure é um serviço gerenciado de registro baseado no Docker Registry 2.0 de código aberto. Criar e manter registros de contêiner do Azure para armazenar e gerenciar suas imagens de contêiner e artefatos relacionados.

@@ -4,3 +4,7 @@
 [[Redundância de Zona]]
 [[Tipos de Blobs]]
 [[Níveis de Acesso]]
+[[Armazenamento de Blobs/Planos de Serviço|Planos de Serviço]]
+[[Site estático]]
+
+

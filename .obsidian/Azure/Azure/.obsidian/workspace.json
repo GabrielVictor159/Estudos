@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Armazenamento de Blobs/Níveis de Acesso.md",
+                "file": "Authenticação/Entra ID/Entidades.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Armazenamento de Blobs/Níveis de Acesso.md",
+                "file": "Authenticação/Entra ID/Entidades.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Armazenamento de Blobs/Níveis de Acesso.md",
+                "file": "Authenticação/Entra ID/Entidades.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Armazenamento de Blobs/Níveis de Acesso.md"
+                "file": "Authenticação/Entra ID/Entidades.md"
               }
             }
           }
@@ -156,33 +156,40 @@
   },
   "active": "ba0e75d791afd427",
   "lastOpenFiles": [
-    "Armazenamento de Blobs/Armazenamento de Blobs.md",
+    "Authenticação/Entra ID/Interface.md",
+    "Authenticação/Entra ID/Permissão e consentimento.md",
+    "Authenticação/Entra ID/Logon Único.md",
+    "Authenticação/Entra ID/Locatário (Tenant Id).md",
+    "Armazenamento de Blobs/Data Lake Storage Gen 2/O que é.md",
+    "Armazenamento de Blobs/Data Lake Storage Gen 2/Data Lake Storage Gen 2.md",
+    "Armazenamento de Blobs/Tipos de Blobs.md",
+    "Armazenamento de Blobs/Site estático.md",
     "Armazenamento de Blobs/Redundância de Zona.md",
+    "Armazenamento de Blobs/Planos de Serviço.md",
     "Armazenamento de Blobs/O que é.md",
     "Armazenamento de Blobs/Níveis de Acesso.md",
-    "Armazenamento de Blobs/Codigos/Contêiner.md",
-    "Armazenamento de Blobs/Codigos/Codigos.md",
-    "Armazenamento de Blobs/Codigos/Cliente.md",
-    "Armazenamento de Blobs/Codigos/Blobs.md",
-    "Armazenamento de Blobs/Tipos de Blobs.md",
-    "Armazenamento de Blobs/Data Lake Storage Gen 2/Data Lake Storage Gen 2.md",
-    "Armazenamento de Blobs/Data Lake Storage Gen 2",
-    "Soluções de serviços/Azure Static Pages/Recursos.md",
-    "Soluções de serviços/Azure Static Pages/O que é.md",
-    "Soluções de serviços/Azure Static Pages/Implantação.md",
-    "Soluções de serviços/Azure Static Pages/Azure Static Pages.md",
-    "Soluções de serviços/Azure Static Pages/Autenticação.md",
-    "Soluções de serviços/Azure Static Pages/API.md",
-    "Soluções de serviços/Serviço de Aplicativos/Slots de implantação.md",
-    "Soluções de serviços/Serviço de Aplicativos/Serviço de aplicativos.md",
-    "Soluções de serviços/Serviço de Aplicativos/Planos de Serviço.md",
-    "Soluções de serviços/Serviço de Aplicativos/Logs.md",
-    "Soluções de serviços/Serviço de Aplicativos/Escalonamento Horizontal.md",
-    "Soluções de serviços/Serviço de Aplicativos/Criação de um App Service.md",
-    "Soluções de serviços/Serviço de Aplicativos/Autenticação.md",
-    "Soluções de serviços/Serviço de Aplicativos/Configurações do serviço de aplicativo.md",
-    "Authenticação/Entra ID/Codigos/Codigos.md",
+    "Armazenamento de Blobs/Armazenamento de Blobs.md",
+    "Cosmos DB/Replicação.md",
+    "Cosmos DB/Provisionamento.md",
+    "Cosmos DB/Particionamento.md",
+    "Cosmos DB/O que é.md",
+    "Cosmos DB/NoSQL.md",
+    "Cosmos DB/Feed de Notificações.md",
+    "Cosmos DB/Cosmos DB.md",
+    "Cosmos DB/Consistência.md",
+    "Cosmos DB/Api's suportadas.md",
     "Authenticação/Entra ID/Serviços/Users (Usuários).md",
+    "Authenticação/Entra ID/Serviços/Serviços.md",
+    "Authenticação/Entra ID/Serviços/Roles (funções).md",
+    "Authenticação/Entra ID/Serviços/Groups (Grupos).md",
+    "images/Pasted image 20240817072105.png",
+    "Gerenciamento de Soluções",
+    "Soluções de Cache",
+    "Soluções de Eventos",
+    "Soluções de Mensagem",
+    "Soluções de container/ACI/Codigos",
+    "images/Pasted image 20240817065431.png",
+    "Armazenamento de Blobs/Data Lake Storage Gen 2",
     "Armazenamento de Blobs/Codigos",
     "images/Pasted image 20240814045754.png",
     "images/Pasted image 20240812022328.png",
@@ -192,16 +199,9 @@
     "Pasted image 20240724033052.png",
     "images/Pasted image 20240722045309.png",
     "images/Pasted image 20240722045205.png",
-    "images/Pasted image 20240722043413.png",
-    "images/Pasted image 20240722043307.png",
     "Soluções de container/ACR",
     "Soluções de container/ACI",
     "Soluções de container/AKS",
-    "Soluções de container",
-    "Armazenamento de Blobs",
-    "Soluções de serviços/Azure Static Pages",
-    "Soluções de serviços/Azure Functions",
-    "Soluções de serviços/Serviço de Aplicativos",
     "Cosmos DB/Sem título.canvas"
   ]
 }

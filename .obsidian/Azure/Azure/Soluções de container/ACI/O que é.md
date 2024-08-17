@@ -1,0 +1,2 @@
+ As Instâncias de Contêiner do Azure oferecem a maneira mais rápida e simples para executar um contêiner no Azure. 
+ Para cenários em que você precisa de orquestração de contêineres completa, incluindo descoberta do serviço em vários contêineres, dimensionamento automático e atualizações de aplicativo coordenadas, recomendamos o [AKS (Serviço de Kubernetes do Azure)](https://learn.microsoft.com/pt-br/azure/aks/)

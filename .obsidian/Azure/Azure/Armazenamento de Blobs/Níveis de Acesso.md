@@ -1,4 +1,3 @@
-																										
 Os dados armazenados no armazenamento de Blobs possuem diferentes níveis de camadas de acesso a dados:
 
 1. **Camada de Acesso Frequente**:

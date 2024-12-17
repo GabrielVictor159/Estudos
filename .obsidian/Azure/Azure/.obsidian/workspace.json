@@ -13,13 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Soluções de container/ACI/O que é.md",
+                "file": "Authenticação/Entra ID/Permissão e consentimento.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Permissão e consentimento"
+            }
+          },
+          {
+            "id": "14d3f1d23b4f3db3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Soluções de Eventos/Hub de Eventos/Hub de Eventos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Hub de Eventos"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -39,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -54,7 +73,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
             }
           },
           {
@@ -62,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
             }
           }
         ]
@@ -85,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Soluções de container/ACI/O que é.md",
+                "file": "Soluções de container/AKS/Autenticação.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +116,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Autenticação"
             }
           },
           {
@@ -102,10 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Soluções de container/ACI/O que é.md",
+                "file": "Soluções de container/AKS/Autenticação.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Autenticação"
             }
           },
           {
@@ -116,7 +143,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -125,8 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Soluções de container/ACI/O que é.md"
-              }
+                "file": "Soluções de container/AKS/Autenticação.md"
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Autenticação"
             }
           }
         ]
@@ -146,54 +177,54 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "328cc534879e7c38",
+  "active": "14d3f1d23b4f3db3",
   "lastOpenFiles": [
-    "Soluções de container/ACI/Instâncias de Container do Azure (ACI).md",
-    "Soluções de container/ACI/Grupo de Contêineres.md",
-    "Soluções de container/ACR/Planos de serviço.md",
-    "Soluções de container/AKS/Planos de Serviço.md",
-    "Armazenamento de Blobs/Planos de Serviço.md",
-    "Soluções de serviços/Serviço de Aplicativos/Escalonamento Horizontal.md",
-    "Soluções de serviços/Serviço de Aplicativos/Criação de um App Service.md",
-    "Soluções de serviços/Serviço de Aplicativos/Configurações do serviço de aplicativo.md",
-    "Soluções de serviços/Serviço de Aplicativos/Autenticação.md",
-    "Soluções de serviços/Serviço de Aplicativos/Slots de implantação.md",
-    "Soluções de serviços/Serviço de Aplicativos/Planos de Serviço.md",
-    "Soluções de serviços/Azure Functions/Planos de serviço.md",
-    "Soluções de Eventos/Grade de Eventos/Schema de Eventos.md",
+    "Soluções de Eventos/Hub de Eventos/O que é.md",
+    "Soluções de Eventos/Hub de Eventos/Registro de Esquema.md",
+    "images/Pasted image 20241217080632.png",
+    "images/Pasted image 20241217075513.png",
+    "Soluções de Eventos/Hub de Eventos/Hub de Eventos.md",
+    "Armazenamento de Blobs/Redundância de Zona.md",
+    "Armazenamento de Blobs/Site estático.md",
     "Soluções de Eventos/Grade de Eventos/Grade de Eventos.md",
-    "Soluções de Eventos/Grade de Eventos/Entrega de eventos.md",
-    "Soluções de Eventos/Grade de Eventos/O Que é.md",
+    "Soluções de Eventos/Grade de Eventos/Grade de eventos no Kubernetes/Grade de eventos no Kubernetes.md",
+    "Soluções de Eventos/Grade de Eventos/Grade de eventos no Kubernetes/Schema do Evento.md",
+    "Soluções de Eventos/Grade de Eventos/Grade de eventos no Kubernetes/Entrega em Lote.md",
+    "Soluções de Eventos/Grade de Eventos/Entrega de Eventos/Politica de repetição.md",
+    "Soluções de Eventos/Grade de Eventos/Grade de eventos no Kubernetes/O que é.md",
+    "images/Pasted image 20241216224505.png",
+    "Soluções de Eventos/Grade de Eventos/Entrega de Eventos/Propriedades de entrega personalizadas.md",
+    "Soluções de Eventos/Grade de Eventos/Entrega de Eventos/Entrega de Eventos.md",
+    "Soluções de Eventos/Grade de Eventos/Camadas de Serviço.md",
+    "Soluções de Eventos/Grade de Eventos/Entrega de Eventos/Filtro de Eventos.md",
+    "Soluções de Eventos/Grade de Eventos/Tópicos de Eventos.md",
+    "Soluções de Eventos/Grade de Eventos/Tópicos de namespace.md",
+    "Soluções de Eventos/Grade de Eventos/Agente MQTT.md",
+    "Soluções de Eventos/Grade de Eventos/Grade de eventos no Kubernetes",
+    "Cosmos DB/Codigos/Pre-gatilhos e Pos-gatilhos.md",
+    "Cosmos DB/Codigos/Item.md",
+    "Cosmos DB/Codigos/Funções Armazenadas.md",
+    "Cosmos DB/Codigos/Exemplos.md",
+    "Cosmos DB/Codigos/Contêiner.md",
+    "Cosmos DB/Codigos/Codigos.md",
+    "Cosmos DB/Codigos/Cliente.md",
+    "images/Pasted image 20241214223554.png",
+    "images/Pasted image 20241214223202.png",
+    "Soluções de Eventos/Grade de Eventos/Entrega de Eventos",
+    "Sem título.canvas",
     "images/Pasted image 20240826064547.png",
-    "Authenticação/Entra ID/Plataforma de Identidade.md",
-    "Soluções de container/AKS/Serviço de Kubernetes do Azure (AKS).md",
-    "Soluções de container/AKS/Autenticação.md",
     "images/Pasted image 20240825182316.png",
-    "Soluções de container/AKS/Conceitos.md",
     "images/Pasted image 20240825173244.png",
     "images/Pasted image 20240825172708.png",
-    "Soluções de Eventos/Soluções de Eventos.md",
-    "Soluções de Eventos/Hub de Eventos/Hub de Eventos.md",
     "Soluções de Eventos/Hub de Eventos",
     "Soluções de Eventos/Grade de Eventos",
-    "Soluções de container/ACR/Registros, Repositórios e Imagens.md",
-    "Soluções de container/ACR/Registro de Container do Azure (ACR).md",
-    "Soluções de container/ACR/O que é.md",
-    "Soluções de container/ACI/Codigos/YAML.md",
     "images/Pasted image 20240817072105.png",
     "Gerenciamento de Soluções",
     "Soluções de Cache",
     "Soluções de Eventos",
     "Soluções de Mensagem",
     "Soluções de container/ACI/Codigos",
-    "images/Pasted image 20240817065431.png",
     "Armazenamento de Blobs/Data Lake Storage Gen 2",
-    "Armazenamento de Blobs/Codigos",
-    "images/Pasted image 20240814045754.png",
-    "images/Pasted image 20240812022328.png",
-    "images/Pasted image 20240724035158.png",
-    "images/Pasted image 20240724035935.png",
-    "Soluções de container/ACR",
     "Cosmos DB/Sem título.canvas"
   ]
 }

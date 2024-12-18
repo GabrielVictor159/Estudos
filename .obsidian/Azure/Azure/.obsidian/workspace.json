@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Soluções de Eventos/Hub de Eventos/Hub de Eventos.md",
+                "file": "Soluções de Eventos/Hub de Eventos/Cotas e Camadas de Serviço.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hub de Eventos"
+              "title": "Cotas e Camadas de Serviço"
             }
           }
         ],
@@ -177,13 +177,14 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "14d3f1d23b4f3db3",
+  "active": "0685f3e399d4cd1c",
   "lastOpenFiles": [
+    "Soluções de Eventos/Hub de Eventos/Hub de Eventos.md",
+    "Soluções de Eventos/Hub de Eventos/Cotas e Camadas de Serviço.md",
     "Soluções de Eventos/Hub de Eventos/O que é.md",
     "Soluções de Eventos/Hub de Eventos/Registro de Esquema.md",
     "images/Pasted image 20241217080632.png",
     "images/Pasted image 20241217075513.png",
-    "Soluções de Eventos/Hub de Eventos/Hub de Eventos.md",
     "Armazenamento de Blobs/Redundância de Zona.md",
     "Armazenamento de Blobs/Site estático.md",
     "Soluções de Eventos/Grade de Eventos/Grade de Eventos.md",

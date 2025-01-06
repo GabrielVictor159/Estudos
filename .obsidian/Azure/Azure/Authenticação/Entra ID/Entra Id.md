@@ -9,4 +9,6 @@
 [[Authenticação/Entra ID/Codigos/Codigos|Codigos]]
 [[Assinaturas de Acesso Compartilhado (SAS)]]
 [[Microsoft Graph]]
+[[Identidades Gerenciadas]]
+
 

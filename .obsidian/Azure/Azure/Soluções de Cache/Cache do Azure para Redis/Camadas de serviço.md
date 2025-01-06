@@ -1,0 +1,11 @@
+| Camada           | Descrição                                                                                                                                                                                                                                                                            |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Basic            | Um Cache do Azure para Redis para software de código aberto em execução em uma única máquina virtual (VM). Esta camada não tem nenhum contrato de nível de serviço (SLA) e é ideal para o desenvolvimento/teste e cargas de trabalho não críticas.                                   |
+| Standard         | Um cache do software livre do Redis em execução em duas VMs em uma configuração replicada.                                                                                                                                                                                           |
+| Premium          | Caches do software livre do Redis de alto desempenho. Essa camada oferece maior taxa de transferência, latência mais baixa, melhor disponibilidade e mais recursos. Os caches Premium são implantados em VMs mais avançadas em comparação com as VMs para caches Básico ou Standard. |
+| Enterprise       | Caches de alto desempenho fornecidos pelo software Redis Enterprise da Redis Labs. Essa camada dá suporte a módulos do Redis, incluindo RediSearch, RedisBloom e RedisTimeSeries. Além disso, ela oferece uma disponibilidade ainda maior do que a camada Premium.                   |
+| Enterprise Flash | Caches grandes econômicos do software Redis Enterprise da Redis Labs. Esta camada estende o armazenamento de dados do Redis para a memória não volátil, que é mais em conta que DRAM em uma VM. Ele reduz o custo de memória geral por GB.                                           |
+
+<h4>Com as camadas Premium, Enterprise e Enterprise Flash, você pode implementar clustering para dividir automaticamente o conjunto de dados entre vários nós. Para implementar o clustering, você deve especificar o número de fragmentos até um máximo de 10.</h4>
+
+

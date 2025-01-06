@@ -1,0 +1,5 @@
+[[Soluções seguras/Azure Key Vault/Autenticação|Autenticação]]
+[[Containers]]
+[[Exclusão reversivel]]
+[[Soluções seguras/Azure Key Vault/O que é|O que é]]
+[[Replicação de dados]]

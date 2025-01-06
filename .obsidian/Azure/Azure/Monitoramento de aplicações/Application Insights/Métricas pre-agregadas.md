@@ -1,0 +1,1 @@
+As métricas pré-agregadas não são armazenadas como eventos individuais com muitas propriedades. Em vez disso, elas são armazenadas como séries temporais pré-agregadas e somente com dimensões de chave.

@@ -59,3 +59,29 @@ A tabela a seguir mostra limites diferentes para as camadas de serviço Básico,
 |Desastre geográfico|N/D|Sim|Sim|Yes|
 |Firewall de IP|N/D|Sim|Sim|Sim|
 
+
+<h3>As camadas Standart, Premium e Dedicado oferecem suporte a zonas de disponibilidade, a Basic não oferece</h3>
+
+## Características da Camada Premium
+A camada Premium foi desenvolvida para cenários de streaming de ponta que exigem um desempenho elástico e superior.
+
+Os Hubs de eventos na camada Premium replicam os eventos em 3 réplicas que são distribuídas entre zonas de disponibilidade.
+
+A taxa de transferência não é definida como nas camadas Standart e Basic  e sim elásticas a depender do esforço exigido no Hub de eventos.
+
+Oferece capacidade isolada de computação e memória para obter latência mais previsível e reduzir o risco de impacto vizinho, utilizando um modelo de cluster nos Multilocatário tendo assim um ambiente Multilocatário gerenciado.
+
+Os Clusters da camada Premium são cobrados por PUs que correspondem a um compartilhamento de recursos isolados (CPU, memória e armazenamento) na infraestrutura subjacente. 
+
+
+## Características da Camada Dedicada
+A camada dedicada de Hubs de Eventos oferece vários benefícios para os clientes que precisam executar cargas de trabalho críticas em capacidade de nível empresarial.
+
+Clusters dedicados podem transmitir eventos na escala de gigabytes por segundo ou milhões de eventos por segundo.
+
+Os clusters dedicados dos Hubs de Eventos operam em uma arquitetura de locatário único.
+
+Os clusters dedicados são provisionados e cobrados por CUs (unidades de capacidade), que é uma quantidade <strong>pré-alocada</strong> de recursos de CPU e memória.
+
+
+

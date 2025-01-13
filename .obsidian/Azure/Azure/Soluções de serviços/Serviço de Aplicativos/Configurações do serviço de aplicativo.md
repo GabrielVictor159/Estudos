@@ -4,7 +4,7 @@
 Essa configuração é para adicionarmos variáveis de ambiente na aplicação, quando em .net ele injeta as variáveis no AppSettings e quando em container envia as variáveis via --env.
 ![Navegando até Variáveis de ambiente > Configurações de aplicativo](https://learn.microsoft.com/pt-br/training/wwl-azure/configure-web-app-settings/media/configure-app-settings.png)
 
-Pode ser edita em massa:
+Pode ser editada em massa:
 ```JSON
 [
   {

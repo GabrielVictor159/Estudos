@@ -7,7 +7,7 @@
 [[Cosmos DB/O que é]]
 [[Api's suportadas]]
 [[Cosmos DB/Codigos/Codigos]]
-[[Feed de Notificações]]
+[[Feed de Alterações]]
 [[Consistência]]
 
 

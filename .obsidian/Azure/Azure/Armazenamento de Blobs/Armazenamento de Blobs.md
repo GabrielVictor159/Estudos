@@ -6,5 +6,5 @@
 [[Níveis de Acesso]]
 [[Armazenamento de Blobs/Planos de Serviço|Planos de Serviço]]
 [[Site estático]]
-
+[[Soluções seguras/Azure Key Vault/Exclusão reversivel|Exclusão reversivel]]
 

@@ -1,4 +1,4 @@
-Para acessar recursos no Entra um Locatario precisa ser representado por uma entidade de segurança.
+Para acessar recursos no Entra um Locatário precisa ser representado por uma entidade de segurança.
 
 <ul>
 <li><strong>Entidade de usuário:</strong> É a entidade de segurança para usuários.</li>

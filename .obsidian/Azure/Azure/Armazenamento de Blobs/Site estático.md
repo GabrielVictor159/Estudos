@@ -1,3 +1,4 @@
+
 O Armazenamento de Blobs do Azure fornece a possibilidade de armazenamento de sites estáticos, para isso basta adicionar os arquivos estáticos no contêiner <b>$web</b>
 
 Para habilitar a hospedagem do site estático, selecione o nome do arquivo padrão e, opcionalmente, forneça um caminho para uma página 404 personalizada.

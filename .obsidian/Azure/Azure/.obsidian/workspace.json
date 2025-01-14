@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Authenticação/Entra ID/Identidades Gerenciadas.md",
+                "file": "Armazenamento de Blobs/Tipos de Blobs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Identidades Gerenciadas"
+              "title": "Tipos de Blobs"
             }
           }
         ]
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Authenticação/Entra ID/Identidades Gerenciadas.md",
+                "file": "Cosmos DB/O que é.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para Identidades Gerenciadas"
+              "title": "Links inversos para O que é"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Authenticação/Entra ID/Identidades Gerenciadas.md",
+                "file": "Cosmos DB/O que é.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para Identidades Gerenciadas"
+              "title": "Links de saída para O que é"
             }
           },
           {
@@ -165,32 +165,34 @@
   },
   "active": "328cc534879e7c38",
   "lastOpenFiles": [
-    "Soluções seguras/Azure Key Vault/Replicação de dados.md",
-    "Soluções seguras/Azure Key Vault/O que é.md",
-    "Soluções seguras/Azure Key Vault/Exclusão reversivel.md",
-    "Soluções seguras/Azure Key Vault/Containers.md",
-    "Soluções seguras/Azure Key Vault/Azure Key Vault.md",
-    "Soluções seguras/Azure Key Vault/Autenticação.md",
-    "Authenticação/Entra ID/Codigos/Codigos.md",
-    "Authenticação/Entra ID/Microsoft Graph.md",
-    "Soluções de container/ACI/Codigos/YAML.md",
-    "Soluções de container/ACI/Codigos/Codigos.md",
-    "Soluções de container/ACI/Codigos/CLI.md",
-    "Soluções de container/ACI/Codigos/ARM.md",
-    "Cosmos DB/Codigos/Exemplos.md",
-    "Cosmos DB/Codigos/Contêiner.md",
-    "Cosmos DB/Codigos/Codigos.md",
-    "Cosmos DB/Codigos/Cliente.md",
-    "Cosmos DB/Codigos/CLI.md",
-    "Cosmos DB/Codigos/Banco de dados.md",
+    "Armazenamento de Blobs/Site estático.md",
+    "Armazenamento de Blobs/Redundância de Zona.md",
     "Armazenamento de Blobs/Planos de Serviço.md",
     "Armazenamento de Blobs/O que é.md",
     "Armazenamento de Blobs/Níveis de Acesso.md",
+    "Armazenamento de Blobs/Exclusão reversivel.md",
+    "Armazenamento de Blobs/Armazenamento de Blobs.md",
+    "Authenticação/Entra ID/Serviços/Users (Usuários).md",
+    "Authenticação/Entra ID/Serviços/Serviços.md",
+    "Authenticação/Entra ID/Serviços/Roles (funções).md",
+    "Authenticação/Entra ID/Serviços/Groups (Grupos).md",
+    "Authenticação/Entra ID/Serviços/App Registration (Registro de Aplicativos).md",
+    "Authenticação/Entra ID/Codigos/Codigos.md",
+    "Authenticação/Entra ID/Plataforma de Identidade.md",
+    "Authenticação/Entra ID/Permissão e consentimento.md",
+    "Authenticação/Entra ID/O que é.md",
+    "Authenticação/Entra ID/Microsoft Graph.md",
+    "Authenticação/Entra ID/Locatário (Tenant Id).md",
+    "Authenticação/Entra ID/Logon Único.md",
+    "Authenticação/Entra ID/Interface.md",
     "Authenticação/Entra ID/Identidades Gerenciadas.md",
     "Authenticação/Entra ID/Entra Id.md",
     "Authenticação/Entra ID/Entidades.md",
     "Authenticação/Entra ID/Assinaturas de Acesso Compartilhado (SAS).md",
     "Cosmos DB/Replicação.md",
+    "Cosmos DB/Provisionamento.md",
+    "Soluções de serviços/Azure Functions/Durable Functions",
+    "Soluções de serviços/Azure Functions/Durable Functions.canvas",
     "images/Pasted image 20250110020717.png",
     "images/Pasted image 20250110020455.png",
     "Soluções de Mensagem/Filas de armazenamento",
@@ -209,7 +211,6 @@
     "images/Pasted image 20250103230951.png",
     "Soluções de Cache/Cache do Azure para Redis",
     "images/Pasted image 20241230051828.png",
-    "Soluções de Mensagem/Barramento de Serviços",
     "images/Pasted image 20241230022839.png",
     "Sem título.canvas",
     "Cosmos DB/Sem título.canvas"

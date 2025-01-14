@@ -16,7 +16,7 @@ O Editor de eventos não conhece a partição de destino apenas a chave de parti
 
 
 ## Editores de eventos
-Um editor de eventos é qualquer entidade que nvie dados para um hub de eventos, eles podem enviar através de HTTPS, AMQP 1.0 ou protocolo Kafka, para obter acesso é necessário obter um token JWT via Entra ID ou utilizar uma SAS.
+Um editor de eventos é qualquer entidade que envie dados para um hub de eventos, eles podem enviar através de HTTPS, AMQP 1.0 ou protocolo Kafka, para obter acesso é necessário obter um token JWT via Entra ID ou utilizar uma SAS.
 
 
 ## Retenção de eventos

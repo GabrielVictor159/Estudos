@@ -1,0 +1,7 @@
+[[Escalonamento Horizontal]]
+[[AZ-204/Soluções de serviços/Serviço de Aplicativos/Planos de Serviço]]
+[[AZ-204/Soluções de serviços/Serviço de Aplicativos/Autenticação]]
+[[Configurações do serviço de aplicativo]]
+[[Criação de um App Service]]
+[[Logs]]
+[[Slots de implantação]]

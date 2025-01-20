@@ -1,0 +1,10 @@
+[[AZ-204/Armazenamento de Blobs/Codigos/Codigos|Codigos]]
+[[Data Lake Storage Gen 2]]
+[[AZ-204/Armazenamento de Blobs/O que é|O que é]]
+[[Redundância de Zona]]
+[[Tipos de Blobs]]
+[[Níveis de Acesso]]
+[[AZ-204/Armazenamento de Blobs/Planos de Serviço|Planos de Serviço]]
+[[Site estático]]
+[[AZ-204/Soluções seguras/Azure Key Vault/Exclusão reversivel|Exclusão reversivel]]
+

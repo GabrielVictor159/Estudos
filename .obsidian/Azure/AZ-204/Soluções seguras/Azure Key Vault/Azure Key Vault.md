@@ -1,0 +1,6 @@
+[[AZ-204/Soluções seguras/Azure Key Vault/Autenticação|Autenticação]]
+[[Containers]]
+[[AZ-204/Soluções seguras/Azure Key Vault/Exclusão reversivel]]
+[[AZ-204/Soluções seguras/Azure Key Vault/O que é|O que é]]
+[[Replicação de dados]]
+[[AZ-204/Soluções seguras/Azure Key Vault/Codigos|Codigos]]

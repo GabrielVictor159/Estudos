@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AZ-104/Pre-requisitos/ARM/Estrutura.md",
+                "file": "AZ-104/Gerenciamento de Identidades/Entra id/Entra id.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Estrutura"
+              "title": "Entra id"
+            }
+          },
+          {
+            "id": "f0798daaf45c8877",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AZ-104/Gerenciamento de Identidades/Entra id/o que é.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "o que é"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +55,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de arquivos"
@@ -162,53 +178,53 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "2ac7143966ecb3d8",
+  "active": "f0798daaf45c8877",
   "lastOpenFiles": [
-    "AZ-104/Pre-requisitos/ARM/O que é.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Exclusão reversível de usuário.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Centro de administração do Microsoft Entra.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciamento de identidades.md",
     "AZ-104/Pre-requisitos/ARM/Estrutura.md",
     "AZ-104/Pre-requisitos/ARM/ARM.md",
+    "AZ-104/Pre-requisitos/Azure CLoud Shell/Recursos disponivéis.md",
+    "AZ-104/Pre-requisitos/Azure CLoud Shell/O que é.md",
+    "AZ-104/Pre-requisitos/Azure CLoud Shell/Azure Cloud Shell.md",
+    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Ferramentas de Gerenciamento.md",
+    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Gerenciamento portal do Azure.md",
+    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Painéis do portal.md",
+    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Prévia de Recursos.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/o que é.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/Entra id.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/Domain Services.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/Classes de objetos.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/camadas de serviço.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciar usuários.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Registro de dispositivos.md",
+    "AZ-104/images/Pasted image 20250204223645.png",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Grupos.md",
+    "AZ-104/images/Pasted image 20250204222233.png",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Sem título",
+    "AZ-104/images/Pasted image 20250204205347.png",
+    "Pasted image 20250204205312.png",
+    "AZ-104/images/Pasted image 20250204203045.png",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades",
+    "AZ-104/images/Pasted image 20250131224314.png",
+    "AZ-104/Gerenciamento de Identidades/Entra id/Locatario.md",
+    "AZ-104/Gerenciamento de Identidades/Gerenciamento de Identidades.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id",
     "AZ-104/Pre-requisitos/Pre-requisitos.md",
+    "AZ-104/Gerenciamento de Identidades",
+    "AZ-104/Pre-requisitos/ARM/Parâmetros do modelo.md",
+    "AZ-104/Pre-requisitos/ARM/O que é.md",
     "AZ-104/Pre-requisitos/ARM",
     "AZ-104/Pre-requisitos/Bash/O que é.md",
-    "AZ-104/Pre-requisitos/Bash/Bash.md",
     "AZ-104/Pre-requisitos/Bash/Sem título",
-    "AZ-104/Pre-requisitos/Azure CLoud Shell/Azure Cloud Shell.md",
     "AZ-104/Pre-requisitos/Bash",
-    "AZ-104/Pre-requisitos/Azure CLoud Shell/O que é.md",
-    "AZ-104/Pre-requisitos/Azure CLoud Shell/Recursos disponivéis.md",
     "AZ-104/images/Pasted image 20250119213605.png",
     "AZ-104/images/Pasted image 20250119213520.png",
     "AZ-104/images/Pasted image 20250119212509.png",
     "AZ-104/Pre-requisitos/Azure CLoud Shell",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Gerenciamento portal do Azure.md",
-    "AZ-104/Pre-requisitos/Sem título.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Painéis do portal.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Ferramentas de Gerenciamento.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Prévia de Recursos.md",
     "AZ-104/images/Pasted image 20250118115924.png",
-    "Pasted image 20250118115919.png",
-    "AZ-104/images/Pasted image 20250118115724.png",
-    "AZ-104/images/Pasted image 20250118115415.png",
-    "AZ-104/images/Pasted image 20250118115325.png",
-    "AZ-104/images/Pasted image 20250118114438.png",
-    "Pasted image 20250118115253.png",
-    "AZ-204/Armazenamento de Blobs/Site estático.md",
     "AZ-104/Pre-requisitos/Gerenciamento portal do azure",
-    "AZ-104/Pre-requisitos",
-    "AZ-104/images",
-    "AZ-104",
-    "AZ-204/Armazenamento de Blobs/Níveis de Acesso.md",
-    "AZ-204/Armazenamento de Blobs/Armazenamento de Blobs.md",
-    "AZ-204/Armazenamento de Blobs/Tipos de Blobs.md",
-    "AZ-204/Armazenamento de Blobs/Codigos/Contêiner.md",
-    "AZ-204/Armazenamento de Blobs/Codigos/Codigos.md",
-    "AZ-204/Armazenamento de Blobs/Codigos/Cliente.md",
-    "AZ-204/Armazenamento de Blobs/Codigos/Blobs.md",
-    "AZ-204/Armazenamento de Blobs/O que é.md",
-    "AZ-204/Armazenamento de Blobs/Redundância de Zona.md",
-    "AZ-204/Armazenamento de Blobs/Data Lake Storage Gen 2/Data Lake Storage Gen 2.md",
-    "AZ-204/Cosmos DB/Provisionamento.md",
-    "Azure/Cosmos DB/Codigos/Funções Armazenadas",
-    "AZ-204/Cosmos DB/Codigos"
+    "AZ-104/Pre-requisitos"
   ]
 }

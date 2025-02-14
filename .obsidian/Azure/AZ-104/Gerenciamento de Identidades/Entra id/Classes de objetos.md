@@ -1,0 +1,2 @@
+Objetos das classes Application e servicePrincipal representam aplicativos no Microsoft Entra ID. Um objeto na classe Application contém uma definição de aplicativo e um objeto na classe servicePrincipal constitui sua instância no locatário do Microsoft Entra atual. A separação desses dois conjuntos de características permite definir um aplicativo em um locatário e usá-lo em vários locatários criando um objeto de entidade de serviço para esse aplicativo em cada locatário.
+

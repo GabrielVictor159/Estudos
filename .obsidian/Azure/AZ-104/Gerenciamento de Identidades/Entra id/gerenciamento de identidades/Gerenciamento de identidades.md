@@ -3,6 +3,9 @@
 [[Exclusão reversível de usuário]]
 [[Grupos]]
 [[Registro de dispositivos]]
+[[Gerenciar licenças]]
+[[Atributos de Segurança]]
+
 
 
 

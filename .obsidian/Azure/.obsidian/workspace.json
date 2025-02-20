@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Atributos de Segurança.md",
+                "file": "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Criação automática de usuários.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Atributos de Segurança"
+              "title": "Criação automática de usuários"
             }
           }
         ]
@@ -163,11 +163,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "a9fa5215e252615e",
+  "active": "2ac7143966ecb3d8",
   "lastOpenFiles": [
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Atributos de Segurança.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Criação automática de usuários.md",
     "AZ-104/images/Pasted image 20250218055316.png",
     "AZ-104/Gerenciamento de Identidades/Entra id/Entra id.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Atributos de Segurança.md",
     "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciamento de identidades.md",
     "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Exclusão reversível de usuário.md",
     "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Centro de administração do Microsoft Entra.md",
@@ -199,7 +200,6 @@
     "Pasted image 20250204205312.png",
     "AZ-104/images/Pasted image 20250204203045.png",
     "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades",
-    "AZ-104/images/Pasted image 20250131224314.png",
     "AZ-104/Gerenciamento de Identidades/Entra id/Locatario.md",
     "AZ-104/Gerenciamento de Identidades/Gerenciamento de Identidades.md",
     "AZ-104/Gerenciamento de Identidades/Entra id",

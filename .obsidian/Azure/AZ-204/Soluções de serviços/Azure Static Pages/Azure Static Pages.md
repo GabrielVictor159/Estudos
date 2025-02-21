@@ -2,4 +2,4 @@
 [[API]]
 [[AZ-204/Soluções de serviços/Azure Static Pages/Autenticação|Autenticação]]
 [[Implantação]]
-[[Recursos]]
+[[AZ-204/Soluções de serviços/Azure Static Pages/Recursos]]

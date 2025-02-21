@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Criação automática de usuários.md",
+                "file": "AZ-104/Gerenciamento de Identidades/Gerenciamento de Identidades.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Criação automática de usuários"
+              "title": "Gerenciamento de Identidades"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de arquivos"
+              "title": "Files"
             }
           },
           {
@@ -155,61 +155,60 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir a troca rápida": false,
-      "graph:Abrir visualização em gráfico": false,
-      "canvas:Criar novo canvas": false,
-      "daily-notes:Abrir a nota de hoje": false,
-      "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "2ac7143966ecb3d8",
   "lastOpenFiles": [
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Atributos de Segurança.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Criação automática de usuários.md",
-    "AZ-104/images/Pasted image 20250218055316.png",
-    "AZ-104/Gerenciamento de Identidades/Entra id/Entra id.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciamento de identidades.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Exclusão reversível de usuário.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Centro de administração do Microsoft Entra.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciar licenças.md",
-    "AZ-104/images/Pasted image 20250218022742.png",
-    "AZ-104/images/Pasted image 20250218022642.png",
-    "AZ-104/images/Pasted image 20250218022607.png",
-    "AZ-104/images/Pasted image 20250218022158.png",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Registro de dispositivos.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Grupos.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciar usuários.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/o que é.md",
-    "AZ-104/Pre-requisitos/ARM/Estrutura.md",
+    "AZ-104/Gerenciamento de Identidades/Azure RBAC/Azure RBAC.md",
+    "AZ-104/Gerenciamento de Identidades/Azure RBAC/O que é.md",
+    "Pasted image 20250220173214.png",
+    "AZ-104/images/Pasted image 20250220173143.png",
+    "AZ-104/images/Pasted image 20250220173040.png",
+    "AZ-104/images/Pasted image 20250220173009.png",
+    "AZ-104/images/Pasted image 20250220172928.png",
+    "AZ-104/images/Pasted image 20250220172819.png",
     "AZ-104/Pre-requisitos/ARM/ARM.md",
-    "AZ-104/Pre-requisitos/Azure CLoud Shell/Recursos disponivéis.md",
-    "AZ-104/Pre-requisitos/Azure CLoud Shell/O que é.md",
-    "AZ-104/Pre-requisitos/Azure CLoud Shell/Azure Cloud Shell.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Ferramentas de Gerenciamento.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Gerenciamento portal do Azure.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Painéis do portal.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Prévia de Recursos.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/Domain Services.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/Classes de objetos.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/camadas de serviço.md",
-    "AZ-104/images/Pasted image 20250204223645.png",
-    "AZ-104/images/Pasted image 20250204222233.png",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Sem título",
-    "AZ-104/images/Pasted image 20250204205347.png",
-    "Pasted image 20250204205312.png",
-    "AZ-104/images/Pasted image 20250204203045.png",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades",
-    "AZ-104/Gerenciamento de Identidades/Entra id/Locatario.md",
+    "AZ-104/Pre-requisitos/ARM/Parâmetros do modelo.md",
+    "AZ-104/Pre-requisitos/ARM/O que é.md",
+    "AZ-104/Pre-requisitos/ARM/Estrutura.md",
     "AZ-104/Gerenciamento de Identidades/Gerenciamento de Identidades.md",
+    "AZ-104/Gerenciamento de Identidades/Azure Policy/Avaliação.md",
+    "AZ-104/Gerenciamento de Identidades/Azure Policy/Azure Policy.md",
+    "AZ-104/Gerenciamento de Identidades/Azure RBAC",
+    "AZ-104/Gerenciamento de Identidades/Azure Policy/Definições do Azure Policy.md",
+    "AZ-104/images/Pasted image 20250220160827.png",
+    "AZ-104/Gerenciamento de Identidades/Azure Policy/O que é.md",
+    "AZ-104/Gerenciamento de Identidades/Azure Policy/Microsoft Cloud Adoption Framework for Azure.md",
+    "AZ-104/Gerenciamento de Identidades/Azure Policy/Recursos do Azure Policy.md",
+    "AZ-204/Armazenamento de Blobs/Exclusão reversivel.md",
+    "AZ-104/images/Pasted image 20250220120221.png",
+    "AZ-104/images/Pasted image 20250220115223.png",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Atributos de Segurança.md",
+    "AZ-104/Gerenciamento de Identidades/Azure Policy",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Centro de administração do Microsoft Entra.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Criação automática de usuários.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Exclusão reversível de usuário.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciamento de identidades.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciar licenças.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciar usuários.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Grupos.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Registro de dispositivos.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/camadas de serviço.md",
+    "AZ-104/Gerenciamento de Identidades/Entra id/o que é.md",
+    "AZ-104/images/Pasted image 20250220111143.png",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Sem título",
+    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades",
     "AZ-104/Gerenciamento de Identidades/Entra id",
-    "AZ-104/Pre-requisitos/Pre-requisitos.md",
     "AZ-104/Gerenciamento de Identidades",
     "AZ-104/Pre-requisitos/ARM",
     "AZ-104/Pre-requisitos/Bash/Sem título",
     "AZ-104/Pre-requisitos/Bash",
-    "AZ-104/Pre-requisitos/Azure CLoud Shell",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure",
-    "AZ-104/Pre-requisitos"
+    "AZ-104/Pre-requisitos/Azure CLoud Shell"
   ]
 }

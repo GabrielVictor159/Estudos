@@ -6,6 +6,12 @@
 [[DNS do Azure]]
 [[Emparelhamento de rede]]
 [[Controlar o fluxo de tráfego]]
+[[Load balancer]]
+[[Gateway de Aplicativo]]
+[[Observador de rede]]
+
+
+
 
 
 

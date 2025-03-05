@@ -1,4 +1,4 @@
-Quando configuramos o emparelhamento de rede entre muitas mais de duas redes a configuração de emparelhamento não é automaticamente herdada entre as redes.
+Quando configuramos o emparelhamento de rede entre mais de duas redes a configuração de emparelhamento não é automaticamente herdada entre as redes.
 
 Há algumas maneiras de estender os recursos do emparelhamento para recursos e redes virtuais fora da rede de emparelhamento:
 

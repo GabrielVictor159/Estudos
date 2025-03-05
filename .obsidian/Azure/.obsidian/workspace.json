@@ -25,12 +25,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AZ-104/Gerenciamento de Identidades/Entra id/camadas de serviço.md",
+                "file": "AZ-104/Redes Virtuais/Observador de Rede/Observador de rede.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "camadas de serviço"
+              "title": "Observador de rede"
             }
           }
         ],
@@ -57,7 +57,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de arquivos"
+              "title": "Files"
             }
           },
           {
@@ -91,7 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 400.5
   },
   "right": {
     "id": "3530082b1575331a",
@@ -168,61 +168,61 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir a troca rápida": false,
-      "graph:Abrir visualização em gráfico": false,
-      "canvas:Criar novo canvas": false,
-      "daily-notes:Abrir a nota de hoje": false,
-      "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
   "active": "5399780bfa5523aa",
   "lastOpenFiles": [
-    "AZ-104/Gerenciamento de Identidades/Azure RBAC/O que é.md",
-    "AZ-104/Gerenciamento de Identidades/Azure RBAC/Azure RBAC.md",
-    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego/Controlar o fluxo de tráfego.md",
+    "AZ-104/Redes Virtuais/Gateway de Aplicativo/O que é.md",
+    "AZ-104/Redes Virtuais/Gateway de Aplicativo/Como funciona.md",
+    "AZ-104/Redes Virtuais/Gateway de Aplicativo/Gateway de Aplicativo.md",
+    "AZ-104/Redes Virtuais/Observador de Rede/Observador de rede.md",
+    "AZ-104/Redes Virtuais/Endereçamento de Ip.md",
+    "AZ-104/Redes Virtuais/Sub-Redes.md",
     "AZ-104/Redes Virtuais/Redes Virtuais.md",
-    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego",
-    "AZ-104/Redes Virtuais/Emparelhamento de rede/Emparelhamento de rede.md",
-    "AZ-104/Redes Virtuais/Emparelhamento de rede/Estender o emparelhamento de redes.md",
-    "AZ-104/images/Pasted image 20250302210556.png",
-    "AZ-104/Redes Virtuais/Emparelhamento de rede/Criar emparelhamento.md",
-    "AZ-104/Redes Virtuais/Emparelhamento de rede/O que é.md",
-    "AZ-104/Redes Virtuais/Emparelhamento de rede/Transito gateway.md",
-    "AZ-104/images/Pasted image 20250302205110.png",
-    "AZ-104/images/Pasted image 20250302203802.png",
-    "AZ-104/Redes Virtuais/Emparelhamento de rede",
-    "AZ-104/Redes Virtuais/DNS do Azure/DNS do Azure.md",
-    "AZ-104/Redes Virtuais/DNS do Azure/O que é.md",
-    "AZ-104/Redes Virtuais/DNS do Azure/Registros Alias.md",
-    "AZ-104/Redes Virtuais/DNS do Azure/Configurar DNS do Azure.md",
-    "AZ-104/images/Pasted image 20250302185134.png",
-    "AZ-104/images/Pasted image 20250302184934.png",
-    "AZ-104/images/Pasted image 20250302184655.png",
-    "AZ-104/images/Pasted image 20250302183815.png",
-    "AZ-104/images/Pasted image 20250302183240.png",
+    "AZ-104/Redes Virtuais/O que é.md",
+    "AZ-104/Redes Virtuais/Criar uma rede virtual.md",
+    "AZ-104/Redes Virtuais/Observador de Rede",
+    "AZ-104/images/Pasted image 20250304182046.png",
+    "AZ-104/images/Pasted image 20250304181957.png",
+    "AZ-104/images/Pasted image 20250304171920.png",
+    "AZ-104/Redes Virtuais/Grupos de segurança de rede/Regras de segurança.md",
     "AZ-104/Redes Virtuais/Grupos de segurança de rede/O que é.md",
-    "AZ-104/Redes Virtuais/DNS do Azure",
     "AZ-104/Redes Virtuais/Grupos de segurança de rede/Grupos de segurança de rede.md",
     "AZ-104/Redes Virtuais/Grupos de segurança de rede/Grupos de segurança de aplicativo.md",
-    "AZ-104/Redes Virtuais/Sub-Redes.md",
-    "AZ-104/Redes Virtuais/O que é.md",
-    "AZ-104/Redes Virtuais/Endereçamento de Ip.md",
-    "AZ-104/Redes Virtuais/Criar uma rede virtual.md",
-    "AZ-104/Redes Virtuais/Grupos de segurança de rede/Regras de segurança.md",
-    "AZ-104/images/Pasted image 20250224161957.png",
-    "AZ-104/images/Pasted image 20250224160642.png",
+    "AZ-104/images/Pasted image 20250304153556.png",
+    "AZ-104/Redes Virtuais/Gateway de Aplicativo",
+    "AZ-204/Soluções de container/Soluções de container.md",
+    "AZ-104/Redes Virtuais/Load balancer/Load balancer.md",
+    "AZ-104/Redes Virtuais/Load balancer/Como funciona.md",
+    "AZ-104/images/Pasted image 20250304143401.png",
+    "AZ-104/images/Pasted image 20250304143313.png",
+    "AZ-104/Redes Virtuais/Load balancer/O que é.md",
+    "AZ-104/Redes Virtuais/Load balancer",
+    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego/NVA.md",
+    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego/Controlar o fluxo de tráfego.md",
+    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego/Criar Rotas personalizadas.md",
+    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego/Gateway de rede virtual.md",
+    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego/Rotas personalizadas.md",
+    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego/Roteamento do Azure.md",
+    "AZ-104/images/Pasted image 20250304110816.png",
+    "Pasted image 20250304110805.png",
+    "AZ-104/images/Pasted image 20250304104148.png",
+    "Pasted image 20250304104136.png",
+    "AZ-104/Redes Virtuais/Emparelhamento de rede/Transito gateway.md",
+    "AZ-104/Redes Virtuais/Emparelhamento de rede/O que é.md",
+    "AZ-104/Redes Virtuais/Emparelhamento de rede/Estender o emparelhamento de redes.md",
+    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego",
+    "AZ-104/Redes Virtuais/Emparelhamento de rede",
+    "AZ-104/Redes Virtuais/DNS do Azure",
     "AZ-104/Redes Virtuais/Grupos de segurança de rede",
-    "AZ-104/Gerenciamento de Identidades/Entra id/Entra id.md",
     "AZ-104/Redes Virtuais",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Grupos.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/redefinir senha Self-Service/Redefinir senha Self-Service.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/redefinir senha Self-Service/Autenticação.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/redefinir senha Self-Service/Implementação.md",
     "AZ-104/Gerenciamento de Identidades/Entra id/redefinir senha Self-Service",
-    "AZ-104/Gerenciamento de Identidades/Azure RBAC",
-    "AZ-104/Gerenciamento de Identidades/Azure Policy",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Sem título",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades"
+    "AZ-104/Gerenciamento de Identidades/Azure RBAC"
   ]
 }

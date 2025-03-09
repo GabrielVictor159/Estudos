@@ -1,0 +1,6 @@
+[[AZ-104/Armazenamento do Azure/Armazenamento de Blobs/O que é|O que é]]
+[[Implementar]]
+[[AZ-104/Armazenamento do Azure/Armazenamento de Blobs/Níveis de Acesso|Níveis de Acesso]]
+[[AZ-104/Armazenamento do Azure/Armazenamento de Blobs/Exclusão reversivel|Exclusão reversivel]]
+[[AZ-104/Armazenamento do Azure/Armazenamento de Blobs/Site estático|Site estático]]
+[[AZ-104/Armazenamento do Azure/Armazenamento de Blobs/Tipos de Blobs|Tipos de Blobs]]

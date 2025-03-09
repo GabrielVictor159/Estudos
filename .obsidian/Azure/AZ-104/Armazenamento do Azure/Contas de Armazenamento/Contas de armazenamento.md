@@ -1,0 +1,6 @@
+[[Acesso a dados]]
+[[Categoria de Dados]]
+[[Pontos de extremidade]]
+[[Replicação geografica]]
+[[Tipos de Armazenamento]]
+[[Tipos de Contas de armazenamento]]

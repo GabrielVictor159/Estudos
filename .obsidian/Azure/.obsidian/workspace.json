@@ -48,9 +48,19 @@
               "icon": "lucide-file",
               "title": "Pre-requisitos"
             }
+          },
+          {
+            "id": "0e79282944c4214d",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -194,6 +204,7 @@
   },
   "active": "a9fa5215e252615e",
   "lastOpenFiles": [
+    "Untitled.canvas",
     "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Prévia de Recursos.md",
     "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Painéis do portal.md",
     "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Gerenciamento portal do Azure.md",
@@ -219,7 +230,6 @@
     "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciar usuários.md",
     "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciar licenças.md",
     "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Gerenciamento de identidades.md",
-    "AZ-104/Gerenciamento de Identidades/Entra id/gerenciamento de identidades/Exclusão reversível de usuário.md",
     "AZ-104/Armazenamento do Azure/Segurança do Armazenamento",
     "AZ-104/images/Pasted image 20250308224456.png",
     "AZ-104/images/Pasted image 20250308223828.png",

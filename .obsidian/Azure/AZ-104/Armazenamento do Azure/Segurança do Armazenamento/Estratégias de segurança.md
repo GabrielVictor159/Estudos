@@ -1,0 +1,7 @@
+
+- **Criptografia em repouso**:  O Storage Service Encryption (SSE) com uma cifra Advanced Encryption Standard (AES) de 256 bits criptografa todos os dados gravados no Armazenamento do Azure. Esse processo não gera custos extras e não prejudica o desempenho. Ele não pode ser desabilitado.
+- **Autenticação**: O Microsoft Entra ID e o RBAC (controle de acesso baseado em função) têm suporte para o Armazenamento do Azure para operações de gerenciamento de recursos e operações de dados.
+- **Criptografia em trânsito**: Mantenha seus dados protegidos habilitando a segurança no nível do transporte entre o Azure e o cliente. Sempre use HTTPS para proteger a comunicação na Internet pública.
+- **Criptografia de disco**: Para VMs (máquinas virtuais), o Azure permite criptografar os VHDs (discos rígidos virtuais) usando o Azure Disk Encryption. Esta criptografia usa o BitLocker para imagens do Windows e o dm-crypt para Linux. O Azure Key Vault armazena as chaves automaticamente para ajudar a controlar e gerenciar as chaves e os segredos de criptografia de disco.
+- **Assinaturas de acesso compartilhado**: O acesso delegado aos objetos de dados no Armazenamento do Azure pode ser permitido usando uma SAS (assinatura de acesso compartilhado).
+- **Autorização**: Todas as solicitações feitas em um recurso seguro no Armazenamento de Blobs, Arquivos do Azure, Armazenamento de Filas ou Azure Cosmos DB (Armazenamento de Tabelas do Azure) devem ser autorizadas.

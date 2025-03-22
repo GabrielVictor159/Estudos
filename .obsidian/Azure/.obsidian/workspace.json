@@ -4,67 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "8d286dc5d2049560",
+        "id": "0c8d1871595435d7",
         "type": "tabs",
         "children": [
           {
-            "id": "829b843502f302c9",
+            "id": "05231109cf73c2d9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AZ-204/Armazenamento de Blobs/Exclusão reversivel.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Exclusão reversivel"
-            }
-          },
-          {
-            "id": "e56077754e889394",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AZ-204/Armazenamento de Blobs/Níveis de Acesso.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Níveis de Acesso"
-            }
-          },
-          {
-            "id": "9dafe4fc1f336a03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AZ-104/Armazenamento do Azure/Armazenamento do Azure.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Armazenamento do Azure"
-            }
-          },
-          {
-            "id": "0e79282944c4214d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AZ-204/Authenticação/Entra ID/Assinaturas de Acesso Compartilhado (SAS).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Assinaturas de Acesso Compartilhado (SAS)"
+              "title": "Nova aba"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -206,9 +159,34 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "9dafe4fc1f336a03",
+  "active": "05231109cf73c2d9",
   "lastOpenFiles": [
+    "AZ-104/Recursos de computação/Recursos de computação.md",
+    "AZ-104/Recursos de computação/Maquinas Virtuais/Maquinas Virtuais.md",
+    "AZ-104/images/Pasted image 20250322075155.png",
+    "AZ-104/Recursos de computação/Maquinas Virtuais/Criando uma maquina Virtual.md",
+    "AZ-104/Recursos de computação/Maquinas Virtuais/Backup de Maquinas Virtuais.md",
+    "AZ-104/Recursos de computação/Maquinas Virtuais/Disponibilidade da VM.md",
+    "AZ-104/images/Pasted image 20250322071709.png",
+    "AZ-104/images/Pasted image 20250322071338.png",
+    "AZ-104/images/Pasted image 20250322071041.png",
+    "AZ-104/Recursos de computação/Maquinas Virtuais",
+    "AZ-204/Armazenamento de Blobs/Exclusão reversivel.md",
+    "AZ-104/Recursos de computação",
+    "AZ-104/Armazenamento do Azure/Armazenamento do Azure.md",
     "AZ-104/Armazenamento do Azure/Arquivos do Azure/Arquivos do Azure.md",
+    "AZ-104/Armazenamento do Azure/Arquivos do Azure/Compartilhamento de arquivos.md",
+    "AZ-104/Armazenamento do Azure/Arquivos do Azure/Sincronização de arquivos.md",
+    "AZ-104/images/Pasted image 20250322063321.png",
+    "AZ-104/Armazenamento do Azure/Arquivos do Azure/O que é.md",
+    "AZ-104/Armazenamento do Azure/Arquivos do Azure/Instantâneos de compartilhamento de arquivos.md",
+    "AZ-104/Armazenamento do Azure/Arquivos do Azure/Gerenciador de armazenamento do Azure.md",
+    "AZ-104/Armazenamento do Azure/Arquivos do Azure/Exclusão temporária de arquivos do Azure.md",
+    "AZ-104/images/Pasted image 20250322045244.png",
+    "AZ-104/images/Pasted image 20250322045029.png",
+    "AZ-104/images/Pasted image 20250322044953.png",
+    "AZ-104/images/Pasted image 20250322044708.png",
+    "AZ-104/images/Pasted image 20250322044226.png",
     "AZ-104/Armazenamento do Azure/Armazenamento de Blobs/Níveis de Acesso.md",
     "AZ-104/Armazenamento do Azure/Armazenamento de Blobs/Tipos de Blobs.md",
     "AZ-104/Armazenamento do Azure/Armazenamento de Blobs/Site estático.md",
@@ -221,39 +199,13 @@
     "AZ-104/Armazenamento do Azure/Contas de Armazenamento/Tipos de Armazenamento.md",
     "AZ-104/Armazenamento do Azure/Contas de Armazenamento/Replicação geografica.md",
     "AZ-104/Armazenamento do Azure/Contas de Armazenamento/Pontos de extremidade.md",
-    "AZ-104/Armazenamento do Azure/Contas de Armazenamento/Contas de armazenamento.md",
-    "AZ-104/Armazenamento do Azure/Contas de Armazenamento/Categoria de Dados.md",
-    "AZ-104/Armazenamento do Azure/Contas de Armazenamento/Acesso a dados.md",
-    "AZ-104/Armazenamento do Azure/Armazenamento do Azure.md",
-    "AZ-104/Armazenamento do Azure/Segurança do Armazenamento/Segurança do Armazenamento.md",
-    "AZ-104/Armazenamento do Azure/Segurança do Armazenamento/Assinatura de acesso compartilhado (SAS).md",
-    "AZ-104/Armazenamento do Azure/Segurança do Armazenamento/Criptografia.md",
-    "AZ-104/Armazenamento do Azure/Segurança do Armazenamento/Estratégias de segurança.md",
-    "AZ-104/images/Pasted image 20250319025201.png",
-    "AZ-104/Pre-requisitos/Pre-requisitos.md",
-    "AZ-204/Authenticação/Entra ID/Assinaturas de Acesso Compartilhado (SAS).md",
-    "AZ-104/images/Pasted image 20250319024534.png",
     "Untitled.canvas",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Prévia de Recursos.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Painéis do portal.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Gerenciamento portal do Azure.md",
-    "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Ferramentas de Gerenciamento.md",
     "AZ-104/Armazenamento do Azure/Segurança do Armazenamento",
-    "AZ-104/images/Pasted image 20250308224456.png",
-    "AZ-104/images/Pasted image 20250308223828.png",
-    "AZ-104/images/Pasted image 20250308224416.png",
     "AZ-104/Armazenamento do Azure/Armazenamento de Blobs",
-    "AZ-104/images/Pasted image 20250222112502.png",
-    "AZ-104/images/Pasted image 20250308215504.png",
-    "AZ-104/images/Pasted image 20250308223746.png",
     "AZ-104/Armazenamento do Azure/Contas de Armazenamento",
     "AZ-104/Armazenamento do Azure",
-    "AZ-104/images/Pasted image 20250308215311.png",
-    "AZ-104/images/Pasted image 20250308214410.png",
     "AZ-104/Redes Virtuais/Observador de Rede",
     "AZ-104/Redes Virtuais/Gateway de Aplicativo",
-    "AZ-104/Redes Virtuais/Load balancer",
-    "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego",
-    "AZ-104/Redes Virtuais/Emparelhamento de rede"
+    "AZ-104/Redes Virtuais/Load balancer"
   ]
 }

@@ -1,0 +1,6 @@
+[[Compartilhamento de arquivos]]
+[[Exclusão temporária de arquivos do Azure]]
+[[Gerenciador de armazenamento do Azure]]
+[[Instantâneos de compartilhamento de arquivos]]
+[[AZ-104/Armazenamento do Azure/Arquivos do Azure/O que é|O que é]]
+[[Sincronização de arquivos]]

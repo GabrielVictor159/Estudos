@@ -15,4 +15,3 @@ O Backup do Azure foi projetado para trabalhar em conjunto com outros serviços 
 - **Criptografia de dados**. A criptografia de dados permite a transmissão segura e o armazenamento dos dados no Azure.
 - **Backup consistente com o aplicativo**. Um backup consistente com o aplicativo significa que um ponto de recuperação tem todos os dados necessários para restaurar a cópia de backup.
 - **Retenção de longo prazo**. O Azure não limita o tempo durante o qual você mantém os dados de backup.
-- 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AZ-104/Gerenciamento de Identidades/Azure RBAC/O que é.md",
+                "file": "AZ-104/Recursos de computação/Maquinas Virtuais/Dimensionamento de maquinas virtuais.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "O que é"
+              "title": "Dimensionamento de maquinas virtuais"
             }
           }
         ]
@@ -165,6 +165,10 @@
   },
   "active": "2e40281259d29c1c",
   "lastOpenFiles": [
+    "AZ-104/Recursos de computação/Maquinas Virtuais/Criando uma maquina Virtual.md",
+    "AZ-104/Recursos de computação/Maquinas Virtuais/Conjuntos de disponibilidade.md",
+    "AZ-104/Recursos de computação/Maquinas Virtuais/Dimensionamento de maquinas virtuais.md",
+    "AZ-104/Gerenciamento de Identidades/Azure RBAC/O que é.md",
     "AZ-104/Gerenciamento de Identidades/Azure RBAC/Azure RBAC.md",
     "AZ-104/Gerenciamento de Identidades/Entra id/Classes de objetos.md",
     "AZ-104/Gerenciamento de Identidades/Entra id/o que é.md",
@@ -189,10 +193,6 @@
     "AZ-104/Recursos de computação/Serviço de aplicativo/Backup do Serviço de aplicativo.md",
     "AZ-104/Recursos de computação/Serviço de aplicativo/Escalonamento Horizontal.md",
     "AZ-104/Recursos de computação/Serviço de aplicativo/Planos de Serviço.md",
-    "AZ-104/Recursos de computação/Serviço de aplicativo/Logs.md",
-    "AZ-104/Recursos de computação/Serviço de aplicativo/Autenticação.md",
-    "AZ-104/Recursos de computação/Serviço de aplicativo/Configurações do serviço de aplicativo.md",
-    "AZ-104/Recursos de computação/Serviço de aplicativo/Criação de um App Service.md",
     "AZ-104/Recursos de computação/Serviço de aplicativo",
     "AZ-104/images/Pasted image 20250323010927.png",
     "AZ-104/images/Pasted image 20250323010112.png",

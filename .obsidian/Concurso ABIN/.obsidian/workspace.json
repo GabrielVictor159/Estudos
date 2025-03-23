@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de arquivos"
             }
           },
           {
@@ -160,19 +160,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "5264437be78751df",
+  "active": "3b699a4feee50ae0",
   "lastOpenFiles": [
+    "Legislação Inteligência/Lei 9.883-1999/Lei que cria a ABIN e institui o SISBIN.md",
+    "Legislação Inteligência/Doutrina/Fundamentos da Atividade de Inteligência.md",
     "Legislação Inteligência/Historico",
     "images/Pasted image 20250310122255.png",
-    "Legislação Inteligência/Doutrina/Fundamentos da Atividade de Inteligência.md",
     "Legislação Inteligência/Princípios da inteligência.md",
     "Legislação Inteligência/Doutrina/Untitled",
     "Legislação Inteligência/Doutrina",
@@ -185,7 +186,6 @@
     "images/Pasted image 20250310123359.png",
     "images/Pasted image 20250310123036.png",
     "images/Pasted image 20250310122906.png",
-    "Legislação Inteligência/Lei 9.883-1999/Lei que cria a ABIN e institui o SISBIN.md",
     "Legislação Inteligência/Estratégia Nacional de Inteligência (ENINT).md",
     "Direito Penal/Medida provisória.md",
     "Legislação Inteligência/Lei 9.883-1999",
@@ -206,7 +206,6 @@
     "Geografia/Geografia.md",
     "Política externa",
     "Legislação Inteligência/Legislação Inteligência.md",
-    "Geografia",
     "História do Brasil/História do Brasil.md",
     "Português/Português.md",
     "Welcome.md"

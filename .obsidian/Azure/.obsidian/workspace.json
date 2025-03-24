@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AZ-104/Recursos de computação/Maquinas Virtuais/Dimensionamento de maquinas virtuais.md",
+                "file": "AZ-104/Monitorar e fazer Backups/Backup do Azure/Como funciona.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dimensionamento de maquinas virtuais"
+              "title": "Como funciona"
             }
           }
         ]
@@ -165,9 +165,15 @@
   },
   "active": "2e40281259d29c1c",
   "lastOpenFiles": [
+    "AZ-104/Monitorar e fazer Backups/Backup do Azure/O que é.md",
+    "AZ-104/Monitorar e fazer Backups/Backup do Azure/Como funciona.md",
+    "AZ-104/images/Pasted image 20250324071353.png",
+    "AZ-104/images/Pasted image 20250324071238.png",
+    "AZ-104/Monitorar e fazer Backups/Backup do Azure/Backup do Azure.md",
+    "AZ-104/Recursos de computação/Maquinas Virtuais/Dimensionamento de maquinas virtuais.md",
+    "AZ-104/Monitorar e fazer Backups/Backup do Azure",
     "AZ-104/Recursos de computação/Maquinas Virtuais/Criando uma maquina Virtual.md",
     "AZ-104/Recursos de computação/Maquinas Virtuais/Conjuntos de disponibilidade.md",
-    "AZ-104/Recursos de computação/Maquinas Virtuais/Dimensionamento de maquinas virtuais.md",
     "AZ-104/Gerenciamento de Identidades/Azure RBAC/O que é.md",
     "AZ-104/Gerenciamento de Identidades/Azure RBAC/Azure RBAC.md",
     "AZ-104/Gerenciamento de Identidades/Entra id/Classes de objetos.md",
@@ -190,9 +196,6 @@
     "AZ-204/Soluções de container/ACI/Codigos/ARM.md",
     "AZ-104/Recursos de computação/Instâncias de Container",
     "AZ-104/Recursos de computação/Serviço de aplicativo/Serviço de aplicativo.md",
-    "AZ-104/Recursos de computação/Serviço de aplicativo/Backup do Serviço de aplicativo.md",
-    "AZ-104/Recursos de computação/Serviço de aplicativo/Escalonamento Horizontal.md",
-    "AZ-104/Recursos de computação/Serviço de aplicativo/Planos de Serviço.md",
     "AZ-104/Recursos de computação/Serviço de aplicativo",
     "AZ-104/images/Pasted image 20250323010927.png",
     "AZ-104/images/Pasted image 20250323010112.png",
@@ -204,13 +207,10 @@
     "AZ-104/Recursos de computação",
     "AZ-104/images/Pasted image 20250322063321.png",
     "AZ-104/images/Pasted image 20250322045244.png",
-    "AZ-104/images/Pasted image 20250322045029.png",
-    "AZ-104/images/Pasted image 20250322044953.png",
     "AZ-104/Armazenamento do Azure/Arquivos do Azure",
     "Untitled.canvas",
     "AZ-104/Armazenamento do Azure/Segurança do Armazenamento",
     "AZ-104/Armazenamento do Azure/Armazenamento de Blobs",
-    "AZ-104/Armazenamento do Azure/Contas de Armazenamento",
-    "AZ-104/Armazenamento do Azure"
+    "AZ-104/Armazenamento do Azure/Contas de Armazenamento"
   ]
 }

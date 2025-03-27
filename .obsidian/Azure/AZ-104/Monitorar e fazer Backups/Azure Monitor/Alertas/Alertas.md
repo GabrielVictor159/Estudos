@@ -1,0 +1,6 @@
+[[Alertas de métricas]]
+[[Alertas de pesquisa de log]]
+[[Alertas do log de atividades]]
+[[Criar regras]]
+[[Grupos de ações e regras de processamento]]
+[[Regra de Alerta]]

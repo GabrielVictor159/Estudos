@@ -1,0 +1,5 @@
+[[Alertas]]
+[[AZ-104/Monitorar e fazer Backups/Azure Monitor/Introdução|Introdução]]
+[[métricas e logs]]
+[[Monitoramento]]
+[[Visualizações]]

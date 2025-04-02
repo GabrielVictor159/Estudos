@@ -5,6 +5,7 @@
 [[Domain Services]]
 [[AZ-104/Gerenciamento de Identidades/Gerenciamento de Identidades|Gerenciamento de Identidades]]
 [[Redefinir senha Self-Service]]
-
+[[Unidades Administrativas]]
+[[AZ-104/Gerenciamento de Identidades/Entra id/Roles]]
 
 

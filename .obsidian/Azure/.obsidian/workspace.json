@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AZ-104/Redes Virtuais/Gateway de Aplicativo/O que é.md",
+                "file": "AZ-104/Recursos de computação/Maquinas Virtuais/Conjuntos de disponibilidade.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "O que é"
+              "title": "Conjuntos de disponibilidade"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "e9380bcdd665d42a",
   "lastOpenFiles": [
+    "AZ-104/Redes Virtuais/Gateway de Aplicativo/O que é.md",
     "AZ-104/Redes Virtuais/Gateway de Aplicativo/Gateway de Aplicativo.md",
     "AZ-104/Redes Virtuais/Gateway de Aplicativo/Como funciona.md",
     "AZ-104/Redes Virtuais/Load balancer/Como funciona.md",
@@ -205,7 +206,6 @@
     "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego/Criar Rotas personalizadas.md",
     "AZ-104/Redes Virtuais/Controlar o fluxo de tráfego/Controlar o fluxo de tráfego.md",
     "AZ-104/Redes Virtuais/Emparelhamento de rede/Transito gateway.md",
-    "AZ-104/Redes Virtuais/Emparelhamento de rede/O que é.md",
     "AZ-104/images/Pasted image 20250401103909.png",
     "AZ-104/images/Pasted image 20250401103848.png",
     "AZ-104/images/Pasted image 20250326233318.png",

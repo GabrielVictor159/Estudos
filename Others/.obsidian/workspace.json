@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "2b58d7a4de8c5b84",
+    "id": "2a36c3b451292ba0",
     "type": "split",
     "children": [
       {
-        "id": "2e18d03dbd72a427",
+        "id": "2663c3b6eebc96bf",
         "type": "tabs",
         "children": [
           {
-            "id": "3b699a4feee50ae0",
+            "id": "8dfddd82f50ca2b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Legislação Inteligência/Doutrina/Fundamentos da Atividade de Inteligência.md",
+                "file": "Jenkins/Jenkins.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fundamentos da Atividade de Inteligência"
+              "title": "Jenkins"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "869e701fada22950",
+    "id": "bd954d9b91978953",
     "type": "split",
     "children": [
       {
-        "id": "55ed23c09d774d6f",
+        "id": "54c544e4f2dcdb82",
         "type": "tabs",
         "children": [
           {
-            "id": "5264437be78751df",
+            "id": "ce9c2b051cd561d5",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "fea4567863108ecb",
+            "id": "308d023b86d07ebc",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,17 +61,17 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Procurar"
             }
           },
           {
-            "id": "e9c2e2cf36cd1d90",
+            "id": "c61673f1f6c70d8d",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "Marcadores"
             }
           }
         ]
@@ -81,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "789c2581bbb1cc71",
+    "id": "2519b7a90f4d5a67",
     "type": "split",
     "children": [
       {
-        "id": "f6c781ad7babf002",
+        "id": "56073e862102a0bd",
         "type": "tabs",
         "children": [
           {
-            "id": "b6774ad164f09401",
+            "id": "0488a2cc63ca881d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Legislação Inteligência/Doutrina/Fundamentos da Atividade de Inteligência.md",
+                "file": "Jenkins/Jenkins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Fundamentos da Atividade de Inteligência"
+              "title": "Links inversos para Jenkins"
             }
           },
           {
-            "id": "9beb8f13ac952aae",
+            "id": "f8781f01a65d22b8",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Legislação Inteligência/Doutrina/Fundamentos da Atividade de Inteligência.md",
+                "file": "Jenkins/Jenkins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Fundamentos da Atividade de Inteligência"
+              "title": "Links de saída para Jenkins"
             }
           },
           {
-            "id": "006eceb4bffde0d2",
+            "id": "b560e636e6723569",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,18 +137,18 @@
             }
           },
           {
-            "id": "b19524ab8cddeece",
+            "id": "5113234997dcf6fe",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Legislação Inteligência/Doutrina/Fundamentos da Atividade de Inteligência.md",
+                "file": "Jenkins/Jenkins.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Fundamentos da Atividade de Inteligência"
+              "title": "Sumário de Jenkins"
             }
           }
         ]
@@ -168,46 +168,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "3b699a4feee50ae0",
+  "active": "8dfddd82f50ca2b4",
   "lastOpenFiles": [
-    "Legislação Inteligência/Lei 9.883-1999/Lei que cria a ABIN e institui o SISBIN.md",
-    "Legislação Inteligência/Doutrina/Fundamentos da Atividade de Inteligência.md",
-    "Legislação Inteligência/Decreto 11.693-2023",
-    "Legislação Inteligência/Historico",
-    "images/Pasted image 20250310122255.png",
-    "Legislação Inteligência/Princípios da inteligência.md",
-    "Legislação Inteligência/Doutrina/Untitled",
-    "Legislação Inteligência/Doutrina",
-    "images/Pasted image 20250310130919.png",
-    "images/Pasted image 20250310131603.png",
-    "images/Pasted image 20250310132105.png",
-    "images/Pasted image 20250310125947.png",
-    "images/Pasted image 20250310125603.png",
-    "images/Pasted image 20250310123614.png",
-    "images/Pasted image 20250310123359.png",
-    "images/Pasted image 20250310123036.png",
-    "images/Pasted image 20250310122906.png",
-    "Legislação Inteligência/Estratégia Nacional de Inteligência (ENINT).md",
-    "Direito Penal/Medida provisória.md",
-    "Legislação Inteligência/Lei 9.883-1999",
-    "Direito Penal/Crimes contra a dignidade sexual/Crimes contra os costumes x crimes contra a dignidade sexual.md",
-    "Direito Penal/Crimes contra a dignidade sexual/Crimes contra a dignidade sexual.md",
-    "Direito Penal/Direito Penal.md",
-    "Plano de Estudos.md",
-    "Direito Penal/Crimes contra a dignidade sexual",
-    "Direito Constitucional/Direito Constitucional.md",
-    "Direito administrativo/Direito administrativo.md",
-    "Direito Constitucional",
-    "Redação/Redação.md",
-    "Direito administrativo",
-    "Legislação extravagante/Legislação extravagante.md",
-    "Redação",
-    "Política externa/Política externa.md",
-    "Legislação extravagante",
-    "Geografia/Geografia.md",
-    "Legislação Inteligência/Legislação Inteligência.md",
-    "História do Brasil/História do Brasil.md",
-    "Português/Português.md",
-    "Welcome.md"
+    "Bem-vindo.md",
+    "Jenkins/Jenkins.md",
+    "Jenkins"
   ]
 }

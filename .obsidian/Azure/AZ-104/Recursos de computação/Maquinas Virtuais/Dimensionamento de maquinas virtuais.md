@@ -13,7 +13,7 @@ Existem dois modos de gerenciamento:
 
 
 - **Orquestração uniforme**: é otimizada para orquestração com grandes cargas de trabalho sem estado em que as VMs são idênticas,.
-- Orquestração flexível: oferece orquestração com diferentes tipos de VMs e a possibilidade de alterar o tamanho das VMs sem reimplantar o conjunto de dimensionamento
+- **Orquestração flexível**: oferece orquestração com diferentes tipos de VMs e a possibilidade de alterar o tamanho das VMs sem reimplantar o conjunto de dimensionamento
 
 ## Regras de dimensionamento
 Podemos implementar regras de dimensionamento baseadas em métricas e definição de limites, seguindo o mesmo padrão do Serviço de aplicativo do Azure:

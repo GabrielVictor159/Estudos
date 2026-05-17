@@ -6,7 +6,7 @@ O Microsoft Entra ID e o RBAC do Azure (controle de acesso baseado em função d
 
 Primeiro, lembre-se de que cada assinatura do Azure está associada a um só diretório do Microsoft Entra. Usuários, grupos e aplicativos nesse diretório podem gerenciar recursos na assinatura do Azure.
 
-Você pode conceder acesso ao atribuir a função do Azure apropriada a usuários, grupos e aplicativos em determinado escopo. O escopo de uma atribuição de função pode ser um grupo de gerenciamento, uma assinatura, um grupo de recursos ou um único recurso.Uma função atribuída a um escopo pai também concede acesso aos escopos filho contidos nele.
+Você pode conceder acesso ao atribuir a função do Azure apropriada a usuários, grupos e aplicativos em determinado escopo. O escopo de uma atribuição de função pode ser um grupo de gerenciamento, uma assinatura, um grupo de recursos ou um único recurso. Uma função atribuída a um escopo pai também concede acesso aos escopos filho contidos nele.
 
 
 ![[Pasted image 20250220172819.png]]

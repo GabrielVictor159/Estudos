@@ -30,8 +30,6 @@ O tráfego é gerenciado usando um hash de cinco tuplas composto pelos seguintes
 - **Afinidade de sessão**: Garante que o mesmo nó de pool sempre manipule o tráfego de um cliente.
 
  Se você precisar gerenciar o tráfego com base em suas propriedades de Camada 7 (camada de aplicativo), precisará implantar uma solução como o Gateway de Aplicativo do Azure.
-
-
 ## Pool de back-end
 O pool de back-end é um grupo de VMs ou instâncias em um conjunto de dimensionamento de máquinas virtuais que responde à solicitação de entrada.
 

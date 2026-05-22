@@ -123,12 +123,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI-900/Introdução a conceitos de IA/LLMs.md",
+                "file": "AI-900/Introdução a conceitos de processamento de linguagem natural/Analise de texto estatístico.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LLMs"
+              "title": "Analise de texto estatístico"
             }
           }
         ],
@@ -275,26 +275,29 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "a9fa5215e252615e",
+  "active": "54a43dd8c19544b9",
   "lastOpenFiles": [
-    "AI-900/Introdução a conceitos de fala de IA",
+    "AI-900/Introdução a conceitos de processamento de linguagem natural/Tokenização.md",
+    "AI-900/Introdução a conceitos de processamento de linguagem natural/Analise de texto estatístico.md",
+    "AI-900/Introdução a conceitos de processamento de linguagem natural/Introdução à linguagem.md",
+    "AI-900/Introdução a conceitos de IA/Agentes de IA.md",
+    "AI-900/Introdução a conceitos de IA/Extração de informações.md",
+    "AI-900/Introdução a conceitos de IA/Fala.md",
+    "AI-900/Introdução a conceitos de IA/IA e agentes generativos.md",
+    "AI-900/Introdução a conceitos de IA/IA Responsável.md",
+    "AI-900/Introdução a conceitos de IA/LLMs.md",
+    "AI-900/Introdução a conceitos de IA/Solicitações.md",
+    "AI-900/Introdução a conceitos de IA/Visão computacional.md",
+    "AI-900/Introdução a conceitos de IA/Texto e linguagem natural.md",
+    "AI-900/Introdução a conceitos de processamento de linguagem natural",
     "AI-900/Introdução a conceitos de IA/Sem título",
     "AI-900/imagens/Pasted image 20260517020419.png",
     "AI-900/imagens/Pasted image 20260517020357.png",
-    "AI-900/Introdução a conceitos de IA/Solicitações.md",
-    "AI-900/Introdução a conceitos de IA/LLMs.md",
-    "AI-900/Introdução a conceitos de IA/Agentes de IA.md",
     "AI-900/imagens/Pasted image 20260517014730.png",
     "AI-900/imagens/Pasted image 20260517014317.png",
     "AI-900/imagens/Pasted image 20260517014535.png",
     "AI-900/imagens/Pasted image 20260517014230.png",
     "AI-900/imagens/Pasted image 20260517002120.png",
-    "AI-900/Introdução a conceitos de IA/IA Responsável.md",
-    "AI-900/Introdução a conceitos de IA/Extração de informações.md",
-    "AI-900/Introdução a conceitos de IA/Fala.md",
-    "AI-900/Introdução a conceitos de IA/IA e agentes generativos.md",
-    "AI-900/Introdução a conceitos de IA/Texto e linguagem natural.md",
-    "AI-900/Introdução a conceitos de IA/Visão computacional.md",
     "AI-900/imagens",
     "AI-900/Introdução a conceitos de IA",
     "AI-900",
@@ -312,8 +315,6 @@
     "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Ferramentas de Gerenciamento.md",
     "AZ-104/Pre-requisitos/Gerenciamento portal do azure/Painéis do portal.md",
     "AZ-104/Pre-requisitos/Azure CLoud Shell/O que é.md",
-    "AZ-104/Pre-requisitos/Azure CLoud Shell/Azure Cloud Shell.md",
-    "AZ-104/Pre-requisitos/Azure CLoud Shell/Recursos disponivéis.md",
     "AZ-104/images/Pasted image 20250401103909.png",
     "AZ-104/images/Pasted image 20250401103848.png",
     "AZ-104/images/Pasted image 20250326233318.png",
@@ -322,7 +323,6 @@
     "AZ-104/Monitorar e fazer Backups/Backup do Azure",
     "AZ-104/Monitorar e fazer Backups",
     "AZ-104/Recursos de computação/Instâncias de Container",
-    "AZ-104/Recursos de computação/Serviço de aplicativo",
     "Untitled.canvas"
   ]
 }

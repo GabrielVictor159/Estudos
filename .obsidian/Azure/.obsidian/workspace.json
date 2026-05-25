@@ -123,12 +123,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI-900/Introdução a conceitos de visão computacional/Tarefas e técnicas de visão computacional.md",
+                "file": "AI-900/Introdução aos conceitos de extração de informações alimentados por IA/Extração e mapeamento de campo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tarefas e técnicas de visão computacional"
+              "title": "Extração e mapeamento de campo"
             }
           }
         ],
@@ -277,8 +277,13 @@
   },
   "active": "54a43dd8c19544b9",
   "lastOpenFiles": [
-    "AI-900/Introdução a conceitos de visão computacional/Redes neurais convolucionais.md",
+    "AI-900/Introdução aos conceitos de extração de informações alimentados por IA/OCR (reconhecimento óptico de caracteres).md",
+    "AI-900/Introdução aos conceitos de extração de informações alimentados por IA/Extração e mapeamento de campo.md",
+    "AI-900/imagens/Pasted image 20260525070931.png",
+    "AI-900/Introdução aos conceitos de extração de informações alimentados por IA/Introdução.md",
     "AI-900/Introdução a conceitos de visão computacional/Imagens e processamento de imagens.md",
+    "AI-900/Introdução aos conceitos de extração de informações alimentados por IA",
+    "AI-900/Introdução a conceitos de visão computacional/Redes neurais convolucionais.md",
     "AI-900/Introdução a conceitos de visão computacional/Tarefas e técnicas de visão computacional.md",
     "AI-900/Introdução a conceitos de visão computacional/Transformadores de visão e modelos multimodais.md",
     "AI-900/Introdução a conceitos de visão computacional/Geração de imagem.md",
@@ -291,7 +296,6 @@
     "AI-900/imagens/Pasted image 20260524094154.png",
     "AI-900/imagens/Pasted image 20260524093334.png",
     "AI-900/imagens/Pasted image 20260524093053.png",
-    "AI-900/imagens/Pasted image 20260524092015.png",
     "AI-900/Introdução a conceitos de fala de IA/Reconhecimento de fala.md",
     "AI-900/Introdução a conceitos de visão computacional",
     "AI-900/Introdução a conceitos de fala de IA/Síntese de Fala.md",
@@ -317,11 +321,8 @@
     "AI-900/Introdução a conceitos de IA",
     "AI-900",
     "AZ-104/Gerenciamento de Identidades/Entra id/camadas de serviço.md",
-    "AZ-104/Pre-requisitos/ARM/Parâmetros do modelo.md",
-    "AZ-104/Pre-requisitos/ARM/O que é.md",
     "AZ-104/Monitorar e fazer Backups/Azure Monitor/Alertas",
     "AZ-104/Monitorar e fazer Backups/Azure Monitor",
-    "AZ-104/Monitorar e fazer Backups/Backup do Azure",
     "Untitled.canvas"
   ]
 }

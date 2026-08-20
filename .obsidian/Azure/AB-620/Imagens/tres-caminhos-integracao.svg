@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1190" height="812" viewBox="0 0 1190 812" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+  <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+</marker>
+</defs>
+<rect x="0" y="0" width="1190" height="812" fill="#f8fafc"/>
+<text x="595" y="48" text-anchor="middle" font-size="27" font-weight="700" fill="#0f172a">Três formas de um Tópico agir em sistemas externos</text>
+<text x="595" y="75" text-anchor="middle" font-size="15" fill="#64748b">tomar medidas a partir da conversa — Microsoft Copilot Studio</text>
+<rect x="290" y="100" width="610" height="48" rx="12" fill="#0f172a"/>
+<text x="595" y="130" text-anchor="middle" font-size="14.5" font-weight="600" fill="#ffffff">Tópico em execução  ·  Adicionar nó (+) no ponto exato do fluxo</text>
+<path d="M 595 148 L 595 178 L 216.0 178 L 216.0 196" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 595 148 L 595 178 L 595.0 178 L 595.0 196" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 595 148 L 595 178 L 974.0 178 L 974.0 196" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="205" width="352" height="436" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="40" y="205" width="6" height="436" rx="3" fill="#2563eb"/>
+<circle cx="80" cy="235" r="14" fill="#2563eb"/>
+<text x="80" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">1</text>
+<text x="104" y="240" font-size="16.5" font-weight="700" fill="#2563eb">Ferramenta de conector</text>
+<text x="66" y="264" font-size="12.5" fill="#475569">uma ação · um resultado</text>
+<text x="66" y="283" font-size="11.5" font-style="italic" fill="#94a3b8">▸  existe conector para o sistema de destino</text>
+<line x1="66" y1="297" x2="366" y2="297" stroke="#eef2f6" stroke-width="1.5"/>
+<rect x="66" y="309" width="300" height="46" rx="9" fill="#f1f6fe"/>
+<text x="80" y="328" font-size="13" font-weight="600" fill="#1e293b">Adicionar uma ferramenta</text>
+<text x="80" y="344" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">Connector predefinido ou personalizado</text>
+<rect x="66" y="363" width="300" height="46" rx="9" fill="#f1f6fe"/>
+<text x="80" y="382" font-size="13" font-weight="600" fill="#1e293b">Entradas</text>
+<text x="80" y="398" font-size="11" font-family="Cascadia Code, Consolas, SF Mono, monospace" fill="#64748b">Topic.OrderNumber  →  Order ID</text>
+<rect x="66" y="417" width="300" height="46" rx="9" fill="#f1f6fe"/>
+<text x="80" y="436" font-size="13" font-weight="600" fill="#1e293b">Saídas</text>
+<text x="80" y="452" font-size="11" font-family="Cascadia Code, Consolas, SF Mono, monospace" fill="#64748b">status do pedido  →  Topic.OrderStatus</text>
+<rect x="66" y="471" width="300" height="46" rx="9" fill="#f1f6fe"/>
+<text x="80" y="490" font-size="13" font-weight="600" fill="#1e293b">Autenticação</text>
+<text x="80" y="506" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">usuário final (padrão) · fornecida pelo criador</text>
+<rect x="66" y="525" width="300" height="46" rx="9" fill="#f1f6fe"/>
+<text x="80" y="544" font-size="13" font-weight="600" fill="#1e293b">Atenção</text>
+<text x="80" y="560" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">Dataverse é conector premium</text>
+<rect x="419" y="205" width="352" height="436" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="419" y="205" width="6" height="436" rx="3" fill="#7c3aed"/>
+<circle cx="459" cy="235" r="14" fill="#7c3aed"/>
+<text x="459" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">2</text>
+<text x="483" y="240" font-size="16.5" font-weight="700" fill="#7c3aed">Fluxo de agente</text>
+<text x="445" y="264" font-size="12.5" fill="#475569">vários passos coordenados · reutilizável</text>
+<text x="445" y="283" font-size="11.5" font-style="italic" fill="#94a3b8">▸  há ramificação ou reuso entre tópicos</text>
+<line x1="445" y1="297" x2="745" y2="297" stroke="#eef2f6" stroke-width="1.5"/>
+<rect x="445" y="309" width="300" height="46" rx="9" fill="#f8f5ff"/>
+<text x="459" y="328" font-size="13" font-weight="600" fill="#1e293b">Gatilho obrigatório</text>
+<text x="459" y="344" font-size="11" font-family="Cascadia Code, Consolas, SF Mono, monospace" fill="#64748b">When an agent calls the flow</text>
+<rect x="445" y="363" width="300" height="46" rx="9" fill="#f8f5ff"/>
+<text x="459" y="382" font-size="13" font-weight="600" fill="#1e293b">Ação final obrigatória</text>
+<text x="459" y="398" font-size="11" font-family="Cascadia Code, Consolas, SF Mono, monospace" fill="#64748b">Respond to the agent · assíncrono OFF</text>
+<rect x="445" y="417" width="300" height="46" rx="9" fill="#f8f5ff"/>
+<text x="459" y="436" font-size="13" font-weight="600" fill="#1e293b">Deve ser fluxo de solução</text>
+<text x="459" y="452" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">aparece na página Fluxos do Copilot Studio</text>
+<rect x="445" y="471" width="300" height="46" rx="9" fill="#f8f5ff"/>
+<text x="459" y="490" font-size="13" font-weight="600" fill="#1e293b">Limite de 100 segundos</text>
+<text x="459" y="506" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">o tópico pausa no nó Ação e aguarda</text>
+<rect x="445" y="525" width="300" height="46" rx="9" fill="#f8f5ff"/>
+<text x="459" y="544" font-size="13" font-weight="600" fill="#1e293b">Longa duração</text>
+<text x="459" y="560" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">devolva um ID e siga assíncrono (até 30 dias)</text>
+<rect x="798" y="205" width="352" height="436" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="798" y="205" width="6" height="436" rx="3" fill="#0f766e"/>
+<circle cx="838" cy="235" r="14" fill="#0f766e"/>
+<text x="838" y="240" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">3</text>
+<text x="862" y="240" font-size="16.5" font-weight="700" fill="#0f766e">Nó Enviar Solicitação HTTP</text>
+<text x="824" y="264" font-size="12.5" fill="#475569">chamada REST ad hoc na própria tela</text>
+<text x="824" y="283" font-size="11.5" font-style="italic" fill="#94a3b8">▸  não há conector; basta uma requisição</text>
+<line x1="824" y1="297" x2="1124" y2="297" stroke="#eef2f6" stroke-width="1.5"/>
+<rect x="824" y="309" width="300" height="46" rx="9" fill="#f0fbf9"/>
+<text x="838" y="328" font-size="13" font-weight="600" fill="#1e293b">Adicionar nó  →  Avançado</text>
+<text x="838" y="344" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">Enviar solicitação HTTP</text>
+<rect x="824" y="363" width="300" height="46" rx="9" fill="#f0fbf9"/>
+<text x="838" y="382" font-size="13" font-weight="600" fill="#1e293b">URL dinâmica com Power Fx</text>
+<text x="838" y="398" font-size="11" font-family="Cascadia Code, Consolas, SF Mono, monospace" fill="#64748b">"https://api.../" &amp; Topic.TrackingNumber</text>
+<rect x="824" y="417" width="300" height="46" rx="9" fill="#f0fbf9"/>
+<text x="838" y="436" font-size="13" font-weight="600" fill="#1e293b">Método</text>
+<text x="838" y="452" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">GET · POST · PATCH · PUT · DELETE</text>
+<rect x="824" y="471" width="300" height="46" rx="9" fill="#f0fbf9"/>
+<text x="838" y="490" font-size="13" font-weight="600" fill="#1e293b">Cabeçalhos</text>
+<text x="838" y="506" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">credenciais em variáveis de ambiente</text>
+<rect x="824" y="525" width="300" height="46" rx="9" fill="#f0fbf9"/>
+<text x="838" y="544" font-size="13" font-weight="600" fill="#1e293b">Esquema de resposta</text>
+<text x="838" y="560" font-size="11.8" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">De Dados de Exemplo  →  JSON de exemplo</text>
+<rect x="824" y="579" width="300" height="46" rx="9" fill="#f0fbf9"/>
+<text x="838" y="598" font-size="13" font-weight="600" fill="#1e293b">Erros</text>
+<text x="838" y="614" font-size="11" font-family="Cascadia Code, Consolas, SF Mono, monospace" fill="#64748b">Continuar no erro · Topic.StatusCode = 200</text>
+<path d="M 216.0 641 L 216.0 677" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 595.0 641 L 595.0 677" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 974.0 641 L 974.0 677" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="40" y="686" width="1110" height="94" rx="16" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="66" y="716" font-size="15.5" font-weight="700" fill="#0f172a">O mesmo padrão vale para os três caminhos</text>
+<circle cx="77" cy="747" r="11" fill="#0f172a"/>
+<text x="77" y="751" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">1</text>
+<text x="96" y="743" font-size="13" font-weight="600" fill="#1e293b">Mapear entradas</text>
+<text x="96" y="759" font-size="11.5" fill="#64748b">variáveis do tópico → parâmetros</text>
+<text x="304" y="752" font-size="18" fill="#cbd5e1">→</text>
+<circle cx="349" cy="747" r="11" fill="#0f172a"/>
+<text x="349" y="751" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">2</text>
+<text x="368" y="743" font-size="13" font-weight="600" fill="#1e293b">Executar a ação</text>
+<text x="368" y="759" font-size="11.5" fill="#64748b">o tópico pausa e aguarda o retorno</text>
+<text x="576" y="752" font-size="18" fill="#cbd5e1">→</text>
+<circle cx="621" cy="747" r="11" fill="#0f172a"/>
+<text x="621" y="751" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">3</text>
+<text x="640" y="743" font-size="13" font-weight="600" fill="#1e293b">Capturar saídas</text>
+<text x="640" y="759" font-size="11.5" fill="#64748b">só os campos usados, em Topic.*</text>
+<text x="848" y="752" font-size="18" fill="#cbd5e1">→</text>
+<circle cx="893" cy="747" r="11" fill="#0f172a"/>
+<text x="893" y="751" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">4</text>
+<text x="912" y="743" font-size="13" font-weight="600" fill="#1e293b">Tratar a falha</text>
+<text x="912" y="759" font-size="11.5" fill="#64748b">nó Condição + mensagem de fallback</text>
+</svg>

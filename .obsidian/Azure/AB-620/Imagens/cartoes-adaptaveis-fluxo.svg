@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="800" viewBox="0 0 1140 800" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+  <path d="M 0 0 L 10 5 L 0 10 z" fill="#94a3b8"/>
+</marker>
+</defs>
+<rect x="0" y="0" width="1140" height="800" rx="0" fill="#f8fafc"/>
+<text x="570" y="48" text-anchor="middle" font-size="27" font-weight="700" fill="#0f172a">Respostas avançadas de agente em um Tópico</text>
+<text x="570" y="75" text-anchor="middle" font-size="15" fill="#64748b">do texto simples ao formulário interativo — Microsoft Copilot Studio</text>
+<rect x="425" y="100" width="290" height="50" rx="12" fill="#0f172a"/>
+<text x="570" y="131" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Resposta dentro de um Tópico</text>
+<path d="M 570 150 L 570 172 L 300 172 L 300 196" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 570 150 L 570 172 L 840 172 L 840 196" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="55" y="196" width="490" height="424" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="55" y="196" width="6" height="424" rx="3" fill="#2563eb"/>
+<text x="81" y="232" font-size="18" font-weight="700" fill="#2563eb">Nó  ·  Enviar uma mensagem</text>
+<text x="81" y="254" font-size="12.5" fill="#64748b">exibe conteúdo  ·  a conversa continua  ·  não coleta entradas</text>
+<line x1="81" y1="268" x2="519" y2="268" stroke="#eef2f6" stroke-width="1.5"/>
+<rect x="81" y="282" width="438" height="48" rx="10" fill="#f1f6fe"/>
+<text x="97" y="302" font-size="14" font-weight="600" fill="#1e293b">Formatação de texto</text>
+<text x="97" y="319" font-size="12.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">negrito  ·  itálico  ·  listas  ·  quebras de linha</text>
+<rect x="81" y="338" width="438" height="48" rx="10" fill="#f1f6fe"/>
+<text x="97" y="358" font-size="14" font-weight="600" fill="#1e293b">Variáveis  {x}</text>
+<text x="97" y="375" font-size="11.5" font-family="Cascadia Code, Consolas, SF Mono, monospace" fill="#64748b">Topic.   Global.   System.User.DisplayName</text>
+<rect x="81" y="394" width="438" height="48" rx="10" fill="#f1f6fe"/>
+<text x="97" y="414" font-size="14" font-weight="600" fill="#1e293b">Imagens e vídeos</text>
+<text x="97" y="431" font-size="12.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">exigem URL pública  ·  mp4 direto ou YouTube</text>
+<rect x="81" y="450" width="438" height="48" rx="10" fill="#f1f6fe"/>
+<text x="97" y="470" font-size="14" font-weight="600" fill="#1e293b">Variações de mensagem</text>
+<text x="97" y="487" font-size="12.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">uma escolhida aleatoriamente a cada execução</text>
+<rect x="81" y="506" width="438" height="48" rx="10" fill="#f1f6fe"/>
+<text x="97" y="526" font-size="14" font-weight="600" fill="#1e293b">Respostas rápidas</text>
+<text x="97" y="543" font-size="12.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">sugestões — o usuário pode ignorar e digitar</text>
+<rect x="81" y="562" width="438" height="48" rx="10" fill="#f1f6fe"/>
+<text x="97" y="582" font-size="14" font-weight="600" fill="#1e293b">Cartão Adaptável informativo</text>
+<text x="97" y="599" font-size="12.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">Container · ColumnSet · Column · TextBlock · Image</text>
+<rect x="595" y="196" width="490" height="424" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+<rect x="595" y="196" width="6" height="424" rx="3" fill="#7c3aed"/>
+<text x="621" y="232" font-size="18" font-weight="700" fill="#7c3aed">Nó  ·  Perguntar com Cartão Adaptável</text>
+<text x="621" y="254" font-size="12.5" fill="#64748b">apresenta um formulário  ·  coleta vários valores em um turno</text>
+<line x1="621" y1="268" x2="1059" y2="268" stroke="#eef2f6" stroke-width="1.5"/>
+<rect x="621" y="282" width="438" height="48" rx="10" fill="#f8f5ff"/>
+<text x="637" y="302" font-size="14" font-weight="600" fill="#1e293b">Elementos de entrada</text>
+<text x="637" y="319" font-size="12.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">Text · Number · Date · Time · Toggle · ChoiceSet</text>
+<rect x="621" y="338" width="438" height="48" rx="10" fill="#f8f5ff"/>
+<text x="637" y="358" font-size="14" font-weight="600" fill="#1e293b">Action.Submit</text>
+<text x="637" y="375" font-size="12.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">empacota todos os campos em um único envio</text>
+<rect x="621" y="394" width="438" height="48" rx="10" fill="#f8f5ff"/>
+<text x="637" y="414" font-size="14" font-weight="600" fill="#1e293b">Variáveis de saída</text>
+<text x="637" y="431" font-size="11.5" font-family="Cascadia Code, Consolas, SF Mono, monospace" fill="#64748b">id do input  →  Topic.&lt;id&gt;   (camelCase)</text>
+<rect x="621" y="450" width="438" height="48" rx="10" fill="#f8f5ff"/>
+<text x="637" y="470" font-size="14" font-weight="600" fill="#1e293b">Nó Condição  (obrigatório)</text>
+<text x="637" y="487" font-size="12.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" fill="#64748b">cartão fechado sem enviar  →  variáveis vazias</text>
+<rect x="621" y="506" width="438" height="48" rx="10" fill="#f8f5ff"/>
+<text x="637" y="526" font-size="14" font-weight="600" fill="#1e293b">Power Fx opcional</text>
+<text x="637" y="543" font-size="11.5" font-family="Cascadia Code, Consolas, SF Mono, monospace" fill="#64748b">choices: "=Topic.Tabela"  com colunas title e value</text>
+<path d="M 300 620 L 300 660" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M 840 620 L 840 660" fill="none" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="55" y="660" width="1030" height="110" rx="16" fill="#fffbeb" stroke="#fde68a" stroke-width="1.5"/>
+<text x="81" y="692" font-size="16" font-weight="700" fill="#92400e">O canal define o que realmente renderiza</text>
+<text x="81" y="712" font-size="12.5" fill="#a16207">versões incompatíveis falham em silêncio — o designer não avisa</text>
+<rect x="515" y="682" width="178" height="52" rx="10" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+<text x="604" y="703" text-anchor="middle" font-size="13.5" font-weight="600" fill="#78350f">Microsoft Teams</text>
+<text x="604" y="721" text-anchor="middle" font-size="12" fill="#a16207">esquema v1.5</text>
+<rect x="705" y="682" width="178" height="52" rx="10" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+<text x="794" y="703" text-anchor="middle" font-size="13.5" font-weight="600" fill="#78350f">Live Chat (Omnicanal)</text>
+<text x="794" y="721" text-anchor="middle" font-size="12" fill="#a16207">esquema v1.5</text>
+<rect x="895" y="682" width="178" height="52" rx="10" fill="#ffffff" stroke="#fcd34d" stroke-width="1.5"/>
+<text x="984" y="703" text-anchor="middle" font-size="13.5" font-weight="600" fill="#78350f">Canal da Web</text>
+<text x="984" y="721" text-anchor="middle" font-size="12" fill="#a16207">esquema v1.6</text>
+<text x="81" y="752" font-size="12.5" fill="#78350f">Multicanal  →  projete todos os cartões para v1.5   ·   o canal da Web não suporta Action.Execute   ·   o painel de teste usa o motor da Web</text>
+</svg>

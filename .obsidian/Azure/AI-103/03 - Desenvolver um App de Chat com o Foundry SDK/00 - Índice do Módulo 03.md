@@ -97,3 +97,4 @@ O que vale exercitar, porque vira questão de "como faço X":
 
 - [Módulo completo no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/foundry-sdk/)
 - Módulo anterior: [[00 - Índice do Módulo 02]]
+- Próximo módulo: [[00 - Índice do Módulo 04]]

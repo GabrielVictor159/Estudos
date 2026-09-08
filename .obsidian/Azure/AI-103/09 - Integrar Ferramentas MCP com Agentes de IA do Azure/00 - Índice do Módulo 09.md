@@ -72,4 +72,5 @@ O **Model Context Protocol (MCP)** é um padrão aberto que conecta LLMs a ferra
 
 - [Módulo oficial no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/connect-agent-to-mcp-tools/)
 - Módulo anterior: [[00 - Índice do Módulo 08]]
+- Próximo módulo: [[00 - Índice do Módulo 10]]
 - Próxima página: [[01 - Arquitetura e Descoberta Dinâmica no MCP]]

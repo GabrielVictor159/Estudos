@@ -123,12 +123,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/03 - Questões Comentadas e Cola de Prova.md",
+                "file": "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/04 - Questões de Exame Comentadas e Resumo Rápido.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Questões Comentadas e Cola de Prova"
+              "title": "04 - Questões de Exame Comentadas e Resumo Rápido"
             }
           }
         ],
@@ -279,10 +279,20 @@
   },
   "active": "54a43dd8c19544b9",
   "lastOpenFiles": [
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/02 - Implementação Prática - FastMCP e Azure AI Agent.md",
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/03 - Questões Comentadas e Cola de Prova.md",
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/01 - Arquitetura e Descoberta Dinâmica no MCP.md",
+    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/03 - Controle de Recuperação, Citações e Monitoramento.md",
+    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/02 - Fontes de Dados e Mecanismos de Busca.md",
+    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/01 - RAG Empresarial e a Camada Foundry IQ.md",
+    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/00 - Índice do Módulo 10.md",
+    "AZ-204/Authenticação/Entra ID/Entra Id.md",
+    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/04 - Questões de Exame Comentadas e Resumo Rápido.md",
     "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/00 - Índice do Módulo 09.md",
+    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/03 - Questões Comentadas e Cola de Prova.md",
+    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/assets/m10-fluxo-recuperacao-grounding.jpg",
+    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/assets/m10-arquitetura-foundry-iq.jpg",
+    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/assets",
+    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ",
+    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/02 - Implementação Prática - FastMCP e Azure AI Agent.md",
+    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/01 - Arquitetura e Descoberta Dinâmica no MCP.md",
     "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/02 - Opções de Implementação de Ferramentas Personalizadas.md",
     "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/02 - Implementação Prática",
     "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/assets/m09-fluxo-execucao-mcp.jpg",
@@ -309,22 +319,12 @@
     "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/assets/agent-tool-diagram.png",
     "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/assets",
     "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente",
-    "AI-103/03 - Desenvolver um App de Chat com o Foundry SDK/05 - Respostas x ChatCompletions - Comparação e Decisão.md",
     "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/assets/m07-implantar-vs-publicar.jpg",
     "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/assets/m07-arquitetura-agente-service.jpg",
     "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/assets/vs-code-tools.png",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/assets/vs-code-agent.png",
     "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/assets",
     "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code",
-    "AI-103/03 - Desenvolver um App de Chat com o Foundry SDK/04 - API de ChatCompletions.md",
-    "AI-103/03 - Desenvolver um App de Chat com o Foundry SDK/03 - API de Respostas.md",
-    "AI-103/03 - Desenvolver um App de Chat com o Foundry SDK/02 - Endpoints, SDKs e Autenticação.md",
-    "AI-103/03 - Desenvolver um App de Chat com o Foundry SDK/01 - Playground de Modelo e Geração de Código.md",
-    "AI-103/05 - Otimizar Desempenho do Modelo/02 - RAG (Geração Aumentada de Recuperação).md",
-    "AI-103/06 - IA Generativa Responsável/assets/m06-camadas-mitigacao.jpg",
     "AI-103/06 - IA Generativa Responsável/assets",
-    "AI-103/06 - IA Generativa Responsável",
-    "AI-103/05 - Otimizar Desempenho do Modelo/assets",
     "Untitled.canvas"
   ]
 }

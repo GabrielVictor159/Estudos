@@ -138,4 +138,4 @@ Diante de um trecho de código, três marcadores resolvem:
 
 - [Gerar respostas com a API de Respostas](https://learn.microsoft.com/pt-br/training/modules/foundry-sdk/04-responses-api)
 - [Gerar respostas com a API de ChatCompletions](https://learn.microsoft.com/pt-br/training/modules/foundry-sdk/05-openai-api)
-- Voltar ao [[00 - Índice do Módulo 03]]
+- Voltar ao [[AI-103/03 - Desenvolver um App de Chat com o Foundry SDK/00 - Índice do Módulo 03]]

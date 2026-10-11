@@ -84,4 +84,4 @@ O que vale exercitar no portal, porque cai como questão de "onde faço X":
 
 ---
 
-Próximo módulo: [[00 - Índice do Módulo 02]]
+Próximo módulo: [[AI-103/02 - Selecionar, Implantar e Avaliar Modelos/00 - Índice do Módulo 02]]

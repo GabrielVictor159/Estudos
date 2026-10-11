@@ -92,4 +92,4 @@ O que vale exercitar, porque vira questão de "onde faço X":
 ## Aprofundar na documentação
 
 - [Módulo completo no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/model-catalog-evaluate/)
-- Módulo anterior: [[00 - Índice do Módulo 01]] · Próximo módulo: [[00 - Índice do Módulo 03]]
+- Módulo anterior: [[AI-901/01 - Introdução a conceitos de IA/00 - Índice do Módulo 01]] · Próximo módulo: [[AI-901/03 - Introdução a conceitos de fala de IA/00 - Índice do Módulo 03]]

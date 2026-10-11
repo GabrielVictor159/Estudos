@@ -126,5 +126,5 @@ O que vale exercitar:
 ## Aprofundar na documentação
 
 - [Módulo completo no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/optimize-generative-ai-model-performance/)
-- Módulo anterior: [[00 - Índice do Módulo 04]]
-- Próximo módulo: [[00 - Índice do Módulo 06]]
+- Módulo anterior: [[AI-103/04 - Ferramentas de IA Generativa/00 - Índice do Módulo 04]]
+- Próximo módulo: [[AI-103/06 - IA Generativa Responsável/00 - Índice do Módulo 06]]

@@ -97,6 +97,6 @@ O que vale exercitar para fixar:
 ## Aprofundar na documentação
 
 - [Módulo oficial no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/build-agent-with-custom-tools/)
-- Módulo anterior: [[00 - Índice do Módulo 07]]
+- Módulo anterior: [[AI-901/07 - Introdução à IA no Azure/00 - Índice do Módulo 07]]
 - Próximo módulo: [[00 - Índice do Módulo 09]]
 - Próxima página: [[01 - Por Que Usar Ferramentas Personalizadas]]

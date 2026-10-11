@@ -106,5 +106,5 @@ O que vale exercitar, porque vira questão de "como faço X":
 ## Aprofundar na documentação
 
 - [Módulo completo no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/use-generative-ai-tools/)
-- Módulo anterior: [[00 - Índice do Módulo 03]]
-- Próximo módulo: [[00 - Índice do Módulo 05]]
+- Módulo anterior: [[AI-901/03 - Introdução a conceitos de fala de IA/00 - Índice do Módulo 03]]
+- Próximo módulo: [[AI-103/05 - Otimizar Desempenho do Modelo/00 - Índice do Módulo 05]]

@@ -103,5 +103,5 @@ Nota de entrada do módulo. Aqui o assunto é **como garantir que sua solução 
 ## Aprofundar na documentação
 
 - [Módulo completo no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/responsible-ai-studio/)
-- Módulo anterior: [[00 - Índice do Módulo 05]]
-- Próximo módulo: [[00 - Índice do Módulo 07]]
+- Módulo anterior: [[AI-103/05 - Otimizar Desempenho do Modelo/00 - Índice do Módulo 05]]
+- Próximo módulo: [[AI-901/07 - Introdução à IA no Azure/00 - Índice do Módulo 07]]

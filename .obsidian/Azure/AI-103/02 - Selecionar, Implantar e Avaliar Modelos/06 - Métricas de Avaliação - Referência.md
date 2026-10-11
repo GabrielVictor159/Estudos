@@ -118,4 +118,4 @@ Métricas **comparativas**: exigem uma resposta de referência ("gabarito").
 ## Aprofundar na documentação
 
 - [Avaliar o desempenho do modelo — unidade do módulo](https://learn.microsoft.com/pt-br/training/modules/model-catalog-evaluate/5-evaluate-performance)
-- Voltar ao [[00 - Índice do Módulo 02]] · Página anterior: [[05 - Avaliar o Desempenho do Modelo]]
+- Voltar ao [[AI-103/02 - Selecionar, Implantar e Avaliar Modelos/00 - Índice do Módulo 02]] · Página anterior: [[05 - Avaliar o Desempenho do Modelo]]

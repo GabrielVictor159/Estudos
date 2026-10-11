@@ -114,5 +114,5 @@ A autonomia conferida aos agentes exige governança rigorosa. A tabela abaixo si
 ## Aprofundar na Documentação
 
 - [Entender os agentes de IA e o Serviço do Microsoft Foundry Agent](https://learn.microsoft.com/pt-br/training/modules/develop-ai-agents-azure-vs-code/2-understand-ai-agents-foundry)
-- Voltar ao [[00 - Índice do Módulo 07]]
+- Voltar ao [[AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/00 - Índice do Módulo 07]]
 - Próxima página: [[02 - Abordagens de Desenvolvimento (Portal vs VS Code)]]

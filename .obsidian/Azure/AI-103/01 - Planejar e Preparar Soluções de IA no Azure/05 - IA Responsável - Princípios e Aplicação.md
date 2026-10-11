@@ -174,4 +174,4 @@ O desenvolvimento de software com IA carrega uma responsabilidade maior do que o
 
 - [IA responsável — unidade do módulo](https://learn.microsoft.com/pt-br/training/modules/prepare-azure-ai-development/6-responsible-ai)
 - [IA responsável na Microsoft](https://microsoft.com/ai/responsible-ai)
-- Voltar ao [[00 - Índice do Módulo 01]]
+- Voltar ao [[AI-103/01 - Planejar e Preparar Soluções de IA no Azure/00 - Índice do Módulo 01]]

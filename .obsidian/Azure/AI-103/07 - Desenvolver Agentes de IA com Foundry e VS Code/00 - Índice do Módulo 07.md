@@ -109,6 +109,6 @@ O que vale exercitar para fixar:
 ## Aprofundar na documentação
 
 - [Módulo oficial no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/develop-ai-agents-azure-vs-code/)
-- Módulo anterior: [[00 - Índice do Módulo 06]]
+- Módulo anterior: [[AI-103/06 - IA Generativa Responsável/00 - Índice do Módulo 06]]
 - Próximo módulo: [[00 - Índice do Módulo 08]]
 - Próxima página: [[01 - Conceitos de Agentes e Foundry Agent Service]]

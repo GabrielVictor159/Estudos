@@ -246,5 +246,5 @@ Para funções que recebem parâmetros, defina o schema JSON:
 
 - [Usar a ferramenta de funções — unidade do módulo](https://learn.microsoft.com/pt-br/training/modules/use-generative-ai-tools/06-function)
 - [Guia de desenvolvedores OpenAI — Function Calling](https://developers.openai.com/api/docs/guides/function-calling)
-- Voltar ao [[00 - Índice do Módulo 04]]
+- Voltar ao [[AI-103/04 - Ferramentas de IA Generativa/00 - Índice do Módulo 04]]
 - Página anterior: [[04 - Ferramenta file_search]]

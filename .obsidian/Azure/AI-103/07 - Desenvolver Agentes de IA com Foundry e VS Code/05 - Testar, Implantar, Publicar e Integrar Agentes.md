@@ -178,5 +178,5 @@ Quando uma nova versão de um agente é publicada no mesmo Aplicativo de Agente:
 ## Aprofundar na Documentação
 
 - [Testar, implantar e integrar agentes no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/develop-ai-agents-azure-vs-code/8-test-deploy-integrate)
-- Voltar ao [[00 - Índice do Módulo 07]]
+- Voltar ao [[AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/00 - Índice do Módulo 07]]
 - Página anterior: [[04 - Estender Agentes com Ferramentas e Servidores MCP]]

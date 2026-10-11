@@ -92,5 +92,5 @@ Antes de liberar a solução, faça uma revisão formal cobrindo **4 áreas**:
 ## Aprofundar na documentação
 
 - [Gerenciar uma solução de IA responsável — unidade do módulo](https://learn.microsoft.com/pt-br/training/modules/responsible-ai-studio/6-operate-responsibly)
-- Voltar ao [[00 - Índice do Módulo 06]]
+- Voltar ao [[AI-103/06 - IA Generativa Responsável/00 - Índice do Módulo 06]]
 - Página anterior: [[03 - Atenuar Danos (Camadas de Mitigação)]]

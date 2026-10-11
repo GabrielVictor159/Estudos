@@ -95,44 +95,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AZ-104/Armazenamento do Azure/Armazenamento de Blobs/Níveis de Acesso.md",
+                "file": "AI-901/07 - Introdução à IA no Azure/00 - Índice do Módulo 07.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Níveis de Acesso"
-            }
-          },
-          {
-            "id": "685be0a60fb59dd3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AZ-104/Gerenciamento de Identidades/Entra id/Domain Services.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Domain Services"
-            }
-          },
-          {
-            "id": "54a43dd8c19544b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/04 - Questões de Exame Comentadas e Resumo Rápido.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04 - Questões de Exame Comentadas e Resumo Rápido"
+              "title": "00 - Índice do Módulo 07"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -191,7 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 400.5
+    "width": 654.5
   },
   "right": {
     "id": "3530082b1575331a",
@@ -277,54 +249,54 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "54a43dd8c19544b9",
+  "active": "0fe626d3ad7d7f2f",
   "lastOpenFiles": [
-    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/03 - Controle de Recuperação, Citações e Monitoramento.md",
-    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/02 - Fontes de Dados e Mecanismos de Busca.md",
-    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/01 - RAG Empresarial e a Camada Foundry IQ.md",
-    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/00 - Índice do Módulo 10.md",
-    "AZ-204/Authenticação/Entra ID/Entra Id.md",
-    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/04 - Questões de Exame Comentadas e Resumo Rápido.md",
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/00 - Índice do Módulo 09.md",
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/03 - Questões Comentadas e Cola de Prova.md",
+    "AI-901/07 - Introdução à IA no Azure/05 - Endpoints e Integração com Aplicativos.md",
+    "AI-901/07 - Introdução à IA no Azure/assets/m07-mapa-visual.svg",
+    "AI-901/07 - Introdução à IA no Azure/assets/m07-endpoint-fluxo.svg",
+    "AI-901/07 - Introdução à IA no Azure/assets/m07-organizacao-foundry.svg",
+    "AI-901/07 - Introdução à IA no Azure/assets/m07-arquitetura-aplicativo.svg",
+    "AI-901/07 - Introdução à IA no Azure/assets/m07-treinamento-inferencia.svg",
+    "AI-901/07 - Introdução à IA no Azure/assets",
+    "AI-901/07 - Introdução à IA no Azure/04 - Microsoft Foundry para IA.md",
+    "AI-901/07 - Introdução à IA no Azure/02 - Azure como Plataforma para Aplicativos de IA.md",
+    "AI-901/07 - Introdução à IA no Azure/01 - Conceitos de IA e Aplicativos de IA.md",
+    "AI-901/07 - Introdução à IA no Azure/03 - Desenvolver Aplicativos de IA no Azure.md",
+    "AI-901/07 - Introdução à IA no Azure/00 - Índice do Módulo 07.md",
+    "AI-901/01 - Introdução a conceitos de IA/05 - Agentes de IA.md",
+    "AI-901/01 - Introdução a conceitos de IA/03 - Solicitações.md",
+    "AI-901/01 - Introdução a conceitos de IA/01 - IA e agentes generativos.md",
+    "AZ-104/Armazenamento do Azure/Armazenamento de Blobs/Níveis de Acesso.md",
+    "AI-900/Introdução a conceitos de fala de IA/Soluções ativadas por voz.md",
+    "AI-901/05 - Introdução aos conceitos de extração de informações alimentados por IA/00 - Índice do Módulo 05.md",
+    "AI-901/05 - Introdução aos conceitos de extração de informações alimentados por IA/03 - Extração e mapeamento de campo.md",
+    "AI-901/05 - Introdução aos conceitos de extração de informações alimentados por IA/02 - OCR (reconhecimento óptico de caracteres).md",
+    "AI-901/04 - Introdução a conceitos de processamento de linguagem natural/00 - Índice do Módulo 04.md",
+    "AI-901/03 - Introdução a conceitos de fala de IA/00 - Índice do Módulo 03.md",
+    "AI-901/02 - Introdução a conceitos de visão computacional/00 - Índice do Módulo 02.md",
+    "AI-901/02 - Introdução a conceitos de visão computacional/03 - Tarefas e técnicas de visão computacional.md",
+    "AI-901/02 - Introdução a conceitos de visão computacional/02 - Redes neurais convolucionais.md",
+    "AI-901/02 - Introdução a conceitos de visão computacional/01 - Imagens e processamento de imagens.md",
+    "AI-901/01 - Introdução a conceitos de IA/00 - Índice do Módulo 01.md",
+    "AI-901/06 - Introdução aos conceitos de geração aumentada por recuperação/00 - Índice do Módulo 06.md",
+    "AI-901/01 - Introdução a conceitos de IA/09 - Extração de informações.md",
+    "AI-901/01 - Introdução a conceitos de IA/08 - Fala.md",
+    "AI-901/01 - Introdução a conceitos de IA/07 - Visão computacional.md",
+    "AI-901/01 - Introdução a conceitos de IA/06 - Texto e linguagem natural.md",
+    "AI-901/07 - Introdução à IA no Azure",
+    "AI-901/06 - Introdução aos conceitos de geração aumentada por recuperação",
+    "AI-901/05 - Introdução aos conceitos de extração de informações alimentados por IA",
+    "AI-901/04 - Introdução a conceitos de processamento de linguagem natural",
+    "AI-901/03 - Introdução a conceitos de fala de IA",
+    "AI-901/02 - Introdução a conceitos de visão computacional",
+    "AI-901/01 - Introdução a conceitos de IA",
+    "AI-900/01 - Introdução à IA no Azure",
+    "AI-901/01 - Introdução à IA no Azure",
     "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/assets/m10-fluxo-recuperacao-grounding.jpg",
     "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/assets/m10-arquitetura-foundry-iq.jpg",
-    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ/assets",
-    "AI-103/10 - Agentes Aprimorados com Conhecimento no Foundry IQ",
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/02 - Implementação Prática - FastMCP e Azure AI Agent.md",
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/01 - Arquitetura e Descoberta Dinâmica no MCP.md",
-    "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/02 - Opções de Implementação de Ferramentas Personalizadas.md",
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/02 - Implementação Prática",
     "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/assets/m09-fluxo-execucao-mcp.jpg",
     "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/assets/m09-mcp-arquitetura.jpg",
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure/assets",
-    "AI-103/09 - Integrar Ferramentas MCP com Agentes de IA do Azure",
-    "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/00 - Índice do Módulo 08.md",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/05 - Testar, Implantar, Publicar e Integrar Agentes.md",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/04 - Estender Agentes com Ferramentas e Servidores MCP.md",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/03 - Configuração e Estrutura YAML de Agentes.md",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/02 - Abordagens de Desenvolvimento (Portal vs VS Code).md",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/01 - Conceitos de Agentes e Foundry Agent Service.md",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/00 - Índice do Módulo 07.md",
-    "AI-103/06 - IA Generativa Responsável/04 - Gerenciar e Operar com Responsabilidade.md",
-    "AI-103/06 - IA Generativa Responsável/03 - Atenuar Danos (Camadas de Mitigação).md",
-    "AI-103/06 - IA Generativa Responsável/02 - Medir Danos.md",
-    "AI-103/06 - IA Generativa Responsável/01 - Planejar e Mapear Danos.md",
-    "AI-103/06 - IA Generativa Responsável/00 - Índice do Módulo 06.md",
-    "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/04 - Questões de Exame e Pontos de Atenção.md",
-    "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/03 - Integração Prática no SDK (Código e OpenAPI).md",
-    "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/01 - Por Que Usar Ferramentas Personalizadas.md",
     "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/assets/m08-fluxo-openapi.jpg",
-    "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/assets/m08-opcoes-ferramentas-personalizadas.jpg",
-    "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/assets/agent-tool-diagram.png",
-    "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente/assets",
-    "AI-103/08 - Integrar Ferramentas Personalizadas ao seu Agente",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/assets/m07-implantar-vs-publicar.jpg",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/assets/m07-arquitetura-agente-service.jpg",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/assets/vs-code-tools.png",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code/assets",
-    "AI-103/07 - Desenvolver Agentes de IA com Foundry e VS Code",
-    "AI-103/06 - IA Generativa Responsável/assets",
     "Untitled.canvas"
   ]
 }

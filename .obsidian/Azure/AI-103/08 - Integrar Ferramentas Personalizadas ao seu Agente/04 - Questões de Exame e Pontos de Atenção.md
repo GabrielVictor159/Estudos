@@ -104,4 +104,4 @@ diretamente.             tools=[] do agente.             ou Azure Functions.    
 - [Avaliação do módulo no Microsoft Learn](https://learn.microsoft.com/pt-br/training/modules/build-agent-with-custom-tools/6-knowledge-check)
 - [Desenvolver um agente com Microsoft Foundry Agent Service](https://learn.microsoft.com/pt-br/training/modules/develop-ai-agent-azure/)
 - Voltar ao [[00 - Índice do Módulo 08]]
-- Módulo anterior: [[00 - Índice do Módulo 07]]
+- Módulo anterior: [[AI-901/07 - Introdução à IA no Azure/00 - Índice do Módulo 07]]

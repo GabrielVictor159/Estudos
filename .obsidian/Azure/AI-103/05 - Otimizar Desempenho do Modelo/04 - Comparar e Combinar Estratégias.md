@@ -164,5 +164,5 @@ Para os aplicativos mais exigentes:
 ## Aprofundar na documentação
 
 - [Comparar e combinar estratégias — unidade do módulo](https://learn.microsoft.com/pt-br/training/modules/optimize-generative-ai-model-performance/5-compare-combine-strategies)
-- Voltar ao [[00 - Índice do Módulo 05]]
+- Voltar ao [[AI-103/05 - Otimizar Desempenho do Modelo/00 - Índice do Módulo 05]]
 - Página anterior: [[03 - Ajuste Fino (Fine-Tuning)]]

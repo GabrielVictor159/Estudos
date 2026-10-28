@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Módulo 06 — Introdução aos conceitos de geração aumentada por recuperação
 
+![[assets/m06-panorama-exclusivo.png|1000]]
+
+
+
+
 Fluxo RAG: preparar fontes, recuperar trechos relevantes, gerar resposta com contexto e avaliar qualidade.
 
 ## Páginas deste módulo

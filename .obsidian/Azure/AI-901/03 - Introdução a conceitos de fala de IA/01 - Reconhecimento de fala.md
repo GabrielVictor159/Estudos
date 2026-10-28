@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Reconhecimento de fala
 
+![[assets/m03-stt-exclusivo.png|1000]]
+
+
+
+
 **Reconhecimento de fala** (speech‑to‑text) converte áudio falado em texto escrito por meio de um pipeline em estágios: **captura de áudio → pré‑processamento / extração de recursos → modelagem acústica → modelagem de linguagem → decodificação → pós‑processamento**. Cada estágio transforma a representação do sinal até produzir a transcrição final, e problemas de qualidade geralmente podem ser rastreados a um desses estágios.
 
 ##### 1. Captura de áudio e considerações práticas

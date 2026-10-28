@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Modelos de linguagem semântica
 
+![[assets/m04-semantica-exclusiva.png|1000]]
+
+
+
+
 **Modelos semânticos** representam tokens de linguagem como **vetores densos (embeddings)** que codificam significado. Essa representação vetorial permite que relações semânticas entre palavras sejam tratadas com operações matemáticas e medidas de similaridade, formando a base de técnicas modernas de NLP e IA generativa.
 
 ##### Representação vetorial e embeddings

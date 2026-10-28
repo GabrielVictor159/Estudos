@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Introdução à linguagem
 
+![[assets/m04-contexto.png|1000]]
+
+*O contexto ajuda a distinguir significados; estatísticas descrevem a ocorrência dos termos.*
+
+
 #### Linguagem e desafio computacional
 
 **Linguagem** é o principal meio humano de comunicar intenções, informações e significado. Para computadores, linguagem é **ambígua, contextual e variável**: palavras têm múltiplos sentidos, frases dependem de contexto, e estilo, sotaque e erros tornam a interpretação difícil. O objetivo do processamento de linguagem natural é reduzir essa lacuna, transformando texto e fala em representações que máquinas possam usar para tomar decisões e gerar respostas úteis.

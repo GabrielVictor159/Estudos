@@ -12,6 +12,8 @@ nivel: iniciante
 
 # Conceitos de IA e Aplicativos de IA
 
+
+
 **Inteligência artificial (IA)** é a área que cria sistemas capazes de executar tarefas que normalmente exigem capacidades humanas, como percepção, raciocínio, resolução de problemas e compreensão da linguagem. Um **aplicativo de IA** usa modelos e outras técnicas de IA para processar entradas e produzir previsões, conteúdo ou decisões.
 
 ## 1. Modelos de aprendizado de máquina
@@ -24,7 +26,7 @@ Muitos aplicativos de IA são alimentados por **modelos de aprendizado de máqui
 | **Inferência** | O modelo aplica o que aprendeu a uma nova entrada e produz uma saída, como uma previsão, classificação ou resposta. |
 | **Retreinamento/ajuste fino** | O modelo pode ser treinado novamente ou ajustado para melhorar ou adaptar seu comportamento. |
 
-![[assets/m07-treinamento-inferencia.svg]]
+![[assets/m07-treinamento-inferencia.svg|700]]
 
 *O treinamento prepara o modelo; a inferência aplica o modelo treinado a novas entradas.*
 

@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Síntese de Fala
 
+![[assets/m03-tts-exclusivo.png|1000]]
+
+
+
+
 **Síntese de fala (TTS)** converte texto escrito em áudio falado por meio de um pipeline em estágios que transforma texto bruto em uma forma de onda natural e inteligível.
 
 #### Pipeline principal e estágios

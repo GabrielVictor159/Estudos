@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Soluções ativadas por voz
 
+![[assets/m03-conversa.png|1000]]
+
+*Fluxo conceitual de uma interface por voz: ouvir, transcrever, interpretar, sintetizar e responder.*
+
+
 **Recursos de fala** combinam **reconhecimento de fala** (conversão de áudio em texto) e **síntese de fala** (conversão de texto em áudio) para criar interfaces conversacionais que são mais naturais, acessíveis e eficientes. Essas tecnologias habilitam operação mãos‑livres, ampliam o alcance a múltiplos idiomas e melhoram a experiência do usuário em cenários onde telas não são práticas.
 
 ##### Reconhecimento de fala — aplicações e valor

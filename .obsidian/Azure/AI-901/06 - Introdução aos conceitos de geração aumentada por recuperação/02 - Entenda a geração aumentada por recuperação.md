@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Entenda a geração aumentada por recuperação
 
+![[assets/m06-rag-ajuste-exclusivo.png|1000]]
+
+
+
+
 **RAG** (*Retrieval-Augmented Generation*, geração aumentada por recuperação) é um padrão que combina um mecanismo de busca com um **LLM**. A aplicação recupera informações de uma fonte de conhecimento e as inclui na entrada do modelo, para que a resposta seja gerada com base nesse contexto.
 
 ##### Por que usar RAG

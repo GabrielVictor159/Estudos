@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Introdução
 
+![[assets/m06-necessidade-exclusiva.png|1000]]
+
+
+
+
 **Geração aumentada por recuperação (RAG)** combina a busca por informações relevantes em fontes externas com um **LLM**, que usa o conteúdo encontrado para elaborar uma resposta. Esse padrão permite responder com base em dados próprios ou atualizados, complementando o conhecimento aprendido pelo modelo durante o treinamento.
 
 ##### Objetivo do módulo

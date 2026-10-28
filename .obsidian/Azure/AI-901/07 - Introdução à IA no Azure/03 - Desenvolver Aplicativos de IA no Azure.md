@@ -12,6 +12,8 @@ nivel: iniciante
 
 # Desenvolver Aplicativos de IA no Azure
 
+
+
 Um aplicativo de IA confiável depende de mais do que um modelo. O Azure oferece recursos para **rede, identidade, segurança, hospedagem, dimensionamento, armazenamento e capacidades de IA**, que podem ser combinados conforme o cenário.
 
 ## 1. Rede, identidade e segurança
@@ -61,7 +63,7 @@ O Microsoft Foundry oferece recursos para trabalhar com modelos, agentes e ferra
 
 **Aplicativo cliente → rede e identidade → endpoint do recurso de IA → inferência → resposta.** O aplicativo pode consultar armazenamento, registrar telemetria e aplicar lógica de negócio antes de apresentar o resultado.
 
-![[assets/m07-arquitetura-aplicativo.svg]]
+![[assets/m07-arquitetura-aplicativo.svg|700]]
 
 *O aplicativo combina hospedagem, conectividade, identidade, recursos de IA, dados e telemetria.*
 

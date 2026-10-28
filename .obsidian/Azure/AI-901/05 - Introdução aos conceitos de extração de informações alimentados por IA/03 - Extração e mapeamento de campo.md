@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Extração e mapeamento de campo
 
+![[assets/m05-campos.png|1000]]
+
+*Exemplo fictício de associação, normalização e validação de campos a partir do texto extraído.*
+
+
 **Extração de campo** transforma a saída do OCR (texto, posições, scores) em **campos de dados rotulados** prontos para sistemas de negócio (ex.: fornecedor, data, total de fatura). A posição do texto no documento é tão importante quanto o conteúdo para determinar o significado.
 
 ##### Pipeline resumido (etapas principais)

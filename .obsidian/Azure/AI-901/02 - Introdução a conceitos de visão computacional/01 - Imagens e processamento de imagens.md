@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Imagens e processamento de imagens
 
+![[assets/m02-pixels-exclusivos.png|1000]]
+
+
+
+
 **Imagens são matrizes numéricas de pixels** onde cada valor representa intensidade luminosa em uma posição x,y. Em imagens em escala de cinza cada pixel varia entre 0 e 255; em imagens coloridas cada pixel é composto por **três canais** que representam vermelho, verde e azul. Essas matrizes definem resolução, profundidade de cor e a estrutura básica que algoritmos de visão processam.
 
 ##### Canais de cor e composição de pixels

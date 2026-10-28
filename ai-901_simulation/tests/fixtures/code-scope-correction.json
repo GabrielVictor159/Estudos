@@ -1,0 +1,1361 @@
+{
+  "AI901-271": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "texto": "bom",
+              "final": false
+            },
+            {
+              "texto": "bom dia",
+              "final": true
+            }
+          ]
+        ],
+        [
+          "bom dia"
+        ]
+      ],
+      [
+        [
+          []
+        ],
+        []
+      ]
+    ]
+  ],
+  "AI901-277": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "objetos": [
+              {
+                "caixa": [
+                  1,
+                  2,
+                  3,
+                  4
+                ]
+              }
+            ],
+            "rotulos": [
+              {
+                "caixa": "rotulo"
+              }
+            ],
+            "legendas": [
+              {
+                "caixa": "legenda"
+              }
+            ],
+            "regioes_ocr": [
+              {
+                "caixa": "ocr"
+              }
+            ]
+          }
+        ],
+        [
+          [
+            1,
+            2,
+            3,
+            4
+          ]
+        ]
+      ]
+    ]
+  ],
+  "AI901-280": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "mascara": "a",
+              "revisado": true,
+              "aprovado": true
+            },
+            {
+              "mascara": "b",
+              "revisado": true,
+              "aprovado": false
+            },
+            {
+              "mascara": "c",
+              "revisado": false,
+              "aprovado": true
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-282": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "encoder": "v1",
+            "vetor": [
+              1,
+              2
+            ]
+          },
+          "v1"
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          {
+            "encoder": "v2",
+            "vetor": [
+              1,
+              2
+            ]
+          },
+          "v1"
+        ],
+        null
+      ]
+    ]
+  ],
+  "AI901-283": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "classe": "a",
+              "aprovado": true
+            },
+            {
+              "classe": "b",
+              "aprovado": true
+            },
+            {
+              "classe": "c",
+              "aprovado": false
+            }
+          ],
+          [
+            "a",
+            "c"
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-312": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "b",
+              "vetor": [
+                2
+              ]
+            },
+            {
+              "id": "a",
+              "vetor": [
+                1
+              ]
+            }
+          ]
+        ],
+        {
+          "a": [
+            1
+          ],
+          "b": [
+            2
+          ]
+        }
+      ]
+    ]
+  ],
+  "AI901-313": [
+    "resolver",
+    [
+      [
+        [
+          "S",
+          "U"
+        ],
+        [
+          {
+            "role": "system",
+            "content": "S"
+          },
+          {
+            "role": "user",
+            "content": "U"
+          }
+        ]
+      ]
+    ]
+  ],
+  "AI901-314": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "e",
+              "capacidades": [
+                "embeddings"
+              ]
+            },
+            {
+              "id": "g",
+              "capacidades": [
+                "generation"
+              ]
+            }
+          ]
+        ],
+        [
+          "e"
+        ]
+      ]
+    ]
+  ],
+  "AI901-317": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "temperature": 0.2,
+            "top_p": 0.8,
+            "max_output_tokens": 100
+          }
+        ],
+        {
+          "temperature": 0.2,
+          "top_p": 0.8
+        }
+      ]
+    ]
+  ],
+  "AI901-322": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "fp",
+              "previsto": "positivo",
+              "real": "negativo"
+            },
+            {
+              "id": "fn",
+              "previsto": "negativo",
+              "real": "positivo"
+            },
+            {
+              "id": "tp",
+              "previsto": "positivo",
+              "real": "positivo"
+            },
+            {
+              "id": "tn",
+              "previsto": "negativo",
+              "real": "negativo"
+            }
+          ]
+        ],
+        [
+          "fp"
+        ]
+      ]
+    ]
+  ],
+  "AI901-324": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "conjunto": "teste",
+              "usado_no_ajuste": false
+            },
+            {
+              "id": "b",
+              "conjunto": "teste",
+              "usado_no_ajuste": true
+            },
+            {
+              "id": "c",
+              "conjunto": "treino",
+              "usado_no_ajuste": false
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-325": [
+    "resolver",
+    [
+      [
+        [
+          [
+            "ola",
+            "PAD"
+          ],
+          [
+            true,
+            false
+          ]
+        ],
+        [
+          "ola"
+        ]
+      ]
+    ]
+  ],
+  "AI901-332": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "aluno": "compacto",
+            "professor": "grande",
+            "dados_treino": "dados",
+            "otimizador": "adam"
+          }
+        ],
+        "compacto"
+      ]
+    ]
+  ],
+  "AI901-338": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "is_anomaly": true,
+              "tratado": false
+            },
+            {
+              "id": "b",
+              "is_anomaly": false,
+              "tratado": false
+            },
+            {
+              "id": "c",
+              "is_anomaly": true,
+              "tratado": true
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-358": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "texto": "a",
+              "tenant": "x",
+              "atual": true
+            },
+            {
+              "texto": "b",
+              "tenant": "y",
+              "atual": true
+            },
+            {
+              "texto": "c",
+              "tenant": "x",
+              "atual": false
+            }
+          ],
+          "x"
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-377": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "contem_termo_critico": true,
+              "revisao_concluida": false
+            },
+            {
+              "id": "b",
+              "contem_termo_critico": false,
+              "revisao_concluida": false
+            },
+            {
+              "id": "c",
+              "contem_termo_critico": true,
+              "revisao_concluida": true
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-380": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "imagem": {
+              "largura": 800,
+              "altura": 600
+            },
+            "objeto": {
+              "largura": 90,
+              "altura": 40
+            }
+          }
+        ],
+        [
+          800,
+          600
+        ]
+      ]
+    ]
+  ],
+  "AI901-414": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "risco": "alto",
+              "previsto": 1,
+              "real": 0
+            },
+            {
+              "id": "b",
+              "risco": "alto",
+              "previsto": 1,
+              "real": 1
+            },
+            {
+              "id": "c",
+              "risco": "baixo",
+              "previsto": 1,
+              "real": 0
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-427": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "encoder": "a",
+            "vetor": [
+              1,
+              2
+            ]
+          },
+          {
+            "encoder": "a",
+            "dimensao": 2
+          }
+        ],
+        true
+      ],
+      [
+        [
+          {
+            "encoder": "b",
+            "vetor": [
+              1,
+              2
+            ]
+          },
+          {
+            "encoder": "a",
+            "dimensao": 2
+          }
+        ],
+        false
+      ],
+      [
+        [
+          {
+            "encoder": "a",
+            "vetor": [
+              1
+            ]
+          },
+          {
+            "encoder": "a",
+            "dimensao": 2
+          }
+        ],
+        false
+      ]
+    ]
+  ],
+  "AI901-428": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "tipo": "chat",
+              "texto": "oi",
+              "vetor": [],
+              "id": "c"
+            },
+            {
+              "tipo": "embedding",
+              "texto": "",
+              "vetor": [
+                1,
+                2
+              ],
+              "id": "e"
+            },
+            {
+              "tipo": "imagem",
+              "texto": "",
+              "vetor": [],
+              "id": "i"
+            }
+          ]
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    ]
+  ],
+  "AI901-457": [
+    "resolver",
+    [
+      [
+        [
+          [
+            [
+              {
+                "id": "a",
+                "texto": "A"
+              },
+              {
+                "id": "b",
+                "texto": "B"
+              }
+            ],
+            [
+              {
+                "id": "b",
+                "texto": "B"
+              },
+              {
+                "id": "c",
+                "texto": "C"
+              }
+            ]
+          ]
+        ],
+        [
+          "a",
+          "b",
+          "c"
+        ]
+      ]
+    ]
+  ],
+  "AI901-470": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "status": "recognized",
+              "texto": "ola",
+              "idioma": "pt"
+            },
+            {
+              "status": "no_match",
+              "texto": "",
+              "idioma": "pt"
+            },
+            {
+              "status": "canceled",
+              "texto": "",
+              "idioma": "en"
+            }
+          ]
+        ],
+        [
+          [
+            "ola",
+            "pt"
+          ]
+        ]
+      ]
+    ]
+  ],
+  "AI901-483": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "classe": "defeito",
+              "mascara": "m1",
+              "caixa": "b1"
+            },
+            {
+              "classe": "peca",
+              "mascara": "m2",
+              "caixa": "b2"
+            }
+          ],
+          "defeito"
+        ],
+        [
+          "m1"
+        ]
+      ]
+    ]
+  ],
+  "AI901-484": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "transformacao": "original"
+            },
+            {
+              "id": "b",
+              "transformacao": "espelho"
+            },
+            {
+              "id": "c",
+              "transformacao": "recorte"
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-485": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "habilitado": true,
+              "capacidades": [
+                "image_input"
+              ]
+            },
+            {
+              "id": "b",
+              "habilitado": false,
+              "capacidades": [
+                "image_input"
+              ]
+            },
+            {
+              "id": "c",
+              "habilitado": true,
+              "capacidades": [
+                "image_output",
+                "text_input"
+              ]
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-520": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "grupo": "x",
+              "decisao": "negativa"
+            },
+            {
+              "id": "b",
+              "grupo": "x",
+              "decisao": "positiva"
+            },
+            {
+              "id": "c",
+              "grupo": "y",
+              "decisao": "negativa"
+            }
+          ],
+          "x"
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-549": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "nome": "a",
+              "estado": "pronto",
+              "entradas": [
+                "imagem"
+              ]
+            },
+            {
+              "nome": "b",
+              "estado": "criando",
+              "entradas": [
+                "imagem"
+              ]
+            },
+            {
+              "nome": "c",
+              "estado": "pronto",
+              "entradas": [
+                "texto"
+              ]
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-550": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "role": "tool",
+              "content": "dado"
+            },
+            {
+              "role": "assistant",
+              "content": "resposta"
+            },
+            {
+              "role": "user",
+              "content": "pergunta"
+            }
+          ]
+        ],
+        [
+          "resposta"
+        ]
+      ]
+    ]
+  ],
+  "AI901-551": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "texto": "a",
+              "autorizado": true,
+              "uso": "treino"
+            },
+            {
+              "texto": "b",
+              "autorizado": false,
+              "uso": "treino"
+            },
+            {
+              "texto": "c",
+              "autorizado": true,
+              "uso": "avaliacao"
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-554": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "temperature": 0.2,
+            "top_p": 0.8,
+            "seed": 4
+          },
+          [
+            "top_p"
+          ]
+        ],
+        {
+          "top_p": 0.8
+        }
+      ]
+    ]
+  ],
+  "AI901-579": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "fn",
+              "real": "positivo",
+              "previsto": "negativo"
+            },
+            {
+              "id": "fp",
+              "real": "negativo",
+              "previsto": "positivo"
+            },
+            {
+              "id": "tp",
+              "real": "positivo",
+              "previsto": "positivo"
+            }
+          ]
+        ],
+        [
+          "fn"
+        ]
+      ]
+    ]
+  ],
+  "AI901-580": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "cluster": "x"
+            },
+            {
+              "id": "b",
+              "cluster": "y"
+            },
+            {
+              "id": "c",
+              "cluster": null
+            }
+          ],
+          "x"
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-638": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "estado": "canceled",
+              "motivo": "rede"
+            },
+            {
+              "estado": "recognized",
+              "motivo": ""
+            },
+            {
+              "estado": "no_match",
+              "motivo": "silencio"
+            }
+          ]
+        ],
+        [
+          "rede"
+        ]
+      ]
+    ]
+  ],
+  "AI901-640": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "participante": "a",
+              "final": true,
+              "texto": "A"
+            },
+            {
+              "participante": "a",
+              "final": false,
+              "texto": "parcial"
+            },
+            {
+              "participante": "b",
+              "final": true,
+              "texto": "B"
+            }
+          ],
+          "a"
+        ],
+        [
+          "A"
+        ]
+      ]
+    ]
+  ],
+  "AI901-278": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "caixa_original": [
+              10,
+              20,
+              40,
+              60
+            ],
+            "caixa_canvas": [
+              1,
+              2,
+              4,
+              6
+            ],
+            "recorte": [
+              0,
+              0,
+              80,
+              80
+            ],
+            "padding": [
+              2,
+              2
+            ]
+          }
+        ],
+        [
+          10,
+          20,
+          40,
+          60
+        ]
+      ]
+    ]
+  ],
+  "AI901-281": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "prompt": "paisagem",
+            "deployment": "externo"
+          },
+          {
+            "prompt_padrao": "padrao",
+            "deployment": "imagem",
+            "chat_deployment": "chat"
+          }
+        ],
+        {
+          "prompt": "paisagem",
+          "deployment": "imagem"
+        }
+      ]
+    ]
+  ],
+  "AI901-301": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "id_pseudonimo": "p",
+            "id_pessoa": "cpf",
+            "texto_original": "segredo",
+            "decisao": "revisar"
+          }
+        ],
+        {
+          "id": "p",
+          "decisao": "revisar"
+        }
+      ]
+    ]
+  ],
+  "AI901-316": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "tokenizador": "v1"
+            },
+            {
+              "id": "b",
+              "tokenizador": "v2"
+            }
+          ],
+          "v1"
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-319": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "validado": true,
+            "inferencia": "v1",
+            "treino": "dados"
+          }
+        ],
+        "v1"
+      ],
+      [
+        [
+          {
+            "validado": false,
+            "inferencia": "v2",
+            "treino": "dados"
+          }
+        ],
+        null
+      ]
+    ]
+  ],
+  "AI901-323": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "tarefa": "regressao",
+              "pronto": true
+            },
+            {
+              "id": "b",
+              "tarefa": "regressao",
+              "pronto": false
+            },
+            {
+              "id": "c",
+              "tarefa": "classificacao",
+              "pronto": true
+            },
+            {
+              "id": "d",
+              "tarefa": "agrupamento",
+              "pronto": true
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-383": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "mascaras": [
+              "m"
+            ],
+            "caixas": [
+              "b"
+            ],
+            "classes": [
+              "c"
+            ],
+            "legendas": [
+              "l"
+            ]
+          }
+        ],
+        [
+          "m"
+        ]
+      ]
+    ]
+  ],
+  "AI901-394": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "evidencia": {
+                "pagina": 1,
+                "unidade": "pixel"
+              }
+            },
+            {
+              "evidencia": {
+                "pagina": 2,
+                "unidade": "inch"
+              }
+            }
+          ]
+        ],
+        [
+          {
+            "pagina": 1,
+            "unidade": "pixel"
+          }
+        ]
+      ]
+    ]
+  ],
+  "AI901-401": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "foto_id": "a",
+              "caixa_original": [
+                10,
+                20,
+                30,
+                40
+              ],
+              "caixa_canvas": [
+                1,
+                2,
+                3,
+                4
+              ],
+              "transformacao": "t1"
+            },
+            {
+              "foto_id": "b",
+              "caixa_original": [
+                50,
+                60,
+                70,
+                80
+              ],
+              "caixa_canvas": [
+                5,
+                6,
+                7,
+                8
+              ],
+              "transformacao": "t2"
+            }
+          ],
+          "a"
+        ],
+        [
+          [
+            10,
+            20,
+            30,
+            40
+          ]
+        ]
+      ]
+    ]
+  ],
+  "AI901-412": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "grupo": "x",
+              "decisao": "negar"
+            },
+            {
+              "id": "b",
+              "grupo": "y",
+              "decisao": "aprovar"
+            },
+            {
+              "id": "c",
+              "grupo": "x",
+              "decisao": "aprovar"
+            }
+          ],
+          "x"
+        ],
+        [
+          [
+            "a",
+            "negar"
+          ],
+          [
+            "c",
+            "aprovar"
+          ]
+        ]
+      ]
+    ]
+  ],
+  "AI901-553": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "quantizado": "q",
+            "original": "o",
+            "relatorio": "r",
+            "quantizado_aprovado": true
+          }
+        ],
+        "q"
+      ],
+      [
+        [
+          {
+            "quantizado": "q",
+            "original": "o",
+            "relatorio": "r",
+            "quantizado_aprovado": false
+          }
+        ],
+        null
+      ]
+    ]
+  ],
+  "AI901-665": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "imagem_id": "a",
+              "mascara": "pa"
+            },
+            {
+              "imagem_id": "b",
+              "mascara": "pb"
+            }
+          ],
+          {
+            "a": "ra"
+          }
+        ],
+        [
+          [
+            "pa",
+            "ra"
+          ]
+        ]
+      ]
+    ]
+  ]
+}

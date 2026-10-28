@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Módulo 03 — Introdução a conceitos de fala de IA
 
+![[assets/m03-fala.png|1000]]
+
+*Reconhecimento converte áudio em texto; síntese converte texto em áudio.*
+
+
 Reconhecimento de fala, síntese de voz e construção de soluções que usam interação por áudio.
 
 ## Páginas deste módulo

@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Tokenização
 
+![[assets/m04-tokens.png|1000]]
+
+*Tokens e IDs são ilustrativos. Embeddings representam informações em vetores; o mapa em duas dimensões é uma simplificação.*
+
+
 #### O que é tokenização
 
 Tokenização é a etapa inicial do processamento de texto que transforma um corpus (texto base) em unidades discretas chamadas **tokens**, que podem ser palavras inteiras, subpalavras, partes de palavras ou símbolos de pontuação. Essa representação permite contar frequências, construir vocabulários e alimentar modelos que operam sobre sequências numéricas.

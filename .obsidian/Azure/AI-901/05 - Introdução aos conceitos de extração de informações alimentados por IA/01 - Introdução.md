@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Introdução
 
+![[assets/m05-processo-exclusivo.png|1000]]
+
+
+
+
 **Extração de informações** converte mídia não estruturada (documentos, imagens, áudio, vídeo) em **campos de dados estruturados** que podem alimentar automação e análises. Soluções combinam OCR, visão computacional, modelos de linguagem e, quando aplicável, reconhecimento de fala para capturar texto, entidades e relações relevantes.
 
 ##### Cenários e exemplos práticos

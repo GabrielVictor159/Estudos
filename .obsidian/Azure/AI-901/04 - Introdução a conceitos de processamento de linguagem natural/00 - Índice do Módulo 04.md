@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Módulo 04 — Introdução a conceitos de processamento de linguagem natural
 
+![[assets/m04-panorama-exclusivo.png|1000]]
+
+
+
+
 Como sistemas processam texto e linguagem: tokenização, representação semântica e análise estatística.
 
 ## Páginas deste módulo

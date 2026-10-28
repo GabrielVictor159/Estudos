@@ -1,0 +1,313 @@
+{
+  "reason": "Correção de escopo solicitada após questionamento sobre LoRA: substituir as cinco questões que cobravam ou citavam a técnica. Não constitui auditoria completa do banco.",
+  "objective": "Identify an appropriate AI model, based on capabilities; Identify appropriate model deployment options and configuration parameters.",
+  "changes": [
+    {
+      "id": "AI901-225",
+      "before": {
+        "id": "AI901-225",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "lora",
+          "parameter-efficient-fine-tuning"
+        ],
+        "coverageLevel": "supporting",
+        "prompt": "Num experimento de adaptação compatível com LoRA, os pesos pré-treinados ficam congelados e são treinadas matrizes de atualização de baixo posto. Qual descrição é correta?",
+        "options": [
+          {
+            "id": "a",
+            "text": "É recuperação no contexto, com o vocabulário atualizado pelos documentos recebidos."
+          },
+          {
+            "id": "b",
+            "text": "É quantização dos pesos congelados, com novos níveis de precisão por camada."
+          },
+          {
+            "id": "c",
+            "text": "É poda de parâmetros, com remoção dos componentes que tiveram menor ativação."
+          },
+          {
+            "id": "d",
+            "text": "É adaptação eficiente por parâmetros adicionais, com suporte e qualidade a avaliar."
+          }
+        ],
+        "answer": [
+          "d"
+        ],
+        "explanation": "LoRA aprende atualizações de baixo posto mantendo os pesos pré-treinados congelados no cenário descrito. Quantização altera precisão e poda remove componentes; recuperação no prompt fornece contexto. O suporte de adaptação e sua qualidade dependem do modelo e do ambiente.",
+        "references": [
+          {
+            "title": "LoRA — artigo original",
+            "url": "https://arxiv.org/abs/2106.09685"
+          }
+        ]
+      },
+      "afterSha256": "e0ab8abd69b098e0534b983b1f10f561d2dd86de4dbb3a830c616582759a96f2"
+    },
+    {
+      "id": "AI901-422",
+      "before": {
+        "id": "AI901-422",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "multiple",
+        "difficulty": "hard",
+        "prompt": "Uma adaptação tem pouca memória de treinamento e a inferência será avaliada em hardware de baixa precisão. Quais afirmações distinguem corretamente LoRA e quantização? Selecione 2 respostas.",
+        "explanation": "LoRA adapta parâmetros específicos por treinamento. Quantização muda representação numérica e seus efeitos dependem da implementação e do hardware. Limitar saída não é LoRA, arredondamento não ensina terminologia e nenhuma técnica dispensa avaliação da configuração resultante.",
+        "conceptTags": [
+          "lora",
+          "quantization",
+          "adaptation"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+            "url": "https://arxiv.org/abs/2106.09685"
+          },
+          {
+            "title": "Quantization — PyTorch 2.14",
+            "url": "https://docs.pytorch.org/docs/2.14/quantization.html"
+          }
+        ],
+        "options": [
+          {
+            "id": "a",
+            "text": "Quantização aprende terminologia do domínio ao arredondar os pesos originais."
+          },
+          {
+            "id": "b",
+            "text": "LoRA pode treinar matrizes adicionais de baixa ordem com a base congelada."
+          },
+          {
+            "id": "c",
+            "text": "LoRA adapta o domínio apenas reduzindo o limite de tokens das respostas."
+          },
+          {
+            "id": "d",
+            "text": "Ambas dispensam validação com exemplos do domínio após modificar o modelo."
+          },
+          {
+            "id": "e",
+            "text": "Quantização reduz a precisão numérica e deve ser avaliada no backend alvo."
+          }
+        ],
+        "answer": [
+          "b",
+          "e"
+        ],
+        "selectCount": 2
+      },
+      "afterSha256": "e3e338bade046543bd3244db892261aa8553af43290f19671c8c30bf96dc2676"
+    },
+    {
+      "id": "AI901-425",
+      "before": {
+        "id": "AI901-425",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "matching",
+        "difficulty": "hard",
+        "prompt": "Associe a intervenção à alteração efetivamente realizada. Use cada destino exatamente uma vez.",
+        "explanation": "LoRA adapta parâmetros treináveis específicos. Destilação transfere comportamento por treinamento. Quantização altera a representação numérica. RAG seleciona contexto externo na execução, sem exigir alteração dos pesos a cada mudança de documento.",
+        "conceptTags": [
+          "lora",
+          "distillation",
+          "quantization",
+          "rag"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+            "url": "https://arxiv.org/abs/2106.09685"
+          },
+          {
+            "title": "Distilling the Knowledge in a Neural Network",
+            "url": "https://arxiv.org/abs/1503.02531"
+          },
+          {
+            "title": "Quantization — PyTorch 2.14",
+            "url": "https://docs.pytorch.org/docs/2.14/quantization.html"
+          },
+          {
+            "title": "Vector search overview",
+            "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-overview"
+          }
+        ],
+        "left": [
+          {
+            "id": "l0",
+            "text": "Treinar parâmetros adicionais de baixa ordem, mantendo pesos base congelados."
+          },
+          {
+            "id": "l1",
+            "text": "Treinar uma rede menor para aproximar distribuições produzidas por uma maior."
+          },
+          {
+            "id": "l2",
+            "text": "Reduzir a precisão numérica dos pesos e medir efeitos no hardware escolhido."
+          },
+          {
+            "id": "l3",
+            "text": "Selecionar evidências externas para o contexto da solicitação atual."
+          }
+        ],
+        "right": [
+          {
+            "id": "a",
+            "text": "Recuperação aumentada por geração."
+          },
+          {
+            "id": "b",
+            "text": "Destilação professor-aluno."
+          },
+          {
+            "id": "c",
+            "text": "Quantização de pesos."
+          },
+          {
+            "id": "d",
+            "text": "Adaptação LoRA."
+          }
+        ],
+        "answer": {
+          "l0": "d",
+          "l1": "b",
+          "l2": "c",
+          "l3": "a"
+        }
+      },
+      "afterSha256": "e4889af0d36a8ccc817f3de9cf2a1334e6f29d0aca056a233ecd6e2ef644a09d"
+    },
+    {
+      "id": "AI901-546",
+      "before": {
+        "id": "AI901-546",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "matching",
+        "difficulty": "hard",
+        "prompt": "Associe cada intervenção ao estado modificado. Use cada destino uma vez.",
+        "explanation": "As quatro intervenções podem buscar eficiência ou adaptação, mas atuam em estados distintos. Exemplos no prompt não demonstram mudança paramétrica, e compactação numérica não equivale ao treinamento de um aluno ou de adaptadores.",
+        "conceptTags": [
+          "few-shot",
+          "lora",
+          "quantization",
+          "distillation"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+            "url": "https://arxiv.org/abs/2106.09685"
+          },
+          {
+            "title": "Quantization — PyTorch 2.14",
+            "url": "https://docs.pytorch.org/docs/2.14/quantization.html"
+          },
+          {
+            "title": "Distilling the Knowledge in a Neural Network",
+            "url": "https://arxiv.org/abs/1503.02531"
+          }
+        ],
+        "left": [
+          {
+            "id": "l0",
+            "text": "Incluir exemplos na entrada de uma requisição."
+          },
+          {
+            "id": "l1",
+            "text": "Aprender pesos de baixa ordem mantendo a base fixa."
+          },
+          {
+            "id": "l2",
+            "text": "Converter pesos para representação numérica mais compacta."
+          },
+          {
+            "id": "l3",
+            "text": "Treinar um estudante usando sinais do professor."
+          }
+        ],
+        "right": [
+          {
+            "id": "a",
+            "text": "Contexto de inferência por few-shot."
+          },
+          {
+            "id": "b",
+            "text": "Parâmetros adicionais de adaptação LoRA."
+          },
+          {
+            "id": "c",
+            "text": "Representação dos pesos por quantização."
+          },
+          {
+            "id": "d",
+            "text": "Parâmetros de outro modelo por destilação."
+          }
+        ],
+        "answer": {
+          "l0": "a",
+          "l1": "b",
+          "l2": "c",
+          "l3": "d"
+        }
+      },
+      "afterSha256": "bf742cdd76e8526a1f862ed32eab30eb582c0f85ea9d808c4b11048bce2e080a"
+    },
+    {
+      "id": "AI901-559",
+      "before": {
+        "id": "AI901-559",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "case",
+        "difficulty": "hard",
+        "prompt": "Qual comparação sustenta a escolha de pesos de baixa precisão no hardware final?",
+        "explanation": "Eficiência numérica depende do backend e dos kernels, e qualidade pode variar por categoria. Arquivo menor não comprova aceleração. LoRA e quantização atuam de formas diferentes e devem ser identificados separadamente no experimento.",
+        "conceptTags": [
+          "quantization",
+          "hardware-validation"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "Quantization — PyTorch 2.14",
+            "url": "https://docs.pytorch.org/docs/2.14/quantization.html"
+          },
+          {
+            "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+            "url": "https://arxiv.org/abs/2106.09685"
+          }
+        ],
+        "options": [
+          {
+            "id": "a",
+            "text": "Comparar tamanhos de arquivo e usar a redução de bits como estimativa suficiente de latência."
+          },
+          {
+            "id": "b",
+            "text": "Medir qualidade no formato original e transferir a nota para o formato convertido."
+          },
+          {
+            "id": "c",
+            "text": "Medir memória, tempo e qualidade nessa configuração e implementação."
+          },
+          {
+            "id": "d",
+            "text": "Medir baixa precisão em outro backend e assumir o mesmo ganho no hardware final."
+          }
+        ],
+        "answer": [
+          "c"
+        ],
+        "context": "Uma fábrica prepara modelos para classificar componentes a partir de imagens e séries de sensores. Há dados de diversas máquinas e lotes. Imagens da mesma peça aparecem em vários quadros, enquanto medições de sensores chegam em sequência. As categorias raras são importantes para a operação. A equipe compara CNNs, modelos com atenção e redes recorrentes usando o mesmo protocolo de referência. Não existe evidência de superioridade universal de uma família. Uma variante usa pesos de baixa precisão e outra usa adaptação de baixa ordem; essas intervenções são registradas separadamente. O processo inclui treinamento, seleção de configuração e teste independente por origem e período. Os responsáveis querem evitar que peças repetidas ou informação futura inflem o desempenho. A avaliação registra consumo de memória, tempo e métricas por categoria, além da média geral. O hardware final pode executar formatos numéricos com eficiências diferentes. Cada alteração exige uma comparação controlada com exemplos e preparação coerentes, e o conjunto final não deve ser consultado repetidamente para escolher a melhor variante."
+      },
+      "afterSha256": "a33cb26f643fa7fc7571f93e53e96c8eb6cc5297fcd217eb81819aa693631f98"
+    }
+  ]
+}

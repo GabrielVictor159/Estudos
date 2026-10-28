@@ -1,0 +1,29 @@
+{
+  "id": "AI-901",
+  "title": "Microsoft Azure AI Fundamentals",
+  "blueprintVersion": "2026-04-15",
+  "verifiedAt": "2026-10-17",
+  "sourceUrl": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901",
+  "defaultQuestionCount": 40,
+  "defaultDurationMinutes": 45,
+  "practiceTargetPercent": 70,
+  "domains": [
+    {
+      "id": "concepts", "title": "Conceitos e capacidades de IA", "weight": 42.5, "minPercent": 40, "maxPercent": 45,
+      "topics": [
+        { "id": "responsible-ai", "title": "Princípios de IA responsável", "description": "Equidade, confiabilidade, segurança, privacidade, inclusão, transparência e responsabilidade." },
+        { "id": "models", "title": "Modelos e configurações", "description": "Funcionamento de modelos generativos, seleção de modelos, implantação e parâmetros." },
+        { "id": "workloads", "title": "Cargas de trabalho de IA", "description": "IA generativa e agentes, análise de texto, fala, visão e extração de informações." }
+      ]
+    },
+    {
+      "id": "foundry", "title": "Implementação com Microsoft Foundry", "weight": 57.5, "minPercent": 55, "maxPercent": 60,
+      "topics": [
+        { "id": "generative-agents", "title": "Aplicações generativas e agentes", "description": "Prompts, implantação, Foundry SDK, clientes de chat e soluções com um agente." },
+        { "id": "text-speech", "title": "Texto e fala", "description": "Análise de texto, prompts falados, modelos multimodais e Azure Speech." },
+        { "id": "vision", "title": "Visão computacional e geração de imagens", "description": "Entradas visuais, modelos generativos e aplicações com recursos de visão." },
+        { "id": "extraction", "title": "Extração de informações", "description": "Documentos, formulários, imagens, áudio e vídeo com Azure Content Understanding." }
+      ]
+    }
+  ]
+}

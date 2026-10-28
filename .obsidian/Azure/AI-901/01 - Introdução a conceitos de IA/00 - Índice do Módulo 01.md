@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Módulo 01 — Introdução a conceitos de IA
 
+![[assets/m01-panorama-exclusivo.png|1000]]
+
+
+
+
 Fundamentos de inteligência artificial, modelos generativos, agentes, prompts e principais modalidades de IA.
 
 ## Páginas deste módulo

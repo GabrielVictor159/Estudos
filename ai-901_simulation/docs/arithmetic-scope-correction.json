@@ -1,0 +1,3897 @@
+{
+  "reason": "Correção solicitada pelo usuário: substituir exercícios de cálculo por interpretação conceitual e aplicação de Python.",
+  "count": 69,
+  "changes": [
+    {
+      "id": "AI901-107",
+      "before": {
+        "id": "AI901-107",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "embeddings",
+          "cosine-similarity"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Considere vetores didáticos q=(1,0), A=(3,0), B=(0,2) e C=(-1,0). Usando similaridade de cosseno, qual documento é mais próximo de q e qual ressalva continua válida?",
+        "options": [
+          {
+            "id": "a",
+            "text": "B, porque a proximidade deve ser calculada a partir da norma do documento."
+          },
+          {
+            "id": "b",
+            "text": "A, com ressalva de que proximidade semântica não comprova veracidade."
+          },
+          {
+            "id": "c",
+            "text": "C, porque o cosseno usa a intensidade do alinhamento independentemente do sinal."
+          },
+          {
+            "id": "d",
+            "text": "A, com confiança factual proporcional à maior magnitude de seu embedding."
+          }
+        ],
+        "answer": [
+          "b"
+        ],
+        "explanation": "A tem a mesma direção de q, com cosseno 1; B tem 0 e C tem -1. O cosseno mede alinhamento, não veracidade. O módulo maior de A não é a causa da classificação pelo cosseno nem comprova qualidade factual. As dimensões didáticas não têm significado fixo presumido.",
+        "references": [
+          {
+            "title": "Similaridade e ranking vetorial",
+            "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-ranking"
+          }
+        ]
+      },
+      "afterSha256": "2d8b73eeee181734829e9f222b4d327cf1a7837e2304f65a60fba24a6e74c70c"
+    },
+    {
+      "id": "AI901-154",
+      "before": {
+        "id": "AI901-154",
+        "domainId": "foundry",
+        "topicId": "generative-agents",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "top-p",
+          "nucleus-sampling"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Numa demonstração didática de nucleus sampling, os tokens candidatos têm probabilidades 0,50; 0,25; 0,15; 0,10, nessa ordem. Para top_p=0,70, qual é o menor conjunto de maior probabilidade que alcança a massa solicitada?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Primeiro token, com massa acumulada de 0,50."
+          },
+          {
+            "id": "b",
+            "text": "Três primeiros tokens, com massa acumulada de 0,90."
+          },
+          {
+            "id": "c",
+            "text": "Dois primeiros tokens, com massa acumulada de 0,75."
+          },
+          {
+            "id": "d",
+            "text": "Quatro tokens, com massa acumulada de 1,00."
+          }
+        ],
+        "answer": [
+          "c"
+        ],
+        "explanation": "O menor prefixo ordenado cuja soma alcança 0,70 contém os dois primeiros candidatos: 0,50+0,25=0,75. O exemplo considera a definição didática de nucleus sampling; top_p não é a quantidade de candidatos nem exige soma exatamente igual ao limiar.",
+        "references": [
+          {
+            "title": "Contrato de chat e parâmetros",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/latest"
+          }
+        ]
+      },
+      "afterSha256": "abdc0a04bf15770cd595224320617270177d44816b361c265a5d45be62c66ba6"
+    },
+    {
+      "id": "AI901-173",
+      "before": {
+        "id": "AI901-173",
+        "domainId": "foundry",
+        "topicId": "text-speech",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "wer",
+          "asr-evaluation"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Uma referência de transcrição contém 100 palavras. O alinhamento indica 5 substituições, 3 exclusões e 2 inserções. Usando WER=(S+D+I)/N, qual é o valor e qual ressalva importa?",
+        "options": [
+          {
+            "id": "a",
+            "text": "10%; a taxa não expressa sozinha o impacto de termos críticos."
+          },
+          {
+            "id": "b",
+            "text": "8%; a taxa considera substituições e exclusões da referência."
+          },
+          {
+            "id": "c",
+            "text": "90%; a taxa representa a proporção de palavras preservadas."
+          },
+          {
+            "id": "d",
+            "text": "10%; a taxa corresponde ao erro dos campos de negócio extraídos."
+          }
+        ],
+        "answer": [
+          "a"
+        ],
+        "explanation": "A soma dos erros é 10, dividida pelas 100 palavras de referência: WER de 10%. Inserções entram no numerador. Uma taxa global não informa quais termos foram alterados nem a precisão de entidades e decisões derivadas; um erro num valor ou numa negação pode ter impacto desproporcional.",
+        "references": [
+          {
+            "title": "Métricas e limites de Content Understanding",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/responsible-ai/content-understanding/transparency-note"
+          }
+        ]
+      },
+      "afterSha256": "8131b3d6a4763da1fd218e2da3a36b471d0d8775d92e7ff481ab0f2a0e022ea6"
+    },
+    {
+      "id": "AI901-179",
+      "before": {
+        "id": "AI901-179",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "convolution",
+          "kernel",
+          "image-filter"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Um filtro didático aplica correlação cruzada, sem inverter o kernel, sem viés e sem ativação. A região de entrada é [[1,2,3],[4,5,6],[7,8,9]] e o kernel é [[1,0,-1],[1,0,-1],[1,0,-1]]. Qual é a soma produzida nessa posição?",
+        "options": [
+          {
+            "id": "a",
+            "text": "6."
+          },
+          {
+            "id": "b",
+            "text": "45."
+          },
+          {
+            "id": "c",
+            "text": "-6."
+          },
+          {
+            "id": "d",
+            "text": "0."
+          }
+        ],
+        "answer": [
+          "c"
+        ],
+        "explanation": "Somam-se os produtos alinhados: (1-3)+(4-6)+(7-9)=-6. O enunciado explicita a convenção para não confundir correlação com uma convolução que inverteria o kernel. O resultado não é a soma de todos os pixels; não foram aplicados viés nem função de ativação.",
+        "references": [
+          {
+            "title": "Representação e processamento de imagens",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/3-understand-image-processing"
+          },
+          {
+            "title": "Redes neurais convolucionais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/4-computer-vision-models"
+          }
+        ]
+      },
+      "afterSha256": "09a35ec8680d27c7707ff5d43846e833237f2ba9607c51da39cf1f3e755e011f"
+    },
+    {
+      "id": "AI901-183",
+      "before": {
+        "id": "AI901-183",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "vit",
+          "patches",
+          "visual-tokens"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Um ViT recebe uma imagem de 224×224 e usa patches não sobrepostos de 16×16. Desconsidere tokens adicionais, padding e detalhes de implementação. Quantos patches visuais existem?",
+        "options": [
+          {
+            "id": "a",
+            "text": "196."
+          },
+          {
+            "id": "b",
+            "text": "14."
+          },
+          {
+            "id": "c",
+            "text": "256."
+          },
+          {
+            "id": "d",
+            "text": "50.176."
+          }
+        ],
+        "answer": [
+          "a"
+        ],
+        "explanation": "Há 224/16=14 patches em cada eixo, totalizando 14×14=196. A resposta exclui tokens adicionais conforme o enunciado. Não se trata da quantidade de pixels, do número de classes ou apenas do tamanho de uma dimensão da grade.",
+        "references": [
+          {
+            "title": "Vision transformers e modelos multimodais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/5-modern-vision-models"
+          }
+        ]
+      },
+      "afterSha256": "108497ee67875651d03735ee3161c13cda0a7e96fa8de456904a9257178fa59e"
+    },
+    {
+      "id": "AI901-185",
+      "before": {
+        "id": "AI901-185",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "segmentation",
+          "iou",
+          "evaluation"
+        ],
+        "coverageLevel": "supporting",
+        "prompt": "Para avaliar uma máscara, use IoU=interseção/união. A previsão cobre 100 pixels, a referência cobre 80 e há 60 pixels em comum. Qual é o IoU?",
+        "options": [
+          {
+            "id": "a",
+            "text": "0,75, usando a interseção dividida pela área de referência."
+          },
+          {
+            "id": "b",
+            "text": "0,50, usando a interseção dividida pela área da união."
+          },
+          {
+            "id": "c",
+            "text": "0,60, usando a interseção dividida pela área prevista."
+          },
+          {
+            "id": "d",
+            "text": "0,67, usando duas vezes a interseção dividida pela soma das áreas."
+          }
+        ],
+        "answer": [
+          "b"
+        ],
+        "explanation": "A união tem 100+80-60=120 pixels, pois a interseção seria contada duas vezes sem a subtração. IoU=60/120=0,50. Dividir só pela previsão ou só pela referência produz outras proporções, não o IoU definido na pergunta.",
+        "references": [
+          {
+            "title": "Tarefas de visão computacional",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/2-overview"
+          }
+        ]
+      },
+      "afterSha256": "c396c06f611ee5c236a67ce6b9b39c3151e58c471d2be6e471cb10aa20a21c38"
+    },
+    {
+      "id": "AI901-208",
+      "before": {
+        "id": "AI901-208",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "queries-keys-values",
+          "dot-product-attention"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Numa atenção didática, use escores por produto escalar, sem escala ou máscara: q=(1,0), k1=(2,0) e k2=(0,3). Antes do softmax, qual chave recebe o maior escore para essa consulta?",
+        "options": [
+          {
+            "id": "a",
+            "text": "k2, com escores obtidos pelas normas 2 e 3 de cada chave."
+          },
+          {
+            "id": "b",
+            "text": "k1, com produtos escalares 2 para k1 e 0 para k2."
+          },
+          {
+            "id": "c",
+            "text": "Empate, com escore 1 após normalizar individualmente as consultas."
+          },
+          {
+            "id": "d",
+            "text": "k2, com escores 2 e 3 após somar as componentes de cada chave."
+          }
+        ],
+        "answer": [
+          "b"
+        ],
+        "explanation": "O cálculo declarado produz 2 para k1 e 0 para k2. Módulo isolado não decide esse produto. No mecanismo de atenção, escores orientam a ponderação, mas um escore maior não é uma prova de verdade ou de causalidade da resposta final.",
+        "references": [
+          {
+            "title": "Attention Is All You Need — artigo original",
+            "url": "https://arxiv.org/abs/1706.03762"
+          }
+        ]
+      },
+      "afterSha256": "c3b3f8a360d1025d331d769772eacbbb76a53afac1773839faa3734fb919535c"
+    },
+    {
+      "id": "AI901-209",
+      "before": {
+        "id": "AI901-209",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "attention",
+          "weighted-values"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Uma camada recebeu pesos de atenção já normalizados: 0,25 e 0,75. Os values correspondentes são v1=(4,0) e v2=(0,8). Sem projeção adicional, qual combinação ponderada resulta?",
+        "options": [
+          {
+            "id": "a",
+            "text": "(4,8)."
+          },
+          {
+            "id": "b",
+            "text": "(3,2)."
+          },
+          {
+            "id": "c",
+            "text": "(1,2)."
+          },
+          {
+            "id": "d",
+            "text": "(1,6)."
+          }
+        ],
+        "answer": [
+          "d"
+        ],
+        "explanation": "A combinação é 0,25×(4,0)+0,75×(0,8)=(1,6). Somar diretamente os vetores ignora os pesos; trocar as contribuições inverte o cálculo. O exercício separa os pesos usados na combinação dos values sobre os quais eles atuam.",
+        "references": [
+          {
+            "title": "Attention Is All You Need — artigo original",
+            "url": "https://arxiv.org/abs/1706.03762"
+          }
+        ]
+      },
+      "afterSha256": "852f5e6bc441ff8b6b7208c183c4b24379bbb04a10f7e2bfa36e8a996800afb5"
+    },
+    {
+      "id": "AI901-215",
+      "before": {
+        "id": "AI901-215",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "parameter-memory",
+          "model-efficiency"
+        ],
+        "coverageLevel": "supporting",
+        "prompt": "Um modelo didático tem 2 bilhões de parâmetros armazenados com 2 bytes cada. Ignore ativações, caches, metadados e qualquer outra sobrecarga. Qual é a memória apenas desses parâmetros, em GB decimais?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1 GB."
+          },
+          {
+            "id": "b",
+            "text": "2 GB."
+          },
+          {
+            "id": "c",
+            "text": "8 GB."
+          },
+          {
+            "id": "d",
+            "text": "4 GB."
+          }
+        ],
+        "answer": [
+          "d"
+        ],
+        "explanation": "O produto é 2×10⁹×2=4×10⁹ bytes, ou 4 GB decimais. O enunciado exclui outras parcelas para isolar o cálculo. Na execução real, pesos não representam necessariamente toda a memória necessária, pois caches, ativações e o ambiente também podem consumir recursos.",
+        "references": [
+          {
+            "title": "Quantização no ONNX Runtime",
+            "url": "https://onnxruntime.ai/docs/performance/model-optimizations/quantization.html"
+          },
+          {
+            "title": "Fundamentos de deep learning",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/8-deep-learning"
+          }
+        ]
+      },
+      "afterSha256": "65bf1fcfcf486d7b5ad6f4ed8cb48e8721e2898864efbe14c3c6e2584a3de2b7"
+    },
+    {
+      "id": "AI901-222",
+      "before": {
+        "id": "AI901-222",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "regression",
+          "mae"
+        ],
+        "coverageLevel": "supporting",
+        "prompt": "Use MAE como a média dos erros absolutos. Os valores reais são [10,20,30] e as previsões são [12,17,34]. Qual é o MAE?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1."
+          },
+          {
+            "id": "b",
+            "text": "3."
+          },
+          {
+            "id": "c",
+            "text": "9."
+          },
+          {
+            "id": "d",
+            "text": "29/3."
+          }
+        ],
+        "answer": [
+          "b"
+        ],
+        "explanation": "Os erros absolutos são 2, 3 e 4, somando 9. A média é 9/3=3. Somar erros com sinais pode cancelar desvios; 29/3 corresponde a outro cálculo baseado em quadrados, não à definição de MAE fornecida. A métrica está na unidade do valor previsto.",
+        "references": [
+          {
+            "title": "Tipos de aprendizado de máquina",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/3-types-of-machine-learning"
+          },
+          {
+            "title": "Classificação binária e métricas",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/5-binary-classification"
+          }
+        ]
+      },
+      "afterSha256": "3709c004c7e551ba9936bb68f2169fe33f278220ec3bc656902e151a669f1c93"
+    },
+    {
+      "id": "AI901-226",
+      "before": {
+        "id": "AI901-226",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "epochs",
+          "minibatch",
+          "optimization-steps"
+        ],
+        "coverageLevel": "supporting",
+        "prompt": "Um treinamento percorre 101 exemplos em minibatches de até 20, mantendo o último lote parcial. Há uma atualização por lote. Em quatro épocas, quantas atualizações ocorrem?",
+        "options": [
+          {
+            "id": "a",
+            "text": "20."
+          },
+          {
+            "id": "b",
+            "text": "24."
+          },
+          {
+            "id": "c",
+            "text": "404."
+          },
+          {
+            "id": "d",
+            "text": "80."
+          }
+        ],
+        "answer": [
+          "b"
+        ],
+        "explanation": "Cada época usa cinco lotes de 20 e um lote de 1: seis atualizações. Em quatro épocas, são 24. O enunciado fixa o tratamento do último lote e a atualização por lote, sem acumulação de gradientes ou descarte de exemplos que alterariam a contagem.",
+        "references": [
+          {
+            "title": "Fundamentos de deep learning",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/8-deep-learning"
+          }
+        ]
+      },
+      "afterSha256": "690947c1b7578e96456f4c5b0160fa5bba148093c2c3049119a33887c15d3a2e"
+    },
+    {
+      "id": "AI901-232",
+      "before": {
+        "id": "AI901-232",
+        "domainId": "concepts",
+        "topicId": "workloads",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "audio-sampling",
+          "speech-representation"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Um áudio mono de 3 segundos é amostrado a 16.000 amostras por segundo. Ignore cabeçalhos e canais adicionais. Quantas amostras de sinal existem, e o que essa contagem não determina sozinha?",
+        "options": [
+          {
+            "id": "a",
+            "text": "16.000 amostras; a taxa determina a duração de cada palavra."
+          },
+          {
+            "id": "b",
+            "text": "48.000 amostras; a contagem determina a quantidade de palavras."
+          },
+          {
+            "id": "c",
+            "text": "48.000 amostras; a contagem não determina a transcrição."
+          },
+          {
+            "id": "d",
+            "text": "3.000 amostras; o número determina os segmentos reconhecidos."
+          }
+        ],
+        "answer": [
+          "c"
+        ],
+        "explanation": "Três segundos a 16.000 amostras por segundo produzem 48.000 amostras mono. Essa conta descreve o sinal digital, não palavras reconhecidas ou interpretação. Captura, idioma e o processamento posterior continuam necessários para obter e avaliar a transcrição.",
+        "references": [
+          {
+            "title": "Fundamentos de reconhecimento de fala",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-ai-speech/3-speech-recognition"
+          }
+        ]
+      },
+      "afterSha256": "76b0964b4c3cde770411744abbd955ffb92e36c182a356412248c9b70696fb80"
+    },
+    {
+      "id": "AI901-245",
+      "before": {
+        "id": "AI901-245",
+        "domainId": "foundry",
+        "topicId": "generative-agents",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "token-accounting",
+          "multi-call-budget"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Um aplicativo faz três chamadas independentes. Cada uma envia 1.000 tokens de instruções e 500 de dados e recebe 200 de saída. As contagens incluem toda a sobrecarga e não há outros tokens no exercício. Qual é o total de tokens de entrada e saída processados nessas chamadas?",
+        "options": [
+          {
+            "id": "a",
+            "text": "1.700."
+          },
+          {
+            "id": "b",
+            "text": "3.100."
+          },
+          {
+            "id": "c",
+            "text": "4.500."
+          },
+          {
+            "id": "d",
+            "text": "5.100."
+          }
+        ],
+        "answer": [
+          "d"
+        ],
+        "explanation": "Cada chamada processa 1.000+500+200=1.700 tokens no cálculo declarado; três chamadas somam 5.100. Instruções repetidas continuam presentes em cada solicitação. O exercício não presume regras de faturamento, cache ou tokens internos diferentes dos valores fornecidos.",
+        "references": [
+          {
+            "title": "Cotas e limites de taxa",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/quota"
+          },
+          {
+            "title": "Contrato de chat e parâmetros",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/latest"
+          }
+        ]
+      },
+      "afterSha256": "0857cacb4acac7d952f0dc2df502be5b0dabf953a19076f6135d42cefc6b8d85"
+    },
+    {
+      "id": "AI901-252",
+      "before": {
+        "id": "AI901-252",
+        "domainId": "foundry",
+        "topicId": "generative-agents",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "quota-allocation",
+          "tpm"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "No escopo de cota apresentado, há 100 mil TPM disponíveis. Duas implantações desse mesmo escopo já receberam 40 mil e 35 mil TPM. Sem mudar a cota nem reduzir essas alocações, qual é a maior alocação restante?",
+        "options": [
+          {
+            "id": "a",
+            "text": "25 mil TPM."
+          },
+          {
+            "id": "b",
+            "text": "60 mil TPM."
+          },
+          {
+            "id": "c",
+            "text": "75 mil TPM."
+          },
+          {
+            "id": "d",
+            "text": "100 mil TPM."
+          }
+        ],
+        "answer": [
+          "a"
+        ],
+        "explanation": "A disponibilidade restante é 100-40-35=25 mil TPM no escopo explicitado. A criação de outro recurso não deve ser tomada como prova de cota independente quando o serviço compartilha o mesmo escopo. Essa conta não informa, por si só, o contexto máximo de cada chamada.",
+        "references": [
+          {
+            "title": "Cotas e limites de taxa",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/quota"
+          },
+          {
+            "title": "Contrato de chat e parâmetros",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/latest"
+          }
+        ]
+      },
+      "afterSha256": "ca170eade1ff4b8ea91a4e173171517a054dd93e361ab033d0f36d3dcf64aa27"
+    },
+    {
+      "id": "AI901-257",
+      "before": {
+        "id": "AI901-257",
+        "domainId": "foundry",
+        "topicId": "generative-agents",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "retrieval-recall",
+          "recall-at-k"
+        ],
+        "coverageLevel": "curriculum",
+        "prompt": "Uma pergunta possui três documentos de referência relevantes. A busca retorna cinco documentos, dos quais dois pertencem a esse conjunto relevante. Usando recall@5 como relevantes recuperados divididos por todos os relevantes conhecidos, qual é o valor?",
+        "options": [
+          {
+            "id": "a",
+            "text": "2/3."
+          },
+          {
+            "id": "b",
+            "text": "2/5."
+          },
+          {
+            "id": "c",
+            "text": "3/5."
+          },
+          {
+            "id": "d",
+            "text": "5/3."
+          }
+        ],
+        "answer": [
+          "a"
+        ],
+        "explanation": "O denominador de recall é o total de relevantes conhecidos: 2/3. A razão 2/5 corresponde à proporção de relevantes entre os recuperados, ligada à precisão no conjunto retornado. O cálculo usa as definições do exercício e pressupõe que a referência relevante esteja estabelecida.",
+        "references": [
+          {
+            "title": "Avaliadores do Foundry",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/built-in-evaluators"
+          },
+          {
+            "title": "Ranking semântico",
+            "url": "https://learn.microsoft.com/en-us/azure/search/semantic-search-overview"
+          }
+        ]
+      },
+      "afterSha256": "318619321870c3e7883b145cfc2777b47bbaf6e61da1ba8800e8895733991d51"
+    },
+    {
+      "id": "AI901-271",
+      "before": {
+        "id": "AI901-271",
+        "domainId": "foundry",
+        "topicId": "text-speech",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "wer",
+          "evaluation"
+        ],
+        "prompt": "A WER é (substituições + deleções + inserções) / palavras de referência. Complete a fórmula; ela pode ultrapassar 100% quando há muitas inserções.",
+        "code": "substituicoes, delecoes, insercoes = 3, 2, 8\nn_referencia = 10\nwer = {{a}} / n_referencia\nprint(f\"{100 * wer:.0f}%\")",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "(substituicoes + delecoes)"
+              },
+              {
+                "id": "b",
+                "text": "(substituicoes + insercoes)"
+              },
+              {
+                "id": "c",
+                "text": "(substituicoes + delecoes + insercoes)"
+              },
+              {
+                "id": "d",
+                "text": "(n_referencia - substituicoes - delecoes)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "c"
+        },
+        "explanation": "A soma dos três tipos de erro é 13 e a referência tem 10 palavras, resultando em 130%. Ignorar inserções ou limitar o numerador altera a métrica definida. WER não é uma probabilidade limitada ao intervalo de zero a um.",
+        "references": [
+          {
+            "title": "Fundamentos de reconhecimento de fala",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-ai-speech/3-speech-recognition"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "8f04d9af6f282903a4b6b6b323eb460bd41eaf5867c6f652c3a22d2eb26b2ad4"
+    },
+    {
+      "id": "AI901-277",
+      "before": {
+        "id": "AI901-277",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "cnn",
+          "convolution"
+        ],
+        "prompt": "Uma convolução sem dilatação recebe N=32, padding P=1, kernel K=3 e stride S=2. Complete o operador que calcula a dimensão inteira da saída.",
+        "code": "n, p, k, stride = 32, 1, 3, 2\nsaida = (n + 2*p - k) {{a}} stride + 1\nprint(saida)",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "//"
+              },
+              {
+                "id": "b",
+                "text": "/"
+              },
+              {
+                "id": "c",
+                "text": "%"
+              },
+              {
+                "id": "d",
+                "text": "*"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "a"
+        },
+        "explanation": "A divisão inteira implementa o piso para esse numerador não negativo e produz 16 posições. A divisão comum resultaria em 16,5; módulo calcula o resto e multiplicação não representa o passo. A fórmula fornecida já fixa as condições da convolução.",
+        "references": [
+          {
+            "title": "Redes neurais convolucionais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/4-computer-vision-models"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "8481b01cab28eb2e18201043bb6176c8cc0d474f77eefca8e14fa016aecc011d"
+    },
+    {
+      "id": "AI901-280",
+      "before": {
+        "id": "AI901-280",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "iou",
+          "detection-metrics"
+        ],
+        "prompt": "As áreas dos dois retângulos e de sua interseção já foram calculadas no mesmo sistema de coordenadas. Complete a união usada na IoU.",
+        "code": "area_a, area_b, intersecao = 100, 80, 40\nuniao = {{a}}\niou = intersecao / uniao\nprint(iou)",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "area_a + area_b"
+              },
+              {
+                "id": "b",
+                "text": "area_a + area_b - intersecao"
+              },
+              {
+                "id": "c",
+                "text": "max(area_a, area_b)"
+              },
+              {
+                "id": "d",
+                "text": "area_a + area_b - 2*intersecao"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "b"
+        },
+        "explanation": "A união soma as áreas e subtrai a região contada duas vezes. Aqui ela vale 140 e a IoU é 40/140. Não descontar a interseção aumenta indevidamente o denominador; a diferença entre áreas não representa a região coberta por ambos.",
+        "references": [
+          {
+            "title": "Tarefas de visão computacional",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/2-overview"
+          },
+          {
+            "title": "Redes neurais convolucionais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/4-computer-vision-models"
+          },
+          {
+            "title": "Vision transformers e modelos multimodais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/5-modern-vision-models"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "5047ddf71fd9c89ee8a2fe2a3f8b47818b788016aec3159b41af01af02c565a0"
+    },
+    {
+      "id": "AI901-282",
+      "before": {
+        "id": "AI901-282",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "clip",
+          "cosine"
+        ],
+        "prompt": "Os embeddings são vetores não nulos de mesma dimensão. Complete o numerador da similaridade de cosseno usando a função dot já disponível.",
+        "code": "similaridade = {{a}} / (norm(imagem) * norm(texto))\nprint(similaridade)",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "sum((x-y)**2 for x,y in zip(imagem,texto))"
+              },
+              {
+                "id": "b",
+                "text": "dot(imagem, imagem)"
+              },
+              {
+                "id": "c",
+                "text": "norm(imagem) * norm(texto)"
+              },
+              {
+                "id": "d",
+                "text": "dot(imagem, texto)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "d"
+        },
+        "explanation": "O numerador é o produto escalar entre os dois embeddings. O denominador remove a influência de suas normas. Produto de um vetor consigo mesmo mede seu quadrado de norma e não sua afinidade com o outro; somar normas também não mede alinhamento semântico.",
+        "references": [
+          {
+            "title": "CLIP — aprendizado contrastivo de imagem e texto",
+            "url": "https://arxiv.org/abs/2103.00020"
+          },
+          {
+            "title": "Configurar vetorização compatível",
+            "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-configure-vectorizer"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "43f3fcd9a100d60941e4afb36ba9941adaf636716409c3edae089144ba149268"
+    },
+    {
+      "id": "AI901-283",
+      "before": {
+        "id": "AI901-283",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "softmax"
+        ],
+        "prompt": "Uma classificação multiclasse usa logits [2, 1, −1]. Complete a normalização softmax estável; math.exp já foi importada.",
+        "code": "logits = [2.0, 1.0, -1.0]\nm = max(logits)\npesos = [exp(x - m) for x in logits]\nprobabilidades = [p / {{a}} for p in pesos]",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "sum(logits)"
+              },
+              {
+                "id": "b",
+                "text": "max(pesos)"
+              },
+              {
+                "id": "c",
+                "text": "sum(pesos)"
+              },
+              {
+                "id": "d",
+                "text": "len(pesos)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "c"
+        },
+        "explanation": "Softmax divide cada exponencial pela soma das exponenciais, produzindo valores que somam um. Subtrair o máximo melhora a estabilidade sem alterar a distribuição. Dividir pela quantidade de classes ou pela soma dos logits não realiza a normalização exigida.",
+        "references": [
+          {
+            "title": "Fundamentos de deep learning",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/8-deep-learning"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "960184dffecaac269465d8f1bdf12dcc08d6f5dde66ab3ce3634f84d99b75f8b"
+    },
+    {
+      "id": "AI901-312",
+      "before": {
+        "id": "AI901-312",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "embeddings",
+          "vector-operations"
+        ],
+        "prompt": "Os embeddings têm três dimensões. Complete a soma componente a componente usada para construir a média de dois vetores, sem concatená-los.",
+        "code": "u, v = [1.0, 2.0, 0.0], [3.0, 0.0, 2.0]\nmedia = [{{a}} for x, y in zip(u, v)]",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "x + y / 2"
+              },
+              {
+                "id": "b",
+                "text": "(x + y) / 2"
+              },
+              {
+                "id": "c",
+                "text": "(x + y) / len(u)"
+              },
+              {
+                "id": "d",
+                "text": "(x + y) / (len(u) + len(v))"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "b"
+        },
+        "explanation": "A média precisa somar as duas componentes e dividir a soma por dois. Pela precedência, x+y/2 divide só a segunda parcela. Produto e diferença representam outras operações. A média permanece com três dimensões e não equivale a concatenar os dois embeddings.",
+        "references": [
+          {
+            "title": "Configurar vetorização compatível",
+            "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-configure-vectorizer"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "91a3916aefe951f3a9edc836759dd91a210af4bb201b0dc40f39c5c258269944"
+    },
+    {
+      "id": "AI901-313",
+      "before": {
+        "id": "AI901-313",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "attention",
+          "queries-keys-values"
+        ],
+        "prompt": "Na atenção por produto escalar escalado, Q e K têm dimensão d_k. Complete o denominador utilizado antes do softmax; sqrt já foi importada.",
+        "code": "q, k = [1.0, 2.0], [2.0, 1.0]\nd_k = len(q)\nscore = sum(x*y for x, y in zip(q, k)) / {{a}}",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "sqrt(d_k)"
+              },
+              {
+                "id": "b",
+                "text": "d_k"
+              },
+              {
+                "id": "c",
+                "text": "sqrt(len(q) + len(k))"
+              },
+              {
+                "id": "d",
+                "text": "sqrt(d_k * d_k)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "a"
+        },
+        "explanation": "A escala é a raiz da dimensão das chaves, aqui raiz de dois. Dividir pela dimensão inteira ou pela raiz da soma de dimensões muda a magnitude dos logits de atenção. A soma dos valores de K não é a dimensão e não define a escala da arquitetura.",
+        "references": [
+          {
+            "title": "Attention Is All You Need — artigo original",
+            "url": "https://arxiv.org/abs/1706.03762"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "8149df1e045471955bc5fc2f2e4ebe1ced588cc33bbd60c6b7bcb59c9ab59504"
+    },
+    {
+      "id": "AI901-314",
+      "before": {
+        "id": "AI901-314",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "attention",
+          "weighted-values"
+        ],
+        "prompt": "Uma cabeça de atenção já calculou pesos normalizados. Complete a combinação dos vetores de valor em cada dimensão, sem escolher apenas o maior peso.",
+        "code": "pesos = [0.25, 0.75]\nvalores = [[4.0, 0.0], [0.0, 8.0]]\nsaida = [sum({{a}} for w, v in zip(pesos, valores))\n         for j in range(2)]",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "v[j]"
+              },
+              {
+                "id": "b",
+                "text": "w + v[j]"
+              },
+              {
+                "id": "c",
+                "text": "(w * v[j]) / len(valores)"
+              },
+              {
+                "id": "d",
+                "text": "w * v[j]"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "d"
+        },
+        "explanation": "A saída é uma soma ponderada dos valores por dimensão e resulta em [1,6]. Ignorar w soma os vetores sem atenção; somá-lo à componente mistura grandezas, e multiplicar pelo índice ignora os valores. A distribuição de atenção combina conteúdo, não apenas posições.",
+        "references": [
+          {
+            "title": "Attention Is All You Need — artigo original",
+            "url": "https://arxiv.org/abs/1706.03762"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "2be9732dfee549f443c857e481f795d35f3bc01687f1008e253bbf8c26776044"
+    },
+    {
+      "id": "AI901-317",
+      "before": {
+        "id": "AI901-317",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "numerical-stability",
+          "softmax"
+        ],
+        "prompt": "Para evitar overflow no softmax, complete a transformação aplicada a cada logit antes de exp. exp já foi importada.",
+        "code": "logits = [1000.0, 1001.0, 999.0]\nmaximo = max(logits)\nexponenciais = [exp({{a}}) for x in logits]\nprobs = [v / sum(exponenciais) for v in exponenciais]",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "x - maximo"
+              },
+              {
+                "id": "b",
+                "text": "x + maximo"
+              },
+              {
+                "id": "c",
+                "text": "maximo - x"
+              },
+              {
+                "id": "d",
+                "text": "x / maximo"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "a"
+        },
+        "explanation": "Subtrair o mesmo máximo de todos os logits mantém as diferenças relativas e a distribuição softmax, enquanto evita exponenciais enormes. Somar ou multiplicar amplia o risco de overflow. Inverter a subtração favoreceria logits originalmente menores, alterando a previsão.",
+        "references": [
+          {
+            "title": "Attention Is All You Need — artigo original",
+            "url": "https://arxiv.org/abs/1706.03762"
+          },
+          {
+            "title": "Fundamentos de deep learning",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/8-deep-learning"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "8fad73922af1aac63af447299bb7bf74a456fc4bf298edbf5998d9a682a9e8dc"
+    },
+    {
+      "id": "AI901-322",
+      "before": {
+        "id": "AI901-322",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "precision",
+          "classification"
+        ],
+        "prompt": "Complete o cálculo da precisão para a classe positiva, usando as contagens da matriz de confusão. O denominador é maior que zero.",
+        "code": "tp, fp, fn, tn = 30, 10, 20, 140\nprecisao = tp / {{a}}\nprint(precisao)",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "(tp + fn)"
+              },
+              {
+                "id": "b",
+                "text": "(tp + tn)"
+              },
+              {
+                "id": "c",
+                "text": "(tp + fp + fn + tn)"
+              },
+              {
+                "id": "d",
+                "text": "(tp + fp)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "d"
+        },
+        "explanation": "Precisão mede a fração de previsões positivas que estavam certas: 30/40=0,75. TP+FN é o denominador de recall; o total de exemplos serviria a outra métrica. TN não pertence ao conjunto de previsões positivas e não entra nesse denominador.",
+        "references": [
+          {
+            "title": "Classificação binária e métricas",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/5-binary-classification"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "b31ef32e25fa1588c4667de741f2b0c0810f4814bebad6b079b3e46a0b4330ba"
+    },
+    {
+      "id": "AI901-324",
+      "before": {
+        "id": "AI901-324",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "mae",
+          "regression"
+        ],
+        "prompt": "A perda MAE mede média dos erros absolutos. Complete a agregação para pares de valores reais e previstos.",
+        "code": "real = [10.0, 20.0, 30.0]\nprevisto = [13.0, 16.0, 32.0]\nmae = sum({{a}} for y, p in zip(real, previsto)) / len(real)",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "abs(y + p)"
+              },
+              {
+                "id": "b",
+                "text": "abs(y - p)"
+              },
+              {
+                "id": "c",
+                "text": "y - p"
+              },
+              {
+                "id": "d",
+                "text": "(y - p) ** 2"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "b"
+        },
+        "explanation": "O valor absoluto evita que erros positivos e negativos se cancelem e produz MAE de 3. Elevar ao quadrado calcularia MSE após a média. Somar real e previsto não representa erro de previsão. A escolha da métrica determina como erros de diferentes magnitudes pesam.",
+        "references": [
+          {
+            "title": "Classificação binária e métricas",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/5-binary-classification"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "8241299f52c45b0e1908a971d1594103ca5d8ab01e75876be095e496db253a8d"
+    },
+    {
+      "id": "AI901-325",
+      "before": {
+        "id": "AI901-325",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "embeddings",
+          "padding-mask"
+        ],
+        "prompt": "Para pooling mascarado de embeddings, tokens de padding têm máscara zero. Complete a média somente sobre posições válidas; há ao menos uma.",
+        "code": "valores = [2.0, 4.0, 99.0, 99.0]\nmascara = [1, 1, 0, 0]\nmedia = sum(v*m for v, m in zip(valores, mascara)) / {{a}}",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "sum(mascara)"
+              },
+              {
+                "id": "b",
+                "text": "len(valores)"
+              },
+              {
+                "id": "c",
+                "text": "len(mascara)"
+              },
+              {
+                "id": "d",
+                "text": "sum(valores)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "a"
+        },
+        "explanation": "Somar a máscara conta as duas posições válidas, resultando em média 3. Dividir pelo comprimento total dilui a representação com padding mesmo após zerar seu numerador. O máximo da máscara e a soma dos embeddings não contam tokens válidos.",
+        "references": [
+          {
+            "title": "Configurar vetorização compatível",
+            "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-how-to-configure-vectorizer"
+          },
+          {
+            "title": "Attention Is All You Need — artigo original",
+            "url": "https://arxiv.org/abs/1706.03762"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "a2f50e73afb063c7a8e91e72b634561f139a52c681ac0f970a0fef98d255d386"
+    },
+    {
+      "id": "AI901-332",
+      "before": {
+        "id": "AI901-332",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "distillation",
+          "soft-targets"
+        ],
+        "prompt": "A destilação usa probabilidades do professor como alvos suaves. log já está importado e as probabilidades do aluno são estritamente positivas. Complete a entropia cruzada.",
+        "code": "professor = [0.7, 0.2, 0.1]\naluno = [0.6, 0.3, 0.1]\nperda = -sum({{a}} for t, s in zip(professor, aluno))",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "s * log(t)"
+              },
+              {
+                "id": "b",
+                "text": "t * log(s)"
+              },
+              {
+                "id": "c",
+                "text": "(t-s)**2"
+              },
+              {
+                "id": "d",
+                "text": "t * log(t)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "b"
+        },
+        "explanation": "A entropia cruzada dos alvos suaves pondera o log da probabilidade do aluno pela probabilidade do professor. Trocar os papéis define outra função; produto direto e distância absoluta não são a perda pedida. Os alvos carregam distribuição entre classes, não só um rótulo vencedor.",
+        "references": [
+          {
+            "title": "Destilação de modelos",
+            "url": "https://learn.microsoft.com/en-us/samples/azure/azureml-examples/azureml-model-distillation/"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "6e3ad05bfe2a97e31378c9d45115c8a7c051c69c7875c1e84b4e57dd2eaa56cd"
+    },
+    {
+      "id": "AI901-338",
+      "before": {
+        "id": "AI901-338",
+        "domainId": "concepts",
+        "topicId": "workloads",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "anomaly-detection",
+          "z-score"
+        ],
+        "prompt": "A detecção de anomalias usa desvio absoluto da média em unidades de desvio padrão. sigma é positiva. Complete a condição para anomalia acima de três desvios em qualquer direção.",
+        "code": "media, sigma = 100.0, 10.0\nvalor = 55.0\nanomalia = {{a}}",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "(valor - media) / sigma > 3"
+              },
+              {
+                "id": "b",
+                "text": "abs(valor) / sigma > 3"
+              },
+              {
+                "id": "c",
+                "text": "abs(valor - media) > 3"
+              },
+              {
+                "id": "d",
+                "text": "abs(valor - media) / sigma > 3"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "d"
+        },
+        "explanation": "O valor absoluto cobre desvios para cima e para baixo; 55 está a 4,5 desvios da média. Sem abs, quedas extremas não seriam detectadas. Dividir o valor bruto ou somar três sem multiplicar pela escala não calcula o desvio padronizado definido.",
+        "references": [
+          {
+            "title": "Análise estatística de texto",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-language/3-statistical-techniques"
+          },
+          {
+            "title": "Modelos semânticos de linguagem",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-language/4-semantic-models"
+          },
+          {
+            "title": "Tipos de aprendizado de máquina",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/3-types-of-machine-learning"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "6b2b26f5c264da94687596ed78c9d23bf30bb82dc6c1a034d862f033b6ea3deb"
+    },
+    {
+      "id": "AI901-358",
+      "before": {
+        "id": "AI901-358",
+        "domainId": "foundry",
+        "topicId": "generative-agents",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "retrieval-evaluation",
+          "recall-at-k"
+        ],
+        "prompt": "O retriever encontrou 2 dos 5 documentos relevantes conhecidos, retornando 10 documentos. Complete recall@10, não precisão@10.",
+        "code": "relevantes_recuperados = 2\nrelevantes_totais = 5\nretornados = 10\nrecall_at_10 = relevantes_recuperados / {{a}}",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "retornados"
+              },
+              {
+                "id": "b",
+                "text": "(relevantes_totais + retornados)"
+              },
+              {
+                "id": "c",
+                "text": "(relevantes_totais - relevantes_recuperados)"
+              },
+              {
+                "id": "d",
+                "text": "relevantes_totais"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "d"
+        },
+        "explanation": "Recall divide relevantes recuperados pelo total relevante conhecido, produzindo 0,4. Dividir por dez mede precisão nesse conjunto, que seria 0,2. Avaliar só o número retornado não mostra cobertura das evidências necessárias para a resposta do gerador.",
+        "references": [
+          {
+            "title": "Avaliadores do Foundry",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/built-in-evaluators"
+          },
+          {
+            "title": "RAG e índices",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/retrieval-augmented-generation"
+          },
+          {
+            "title": "Engenharia de prompts",
+            "url": "https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/prompt-engineering"
+          },
+          {
+            "title": "Chamadas de função por agentes",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/function-calling"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "9de8d6bc05a46429410381783f5781225f873c3a2b8350de1f2852e3f030106e"
+    },
+    {
+      "id": "AI901-377",
+      "before": {
+        "id": "AI901-377",
+        "domainId": "foundry",
+        "topicId": "text-speech",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "speech-evaluation",
+          "critical-terms"
+        ],
+        "prompt": "Os tokens de áudio foram reconhecidos, mas o sistema precisa preservar termos médicos críticos. Calcule a taxa de erro nesses termos conforme a referência dada, sem diluí-la com palavras comuns.",
+        "code": "termos_criticos_referencia = 20\ntermos_criticos_errados = 4\npalavras_totais = 500\ntaxa_critica = termos_criticos_errados / {{a}}",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "termos_criticos_referencia"
+              },
+              {
+                "id": "b",
+                "text": "palavras_totais"
+              },
+              {
+                "id": "c",
+                "text": "(termos_criticos_referencia - termos_criticos_errados)"
+              },
+              {
+                "id": "d",
+                "text": "termos_criticos_errados"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "a"
+        },
+        "explanation": "A taxa específica usa os vinte termos críticos como denominador e vale 20%. Dividir por todas as palavras produziria 0,8% e esconderia a falha na informação de maior impacto. Essa métrica complementar não é a WER global e deve ser interpretada conforme sua definição operacional.",
+        "references": [
+          {
+            "title": "Fundamentos de reconhecimento de fala",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-ai-speech/3-speech-recognition"
+          },
+          {
+            "title": "Avaliadores do Foundry",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/concepts/built-in-evaluators"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "c4aacce77f6f8395c599c054422d1a5241e3cfbf0109ac626809244a24c69db7"
+    },
+    {
+      "id": "AI901-380",
+      "before": {
+        "id": "AI901-380",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "normalized-boxes",
+          "coordinates"
+        ],
+        "prompt": "Caixas usam coordenadas normalizadas de bordas contínuas: 0 e 1 correspondem às bordas 0 e largura, ou 0 e altura. Complete a conversão em pixels para a imagem não quadrada.",
+        "code": "largura, altura = 1280, 720\nx_norm, y_norm = 0.25, 0.5\nx_pixel = x_norm * {{a}}\ny_pixel = y_norm * {{b}}",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "altura"
+              },
+              {
+                "id": "b",
+                "text": "largura"
+              },
+              {
+                "id": "c",
+                "text": "(largura - 1)"
+              },
+              {
+                "id": "d",
+                "text": "(largura * altura)"
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "label": "Lacuna B",
+            "options": [
+              {
+                "id": "a",
+                "text": "altura"
+              },
+              {
+                "id": "b",
+                "text": "largura"
+              },
+              {
+                "id": "c",
+                "text": "(altura - 1)"
+              },
+              {
+                "id": "d",
+                "text": "(largura * altura)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "b",
+          "b": "a"
+        },
+        "explanation": "A coordenada horizontal escala pela largura e a vertical pela altura, produzindo 320 e 360. Trocar as dimensões distorce a localização e pode passar despercebido em imagens quadradas. Normalização de coordenadas não usa a escala de intensidade 255.",
+        "references": [
+          {
+            "title": "Tarefas de visão computacional",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/2-overview"
+          },
+          {
+            "title": "Redes neurais convolucionais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/4-computer-vision-models"
+          },
+          {
+            "title": "Vision transformers e modelos multimodais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/5-modern-vision-models"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "c3d820dd81d6ac18f77a67ff9629b0ef55b7c60f46e7e357b71dd76a100c4ad8"
+    },
+    {
+      "id": "AI901-414",
+      "before": {
+        "id": "AI901-414",
+        "domainId": "concepts",
+        "topicId": "responsible-ai",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Um conjunto de avaliação inclui casos com risco operacional baixo, médio ou alto. O protocolo define custo por erro de 1, 3 e 10, respectivamente, e pede custo médio por caso, incluindo acertos no denominador. Complete o cálculo. A lista não é vazia.",
+        "explanation": "O peso deve ser contabilizado somente quando há erro e dividido por todos os casos. Dividir pela soma dos pesos produz outra normalização; dividir apenas pelos erros mede severidade condicional ao erro. Contar acertos ou ignorar pesos responde a uma métrica diferente da solicitada.",
+        "conceptTags": [
+          "risk-weighting",
+          "evaluation",
+          "metrics"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "Discover Microsoft's responsible AI principles",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles"
+          }
+        ],
+        "code": "def custo_medio(casos):\n    pesos = {'baixo': 1, 'medio': 3, 'alto': 10}\n    custo = sum({{parcela}} for c in casos)\n    return custo / {{base}}",
+        "blanks": [
+          {
+            "id": "parcela",
+            "label": "Custo de cada caso",
+            "options": [
+              {
+                "id": "a",
+                "text": "pesos[c[\"risco\"]] * (c[\"previsto\"] != c[\"real\"])"
+              },
+              {
+                "id": "b",
+                "text": "pesos[c[\"risco\"]] * (c[\"previsto\"] == c[\"real\"])"
+              },
+              {
+                "id": "c",
+                "text": "int(c[\"previsto\"] != c[\"real\"])"
+              }
+            ]
+          },
+          {
+            "id": "base",
+            "label": "Base da média",
+            "options": [
+              {
+                "id": "a",
+                "text": "max(1, sum(c[\"previsto\"] != c[\"real\"] for c in casos))"
+              },
+              {
+                "id": "b",
+                "text": "sum(pesos[c[\"risco\"]] for c in casos)"
+              },
+              {
+                "id": "c",
+                "text": "len(casos)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "parcela": "a",
+          "base": "c"
+        }
+      },
+      "afterSha256": "4aeca9961f56a393b8294fd158c7acc050b42e84df8dad84da7210fb9c3c74c4"
+    },
+    {
+      "id": "AI901-418",
+      "before": {
+        "id": "AI901-418",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "Uma cabeça de atenção atribui pesos [0,25; 0,75] a dois tokens. Seus vetores V são [2,0] e [0,4]. Qual saída, antes da projeção final, corresponde à operação descrita?",
+        "explanation": "A saída é 0,25×[2,0]+0,75×[0,4]=[0,5;3,0]. Pesos não são a representação final e não devem ser invertidos pela posição dos tokens. Concatenar valores não realiza essa soma ponderada; concatenação de cabeças é uma etapa diferente.",
+        "conceptTags": [
+          "attention",
+          "values",
+          "weighted-sum"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "Attention Is All You Need",
+            "url": "https://arxiv.org/abs/1706.03762"
+          }
+        ],
+        "options": [
+          {
+            "id": "a",
+            "text": "[2,0; 4,0], concatenando as componentes não nulas dos valores."
+          },
+          {
+            "id": "b",
+            "text": "[0,5; 3,0], pela combinação ponderada dos vetores de valor."
+          },
+          {
+            "id": "c",
+            "text": "[0,25; 0,75], preservando os pesos como representação resultante."
+          },
+          {
+            "id": "d",
+            "text": "[1,5; 1,0], aplicando o maior peso ao primeiro vetor da entrada."
+          }
+        ],
+        "answer": [
+          "b"
+        ]
+      },
+      "afterSha256": "f26eecbda401afb2775dd8a60d2656c3b6ccda20cae4604710815354bff5d761"
+    },
+    {
+      "id": "AI901-419",
+      "before": {
+        "id": "AI901-419",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "Uma convolução tem 3 canais de entrada, 8 de saída, kernel 3×3, grupos=1 e um bias por canal de saída. O stride muda de 1 para 2. O que acontece com o número de parâmetros treináveis?",
+        "explanation": "São 8×3×3×3=216 pesos, mais 8 biases: 224 parâmetros. Stride altera onde o filtro é aplicado e o tamanho da saída, não a forma dos pesos. O bias está incluído; não há filtros adicionais por posição pulada.",
+        "conceptTags": [
+          "cnn",
+          "parameters",
+          "stride"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "torch.nn.Conv2d — PyTorch 2.14",
+            "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Conv2d.html"
+          }
+        ],
+        "options": [
+          {
+            "id": "a",
+            "text": "Sobe para 440: posições puladas requerem um segundo conjunto de filtros."
+          },
+          {
+            "id": "b",
+            "text": "Permanece em 224: stride muda o percurso espacial, não os filtros."
+          },
+          {
+            "id": "c",
+            "text": "Permanece em 216: o bias compartilhado não é um parâmetro da camada."
+          },
+          {
+            "id": "d",
+            "text": "Cai para 112: o deslocamento duplicado divide a quantidade de filtros."
+          }
+        ],
+        "answer": [
+          "b"
+        ]
+      },
+      "afterSha256": "375153467cea769433376f0229f5da6df9d6f389c993bef798d8ab4421f16ee8"
+    },
+    {
+      "id": "AI901-427",
+      "before": {
+        "id": "AI901-427",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Para vetores não nulos de mesmo tamanho, implemente similaridade de cosseno em vez de produto escalar. O helper didático recebe listas numéricas e não aplica limiares.",
+        "explanation": "Cosseno divide pelo produto das duas normas, preservando a comparação diante da mudança de escala positiva de qualquer vetor. Somar normas não produz essa propriedade. Repetir a norma de a só coincide com a fórmula em situações particulares, não no contrato geral.",
+        "conceptTags": [
+          "embeddings",
+          "cosine",
+          "normalization"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "Vector search overview",
+            "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-overview"
+          }
+        ],
+        "code": "from math import sqrt\ndef similaridade(a, b):\n    produto = sum(x*y for x, y in zip(a, b))\n    norma_a = sqrt(sum(x*x for x in a))\n    norma_b = sqrt(sum(y*y for y in b))\n    return produto / {{divisor}}",
+        "blanks": [
+          {
+            "id": "divisor",
+            "label": "Normalização",
+            "options": [
+              {
+                "id": "a",
+                "text": "(norma_a * norma_a)"
+              },
+              {
+                "id": "b",
+                "text": "(norma_a + norma_b)"
+              },
+              {
+                "id": "c",
+                "text": "(norma_a * norma_b)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "divisor": "c"
+        }
+      },
+      "afterSha256": "adf3b32082aa2b4b33e07f7aa135c8b932e377a36744f99d6ab694456ee87d87"
+    },
+    {
+      "id": "AI901-428",
+      "before": {
+        "id": "AI901-428",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "A softmax converte escores finitos em probabilidades. Subtrair o máximo preserva as probabilidades e evita overflow nos exemplos. Complete a transformação e a normalização; a entrada não é vazia.",
+        "explanation": "Subtrair uma constante comum conserva as razões da softmax; usar o máximo mantém expoentes não positivos. Inverter a diferença favorece escores menores e somar o máximo pode causar overflow. A normalização usa a soma dos exponenciais, não o maior termo ou a quantidade de itens.",
+        "conceptTags": [
+          "softmax",
+          "numerical-stability",
+          "attention"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "Attention Is All You Need",
+            "url": "https://arxiv.org/abs/1706.03762"
+          }
+        ],
+        "code": "from math import exp\ndef probabilidades(escores):\n    maior = max(escores)\n    termos = [exp({{expoente}}) for s in escores]\n    total = {{total}}\n    return [t / total for t in termos]",
+        "blanks": [
+          {
+            "id": "expoente",
+            "label": "Transformação",
+            "options": [
+              {
+                "id": "a",
+                "text": "maior - s"
+              },
+              {
+                "id": "b",
+                "text": "s - maior"
+              },
+              {
+                "id": "c",
+                "text": "s + maior"
+              }
+            ]
+          },
+          {
+            "id": "total",
+            "label": "Normalizador",
+            "options": [
+              {
+                "id": "a",
+                "text": "max(termos)"
+              },
+              {
+                "id": "b",
+                "text": "sum(termos)"
+              },
+              {
+                "id": "c",
+                "text": "len(termos)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "expoente": "b",
+          "total": "b"
+        }
+      },
+      "afterSha256": "cf54414d7bcf430a0a56674e62328e9f2a9169d0291b2b06a6a5ba20e40e46a0"
+    },
+    {
+      "id": "AI901-457",
+      "before": {
+        "id": "AI901-457",
+        "domainId": "foundry",
+        "topicId": "generative-agents",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Uma fusão didática usa RRF: cada ranking contribui 1/(k+posição), com posições iniciadas em 1 e k positivo. Não há ID repetido dentro de um ranking. Some as contribuições quando um documento aparecer em listas diferentes.",
+        "explanation": "O contrato fixa posições a partir de 1 e soma recíprocos de ranks. Deslocar a posição altera a fórmula; atribuir uma nova contribuição apaga resultados anteriores. Usar o máximo não recompensa a presença em mais de uma lista como a soma definida.",
+        "conceptTags": [
+          "hybrid-search",
+          "rrf",
+          "ranking"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "Vector search overview",
+            "url": "https://learn.microsoft.com/en-us/azure/search/vector-search-overview"
+          }
+        ],
+        "code": "def fundir(rankings, k):\n    scores = {}\n    for ranking in rankings:\n        for pos, doc in enumerate(ranking, start=1):\n            contribuicao = {{valor}}\n            scores[doc] = {{acumulo}}\n    return scores",
+        "blanks": [
+          {
+            "id": "valor",
+            "label": "Contribuição por ranking",
+            "options": [
+              {
+                "id": "a",
+                "text": "1 / (k + pos)"
+              },
+              {
+                "id": "b",
+                "text": "pos / (k + 1)"
+              },
+              {
+                "id": "c",
+                "text": "1 / (k + pos - 1)"
+              }
+            ]
+          },
+          {
+            "id": "acumulo",
+            "label": "Combinação entre listas",
+            "options": [
+              {
+                "id": "a",
+                "text": "scores.get(doc, 0) + contribuicao"
+              },
+              {
+                "id": "b",
+                "text": "contribuicao"
+              },
+              {
+                "id": "c",
+                "text": "max(scores.get(doc, 0), contribuicao)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "valor": "a",
+          "acumulo": "a"
+        }
+      },
+      "afterSha256": "87ff82fe9ad66a4dcfc0ec866d0723b7b7a4d6700357c88cba208454ffb1d53a"
+    },
+    {
+      "id": "AI901-470",
+      "before": {
+        "id": "AI901-470",
+        "domainId": "foundry",
+        "topicId": "text-speech",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Neste exercício, WER é a distância de edição entre listas de palavras, dividida pelo número de palavras da referência. Inserção, exclusão e substituição custam 1. A comparação é sensível a maiúsculas; referência vazia retorna None.",
+        "explanation": "Palavras iguais custam zero e diferentes custam uma substituição. O denominador definido é a referência, de modo que muitas inserções podem produzir WER maior que 1. Dividir pela hipótese ou pelo maior comprimento muda a métrica. Referência vazia é tratada antes da divisão.",
+        "conceptTags": [
+          "wer",
+          "edit-distance",
+          "speech-evaluation"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "Quickstart: Recognize and convert speech to text",
+            "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text"
+          }
+        ],
+        "code": "def wer(referencia, hipotese):\n    a, b = referencia.split(), hipotese.split()\n    if not a:\n        return None\n    anterior = list(range(len(b) + 1))\n    for i, x in enumerate(a, start=1):\n        atual = [i]\n        for j, y in enumerate(b, start=1):\n            troca = anterior[j-1] + {{custo}}\n            atual.append(min(anterior[j] + 1, atual[j-1] + 1, troca))\n        anterior = atual\n    return anterior[-1] / {{divisor}}",
+        "blanks": [
+          {
+            "id": "custo",
+            "label": "Custo de substituição",
+            "options": [
+              {
+                "id": "a",
+                "text": "1"
+              },
+              {
+                "id": "b",
+                "text": "int(x != y)"
+              },
+              {
+                "id": "c",
+                "text": "int(x == y)"
+              }
+            ]
+          },
+          {
+            "id": "divisor",
+            "label": "Denominador da taxa",
+            "options": [
+              {
+                "id": "a",
+                "text": "len(a)"
+              },
+              {
+                "id": "b",
+                "text": "max(1, len(b))"
+              },
+              {
+                "id": "c",
+                "text": "max(len(a), len(b))"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "custo": "b",
+          "divisor": "a"
+        }
+      },
+      "afterSha256": "c832a4fa391f93cc1f974c460bda9b603ffbf07e65eb757a7b393d6b6f0fcadd"
+    },
+    {
+      "id": "AI901-483",
+      "before": {
+        "id": "AI901-483",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Calcule IoU entre retângulos alinhados aos eixos no formato (x1,y1,x2,y2), com coordenadas ordenadas e áreas positivas. Caixas sem interseção devem dar zero. Complete a área de interseção e a união.",
+        "explanation": "A interseção é produto dos comprimentos sobrepostos. A união soma as áreas e desconta a interseção contada duas vezes. Somar comprimentos não mede área; somar áreas sem desconto subestima IoU, e usar apenas a maior área falha em caixas parcialmente sobrepostas.",
+        "conceptTags": [
+          "iou",
+          "geometry",
+          "detection"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "How to use vision-enabled chat models",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision"
+          }
+        ],
+        "code": "def iou(a, b):\n    largura = max(0, min(a[2], b[2]) - max(a[0], b[0]))\n    altura = max(0, min(a[3], b[3]) - max(a[1], b[1]))\n    inter = {{intersecao}}\n    area_a = (a[2]-a[0]) * (a[3]-a[1])\n    area_b = (b[2]-b[0]) * (b[3]-b[1])\n    return inter / {{uniao}}",
+        "blanks": [
+          {
+            "id": "intersecao",
+            "label": "Área comum",
+            "options": [
+              {
+                "id": "a",
+                "text": "largura + altura"
+              },
+              {
+                "id": "b",
+                "text": "max(largura, altura)"
+              },
+              {
+                "id": "c",
+                "text": "largura * altura"
+              }
+            ]
+          },
+          {
+            "id": "uniao",
+            "label": "Área da união",
+            "options": [
+              {
+                "id": "a",
+                "text": "(area_a + area_b)"
+              },
+              {
+                "id": "b",
+                "text": "(area_a + area_b - inter)"
+              },
+              {
+                "id": "c",
+                "text": "max(area_a, area_b)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "intersecao": "c",
+          "uniao": "b"
+        }
+      },
+      "afterSha256": "d294533ab1c1a469d81894f365c282970de0ad9258698641627a800cfd4d233a"
+    },
+    {
+      "id": "AI901-484",
+      "before": {
+        "id": "AI901-484",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Uma augmentação espelha horizontalmente uma imagem. Caixas são (x,y,w,h) com valores normalizados, origem no canto superior esquerdo e sem ultrapassar a imagem. Complete a nova coordenada x, preservando y, largura e altura.",
+        "explanation": "O novo lado esquerdo fica em 1 menos o lado direito original, isto é, 1−(x+w). Usar 1−x transforma o lado esquerdo em lado direito sem compensar a largura. Somar largura encontra apenas o limite original da caixa, não sua posição espelhada.",
+        "conceptTags": [
+          "augmentation",
+          "horizontal-flip",
+          "coordinates"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "torch.nn.Conv2d — PyTorch 2.14",
+            "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Conv2d.html"
+          }
+        ],
+        "code": "def espelhar(caixas):\n    saida = []\n    for x, y, w, h in caixas:\n        novo_x = {{coordenada}}\n        saida.append((novo_x, y, w, h))\n    return saida",
+        "blanks": [
+          {
+            "id": "coordenada",
+            "label": "Posição após espelhamento",
+            "options": [
+              {
+                "id": "a",
+                "text": "x + w"
+              },
+              {
+                "id": "b",
+                "text": "1 - x"
+              },
+              {
+                "id": "c",
+                "text": "1 - x - w"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "coordenada": "c"
+        }
+      },
+      "afterSha256": "2434e4e2d9e7088df79835c87fa21daa07b5f5641ace8f85e8a3fa914e4c592d"
+    },
+    {
+      "id": "AI901-485",
+      "before": {
+        "id": "AI901-485",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Um ViT didático usa patches não sobrepostos p×p e acrescenta um único token de classificação. Altura e largura são divisíveis por p. Calcule posições da matriz de atenção de uma cabeça, incluindo esse token, sem contar batch ou camadas.",
+        "explanation": "O token extra participa da sequência, resultando em N=patches+1. Atenção completa por cabeça produz uma matriz N×N. Ignorar o token, multiplicar pela dimensão espacial do patch ou contar apenas dois vetores não corresponde às posições de scores solicitadas.",
+        "conceptTags": [
+          "vit",
+          "patches",
+          "attention-complexity"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+            "url": "https://arxiv.org/abs/2010.11929"
+          },
+          {
+            "title": "Attention Is All You Need",
+            "url": "https://arxiv.org/abs/1706.03762"
+          }
+        ],
+        "code": "def posicoes(altura, largura, p):\n    patches = (altura // p) * (largura // p)\n    tokens = {{sequencia}}\n    return {{atencao}}",
+        "blanks": [
+          {
+            "id": "sequencia",
+            "label": "Tamanho da sequência",
+            "options": [
+              {
+                "id": "a",
+                "text": "patches * p"
+              },
+              {
+                "id": "b",
+                "text": "patches + 1"
+              },
+              {
+                "id": "c",
+                "text": "patches"
+              }
+            ]
+          },
+          {
+            "id": "atencao",
+            "label": "Posições de atenção",
+            "options": [
+              {
+                "id": "a",
+                "text": "tokens * patches"
+              },
+              {
+                "id": "b",
+                "text": "2 * tokens"
+              },
+              {
+                "id": "c",
+                "text": "tokens * tokens"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "sequencia": "b",
+          "atencao": "c"
+        }
+      },
+      "afterSha256": "a2e3f80e5b1537b3d0060a45d3a4aa117efbf134a2a26f6726723a2da2c3887c"
+    },
+    {
+      "id": "AI901-520",
+      "before": {
+        "id": "AI901-520",
+        "domainId": "concepts",
+        "topicId": "responsible-ai",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Um relatório pede média macro das taxas de erro de grupos com ao menos um caso. Cada grupo tem erros e total; grupos vazios não entram. Complete a agregação; retorne None se nenhum grupo for elegível.",
+        "explanation": "Média macro dá o mesmo peso a cada taxa elegível. Dividir erros totais por casos totais produz média ponderada por volume, e máximo mede o pior grupo. Grupos vazios não devem ser tratados como taxa zero.",
+        "conceptTags": [
+          "macro-average",
+          "groups",
+          "metrics"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "Discover Microsoft's responsible AI principles",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles"
+          }
+        ],
+        "code": "def macro(grupos):\n    taxas = [g['erros']/g['total'] for g in grupos if g['total'] > 0]\n    return {{valor}}",
+        "blanks": [
+          {
+            "id": "valor",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "sum(g[\"erros\"] for g in grupos)/sum(g[\"total\"] for g in grupos) if taxas else None"
+              },
+              {
+                "id": "b",
+                "text": "sum(taxas)/len(taxas) if taxas else None"
+              },
+              {
+                "id": "c",
+                "text": "max(taxas) if taxas else None"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "valor": "b"
+        }
+      },
+      "afterSha256": "b5cd73077e0a445394a397b0d566410945aa536d17cba5c3687ad71a8f461c00"
+    },
+    {
+      "id": "AI901-549",
+      "before": {
+        "id": "AI901-549",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Calcule o comprimento espacial de uma convolução 1D pela fórmula floor((entrada+2*padding-dilatacao*(kernel-1)-1)/stride)+1. Parâmetros são inteiros válidos e a saída é positiva.",
+        "explanation": "Dilatação espaça posições do kernel: a extensão efetiva é d×(k−1)+1. Multiplicar d×k ou somar os parâmetros muda essa geometria. O restante da expressão aplica padding, divisão inteira pelo stride e a posição inicial.",
+        "conceptTags": [
+          "convolution",
+          "dilation",
+          "shape"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "torch.nn.Conv2d — PyTorch 2.14",
+            "url": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Conv2d.html"
+          }
+        ],
+        "code": "def saida_conv(entrada, kernel, padding, stride, dilatacao):\n    efetivo = {{efetivo}}\n    return (entrada + 2*padding - efetivo) // stride + 1",
+        "blanks": [
+          {
+            "id": "efetivo",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "kernel + dilatacao"
+              },
+              {
+                "id": "b",
+                "text": "dilatacao * (kernel - 1) + 1"
+              },
+              {
+                "id": "c",
+                "text": "dilatacao * kernel"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "efetivo": "b"
+        }
+      },
+      "afterSha256": "aefff6cf17c701dbd468c09a633edc138054a58b79a04c5fd60dac9c9ef947f5"
+    },
+    {
+      "id": "AI901-550",
+      "before": {
+        "id": "AI901-550",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Os pesos de atenção já foram normalizados e somam 1. Cada valor é um vetor de duas componentes. Complete a saída ponderada, mantendo as duas dimensões.",
+        "explanation": "Cada token contribui seu vetor de valor multiplicado pelo próprio peso. Usar o índice de componente para escolher peso mistura eixos. Média simples ignora a distribuição de atenção e só coincide quando pesos e exemplos particulares mascaram a diferença.",
+        "conceptTags": [
+          "attention",
+          "weighted-values"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "Attention Is All You Need",
+            "url": "https://arxiv.org/abs/1706.03762"
+          }
+        ],
+        "code": "def combinar(pesos, valores):\n    return [sum({{termo}} for i in range(len(pesos))) for j in range(2)]",
+        "blanks": [
+          {
+            "id": "termo",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "pesos[i] * valores[i][j]"
+              },
+              {
+                "id": "b",
+                "text": "pesos[j] * valores[i][j]"
+              },
+              {
+                "id": "c",
+                "text": "valores[i][j] / len(pesos)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "termo": "a"
+        }
+      },
+      "afterSha256": "9be9ccdcd71e72e0472394f8d983cbfd31b0ebe929227b19c8e3d16e56f4270c"
+    },
+    {
+      "id": "AI901-551",
+      "before": {
+        "id": "AI901-551",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Perdas e mascara têm o mesmo tamanho. mascara=1 indica token supervisionado; 0 indica padding. Retorne média apenas dos tokens supervisionados, ou None se não houver nenhum.",
+        "explanation": "A média deve usar numerador e denominador do mesmo conjunto supervisionado. Dividir por todas as posições dilui a perda com padding; somar todas inclui valores que o contrato manda ignorar. None diferencia ausência de supervisão de perda nula.",
+        "conceptTags": [
+          "loss",
+          "masking",
+          "padding"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "Attention Is All You Need",
+            "url": "https://arxiv.org/abs/1706.03762"
+          }
+        ],
+        "code": "def perda_media(perdas, mascara):\n    ativos = [p for p, m in zip(perdas, mascara) if m == 1]\n    return {{media}}",
+        "blanks": [
+          {
+            "id": "media",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "sum(perdas)/len(perdas) if ativos else None"
+              },
+              {
+                "id": "b",
+                "text": "sum(ativos)/len(perdas) if ativos else None"
+              },
+              {
+                "id": "c",
+                "text": "sum(ativos)/len(ativos) if ativos else None"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "media": "c"
+        }
+      },
+      "afterSha256": "a5036acb2ec3599c4d90a50cd59c78aabd57878a899a6ac06abfffab0ec2b531"
+    },
+    {
+      "id": "AI901-554",
+      "before": {
+        "id": "AI901-554",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "A amostragem didática mantém o menor prefixo de probabilidades já ordenadas cuja soma seja pelo menos p. A lista soma 1 e 0 < p <= 1. Complete a parada após incluir cada item.",
+        "explanation": "A decisão depende da massa acumulada, incluindo igualdade. Usar apenas a probabilidade atual não implementa o prefixo cumulativo. Parar somente acima do limiar inclui um token a mais quando a soma coincide exatamente com p.",
+        "conceptTags": [
+          "top-p",
+          "sampling",
+          "boundaries"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "AI concepts for developers and technology professionals",
+            "url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/"
+          }
+        ],
+        "code": "def nucleo(probabilidades, p):\n    acumulado = 0\n    indices = []\n    for i, valor in enumerate(probabilidades):\n        indices.append(i)\n        acumulado += valor\n        if {{parar}}:\n            break\n    return indices",
+        "blanks": [
+          {
+            "id": "parar",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "valor >= p"
+              },
+              {
+                "id": "b",
+                "text": "acumulado >= p"
+              },
+              {
+                "id": "c",
+                "text": "acumulado > p"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "parar": "b"
+        }
+      },
+      "afterSha256": "ec3df289a967e8187af4953b15dbd3c9c295f44d5d429cf5df1da440ed80d4b3"
+    },
+    {
+      "id": "AI901-555",
+      "before": {
+        "id": "AI901-555",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "case",
+        "difficulty": "hard",
+        "prompt": "Quantos tokens restam para trechos recuperados, segundo os números do caso?",
+        "explanation": "O orçamento restante é 8.000−2.300−1.200=4.500. Entrada e saída compartilham o limite descrito. Ignorar uma parcela ou descontá-la duas vezes não representa o contrato, independentemente do número de palavras dos trechos.",
+        "conceptTags": [
+          "context-budget",
+          "arithmetic"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "AI concepts for developers and technology professionals",
+            "url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/"
+          }
+        ],
+        "options": [
+          {
+            "id": "a",
+            "text": "4.500 tokens, descontando entrada fixa e reserva de saída."
+          },
+          {
+            "id": "b",
+            "text": "5.700 tokens, descontando somente instruções e histórico."
+          },
+          {
+            "id": "c",
+            "text": "6.800 tokens, descontando somente a reserva de saída."
+          },
+          {
+            "id": "d",
+            "text": "3.300 tokens, descontando a reserva duas vezes."
+          }
+        ],
+        "answer": [
+          "a"
+        ],
+        "context": "Uma equipe compara configurações de um modelo de linguagem para um assistente interno. O limite total de contexto do contrato didático é de 8.000 tokens, incluindo entrada e reserva de saída. Instruções e histórico usam 2.300 tokens; a reserva acordada é 1.200. A recuperação produz trechos de comprimentos variados, e palavras não são usadas como unidade exata de contagem. Os testes registram latência até o primeiro token e latência total, além da taxa de conclusão de respostas dentro do limite. A configuração A inicia cedo, mas produz respostas longas; B inicia mais tarde e termina antes na maioria dos casos. A aplicação exibe streaming ao usuário e também precisa registrar o texto final. Os especialistas avaliam correção e completude com exemplos fixos. Uma alteração de tokenizador foi proposta sem reconstrução dos embeddings do próprio modelo. Separadamente, a busca vetorial externa pode mudar de encoder, o que exige compatibilidade entre documentos e consultas. A direção quer decisões apoiadas no contrato e nas medidas reais, sem tratar tamanho do modelo, fluência ou menor tempo inicial como substitutos da avaliação de qualidade e tempo total."
+      },
+      "afterSha256": "9e1e145b90c21103732a1142063217ea73e1cb487c5cd330c91a722126d29399"
+    },
+    {
+      "id": "AI901-579",
+      "before": {
+        "id": "AI901-579",
+        "domainId": "concepts",
+        "topicId": "workloads",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "O custo de uma configuração é 5*FN + FP. Cada configuração tem id, fn e fp; escolha menor custo e, em empate, menor id lexicográfico. Há pelo menos uma configuração.",
+        "explanation": "O custo coloca peso maior em falsos negativos e o desempate usa o identificador declarado. Inverter pesos otimiza outra perda. Desempatar por erro altera a regra mesmo quando as configurações têm o mesmo custo total.",
+        "conceptTags": [
+          "cost-sensitive",
+          "model-selection"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "AI concepts for developers and technology professionals",
+            "url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/"
+          }
+        ],
+        "code": "def escolher(configs):\n    melhor = min(configs, key=lambda c: {{chave}})\n    return melhor['id']",
+        "blanks": [
+          {
+            "id": "chave",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "(c[\"fn\"] + 5*c[\"fp\"], c[\"id\"])"
+              },
+              {
+                "id": "b",
+                "text": "(5*c[\"fn\"] + c[\"fp\"], -c[\"fn\"])"
+              },
+              {
+                "id": "c",
+                "text": "(5*c[\"fn\"] + c[\"fp\"], c[\"id\"])"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "chave": "c"
+        }
+      },
+      "afterSha256": "4b16772c5af4282e65171f2897b8af2d301c8efcb7fad8a9a39e98586b945cf9"
+    },
+    {
+      "id": "AI901-580",
+      "before": {
+        "id": "AI901-580",
+        "domainId": "concepts",
+        "topicId": "workloads",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Um agrupamento didático atribui um ponto 2D ao centro de menor distância euclidiana quadrática. Em empate, vale o primeiro centro da lista. Complete a distância, sem usar apenas um eixo. A lista de centros não é vazia.",
+        "explanation": "A distância quadrática soma quadrados por componente. Ignorar um eixo perde informação; somar diferenças antes do valor absoluto permite cancelamento entre direções. A comparação não precisa da raiz, pois ela preserva a ordem das distâncias não negativas.",
+        "conceptTags": [
+          "clustering",
+          "distance",
+          "features"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "AI concepts for developers and technology professionals",
+            "url": "https://learn.microsoft.com/en-us/training/paths/ai-concepts/"
+          }
+        ],
+        "code": "def grupo(ponto, centros):\n    distancias = [{{distancia}} for c in centros]\n    return min(range(len(centros)), key=lambda i: distancias[i])",
+        "blanks": [
+          {
+            "id": "distancia",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "abs((ponto[0]-c[0]) + (ponto[1]-c[1]))"
+              },
+              {
+                "id": "b",
+                "text": "(ponto[0]-c[0])**2"
+              },
+              {
+                "id": "c",
+                "text": "(ponto[0]-c[0])**2 + (ponto[1]-c[1])**2"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "distancia": "c"
+        }
+      },
+      "afterSha256": "877ba8a87e10ebb8beefd03a65cbb0f33b9235565f9ce731f0f62072727f7f54"
+    },
+    {
+      "id": "AI901-620",
+      "before": {
+        "id": "AI901-620",
+        "domainId": "foundry",
+        "topicId": "text-speech",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "Uma referência tem quatro palavras. O alinhamento registra uma substituição, uma exclusão e três inserções. Pela WER=(S+D+I)/N da referência, qual taxa resulta?",
+        "explanation": "A definição fornecida produz (1+1+3)/4=1,25. Inserções entram no custo, então WER pode exceder 1. Inverter a divisão ou desconsiderar inserções calcula outra medida, não a taxa explicitada no contrato.",
+        "conceptTags": [
+          "wer",
+          "alignment",
+          "insertions"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "Quickstart: Recognize and convert speech to text",
+            "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text"
+          }
+        ],
+        "options": [
+          {
+            "id": "a",
+            "text": "1,25, porque há cinco operações divididas por quatro palavras."
+          },
+          {
+            "id": "b",
+            "text": "0,50, porque inserções não entram no numerador dessa definição."
+          },
+          {
+            "id": "c",
+            "text": "1,00, porque a WER é limitada pela quantidade de palavras originais."
+          },
+          {
+            "id": "d",
+            "text": "0,80, porque as quatro palavras são divididas pelas cinco operações."
+          }
+        ],
+        "answer": [
+          "a"
+        ]
+      },
+      "afterSha256": "01bbb98d8e8a1300c2272c2d4484b181fdbfda98643568d3ffe393062177aaa1"
+    },
+    {
+      "id": "AI901-638",
+      "before": {
+        "id": "AI901-638",
+        "domainId": "foundry",
+        "topicId": "text-speech",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Cada transcrição avaliada tem erros de edição e quantidade de palavras da referência. A WER micro é soma dos erros dividida pela soma de palavras; entradas de referência zero já foram excluídas.",
+        "explanation": "A definição micro agrega operações e palavras antes de dividir. Média das taxas por gravação dá igual peso a trechos de comprimentos diferentes. Dividir erros pelo número de gravações produz outra unidade e não uma taxa por palavra.",
+        "conceptTags": [
+          "wer",
+          "micro-average",
+          "aggregation"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "Quickstart: Recognize and convert speech to text",
+            "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text"
+          }
+        ],
+        "code": "def wer_micro(itens):\n    palavras = sum(i['palavras'] for i in itens)\n    return {{taxa}} if palavras else None",
+        "blanks": [
+          {
+            "id": "taxa",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "sum(i[\"erros\"] for i in itens) / len(itens)"
+              },
+              {
+                "id": "b",
+                "text": "sum(i[\"erros\"]/i[\"palavras\"] for i in itens) / len(itens)"
+              },
+              {
+                "id": "c",
+                "text": "sum(i[\"erros\"] for i in itens) / palavras"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "taxa": "c"
+        }
+      },
+      "afterSha256": "73f67be302e7b18d8d34526d25820abf0f9e52ff43fdc26cafecc8533cf8ef4d"
+    },
+    {
+      "id": "AI901-640",
+      "before": {
+        "id": "AI901-640",
+        "domainId": "foundry",
+        "topicId": "text-speech",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "O adaptador didático recebe canais de áudio de mesmo comprimento. Faça mistura mono por média das amplitudes de cada posição, sem concatenar os canais. Há ao menos um canal.",
+        "explanation": "Mistura por média combina canais no mesmo instante e mantém a escala definida. Somar sem normalização altera ganho; selecionar só o primeiro descarta os demais. O exercício define um adaptador numérico, não um contrato universal de diarização ou reconhecimento.",
+        "conceptTags": [
+          "audio",
+          "channels",
+          "preprocessing"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "Quickstart: Recognize and convert speech to text",
+            "url": "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text"
+          }
+        ],
+        "code": "def mono(canais):\n    return [{{amostra}} for i in range(len(canais[0]))]",
+        "blanks": [
+          {
+            "id": "amostra",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "sum(c[i] for c in canais)"
+              },
+              {
+                "id": "b",
+                "text": "sum(c[i] for c in canais) / len(canais)"
+              },
+              {
+                "id": "c",
+                "text": "canais[0][i]"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "amostra": "b"
+        }
+      },
+      "afterSha256": "e895b19e950aac7931d9e3c5876e9fc189b42ea204085afea3447e62805888e1"
+    },
+    {
+      "id": "AI901-129",
+      "before": {
+        "id": "AI901-129",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "precision",
+          "recall",
+          "confusion-matrix"
+        ],
+        "coverageLevel": "supporting",
+        "prompt": "Num teste de detecção de fraude, o modelo sinaliza 50 operações: 30 são fraudes e 20 não são. Existem 60 fraudes no conjunto completo. Quais são precisão e recall, respectivamente, para a classe fraude?",
+        "options": [
+          {
+            "id": "a",
+            "text": "50% de precisão e 60% de recall."
+          },
+          {
+            "id": "b",
+            "text": "60% de precisão e 50% de recall."
+          },
+          {
+            "id": "c",
+            "text": "40% de precisão e 50% de recall."
+          },
+          {
+            "id": "d",
+            "text": "60% de precisão e 40% de recall."
+          }
+        ],
+        "answer": [
+          "b"
+        ],
+        "explanation": "Precisão é TP/(TP+FP)=30/50=60%. Recall é TP/(TP+FN)=30/60=50%. A primeira mede a proporção correta entre os alertas; a segunda mede a cobertura das fraudes reais. O número de alertas sozinho não estabelece nenhuma das duas métricas.",
+        "references": [
+          {
+            "title": "Classificação binária e métricas",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/5-binary-classification"
+          }
+        ]
+      },
+      "afterSha256": "f1e36302b5227977f7d7e038cb72c17599ec200378c79380b16de3922691e336"
+    },
+    {
+      "id": "AI901-216",
+      "before": {
+        "id": "AI901-216",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "moe",
+          "active-parameters"
+        ],
+        "coverageLevel": "supporting",
+        "prompt": "Um MoE didático possui oito especialistas de 50 milhões de parâmetros e 20 milhões compartilhados. Para um token, ativa dois especialistas. Ignore outros componentes. Quais são os parâmetros totais e os envolvidos nesse caminho ativo?",
+        "options": [
+          {
+            "id": "a",
+            "text": "120 milhões totais e 420 milhões ativos."
+          },
+          {
+            "id": "b",
+            "text": "420 milhões totais e 120 milhões ativos."
+          },
+          {
+            "id": "c",
+            "text": "400 milhões totais e 100 milhões ativos."
+          },
+          {
+            "id": "d",
+            "text": "420 milhões totais e 100 milhões ativos."
+          }
+        ],
+        "answer": [
+          "b"
+        ],
+        "explanation": "O total é 8×50+20=420 milhões. O caminho indicado envolve 2×50+20=120 milhões. O exemplo não estima diretamente memória ou latência reais: componentes não ativados ainda pertencem ao modelo, e o runtime tem outros custos. A distinção é entre parâmetros totais e seleção esparsa.",
+        "references": [
+          {
+            "title": "Mixtral of Experts — artigo dos autores",
+            "url": "https://arxiv.org/abs/2401.04088"
+          }
+        ]
+      },
+      "afterSha256": "39049510d32296a10088f909cb547569950b25ae65e24c90b7390abab209d660"
+    },
+    {
+      "id": "AI901-220",
+      "before": {
+        "id": "AI901-220",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "single",
+        "difficulty": "hard",
+        "conceptTags": [
+          "class-imbalance",
+          "accuracy",
+          "recall"
+        ],
+        "coverageLevel": "supporting",
+        "prompt": "Num conjunto com 990 casos negativos e 10 positivos, um classificador prevê negativo para todos. Qual avaliação está correta?",
+        "options": [
+          {
+            "id": "a",
+            "text": "99% de acurácia e 0% de recall positivo."
+          },
+          {
+            "id": "b",
+            "text": "99% de acurácia e 99% de recall positivo."
+          },
+          {
+            "id": "c",
+            "text": "1% de acurácia e 0% de recall positivo."
+          },
+          {
+            "id": "d",
+            "text": "99% de acurácia e 100% de recall positivo."
+          }
+        ],
+        "answer": [
+          "a"
+        ],
+        "explanation": "O modelo acerta 990 de 1.000 casos, mas não encontra nenhum dos 10 positivos. Portanto, tem 99% de acurácia e recall positivo zero. O exemplo mostra por que uma classe rara e relevante exige métricas além da média global; ausência de alertas não demonstra boa detecção.",
+        "references": [
+          {
+            "title": "Classificação binária e métricas",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/5-binary-classification"
+          }
+        ]
+      },
+      "afterSha256": "b4737d204a4c817b44a5d8f0cbdc0172ddace0200a054ff45b4cab3ddd6b792e"
+    },
+    {
+      "id": "AI901-403",
+      "before": {
+        "id": "AI901-403",
+        "domainId": "concepts",
+        "topicId": "responsible-ai",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "Um avaliador tem sensibilidade de 90% em dois grupos. As taxas de pessoas realmente positivas são 10% e 40%, e a taxa de falso positivo é 10% em ambos. A equipe conclui que a precisão das previsões positivas também é igual. Qual análise é correta?",
+        "explanation": "Em 100 pessoas por grupo, o primeiro gera 9 verdadeiros positivos e 9 falsos positivos: precisão de 50%. O segundo gera 36 e 6: cerca de 85,7%. Mesmas taxas condicionadas ao rótulo não implicam precisão igual. O tamanho do grupo não elimina o efeito da prevalência.",
+        "conceptTags": [
+          "fairness",
+          "prevalence",
+          "precision"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "Discover Microsoft's responsible AI principles",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles"
+          }
+        ],
+        "options": [
+          {
+            "id": "a",
+            "text": "A precisão será diferente apenas se os grupos tiverem quantidades diferentes de pessoas."
+          },
+          {
+            "id": "b",
+            "text": "A precisão será igual após ponderar os dois grupos pelo número de alertas produzidos."
+          },
+          {
+            "id": "c",
+            "text": "A precisão será diferente: prevalências distintas alteram a composição dos alertas positivos."
+          },
+          {
+            "id": "d",
+            "text": "A precisão será igual: sensibilidade e falso positivo iguais determinam a mesma precisão."
+          }
+        ],
+        "answer": [
+          "c"
+        ]
+      },
+      "afterSha256": "590bcb95643e160e8502e056f075bfeda59081aef7f6a28d22e9768b4effe68c"
+    },
+    {
+      "id": "AI901-278",
+      "before": {
+        "id": "AI901-278",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "bounding-boxes",
+          "coordinate-transform"
+        ],
+        "prompt": "Uma imagem foi reduzida uniformemente para metade do tamanho, sem recorte nem padding. Recupere a coordenada x original de uma detecção.",
+        "code": "escala = 0.5\nx_processado = 120\nx_original = {{a}}\nprint(x_original)",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "x_processado * escala"
+              },
+              {
+                "id": "b",
+                "text": "x_processado / (1 + escala)"
+              },
+              {
+                "id": "c",
+                "text": "x_processado * (1 - escala)"
+              },
+              {
+                "id": "d",
+                "text": "x_processado / escala"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "d"
+        },
+        "explanation": "A transformação direta multiplicou x pela escala; a inversa divide pela mesma escala e recupera 240. Multiplicar novamente reduz a coordenada a 60. Este caso não inclui deslocamentos; recorte e padding exigiriam inverter também seus deslocamentos.",
+        "references": [
+          {
+            "title": "Tarefas de visão computacional",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/2-overview"
+          },
+          {
+            "title": "Redes neurais convolucionais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/4-computer-vision-models"
+          },
+          {
+            "title": "Vision transformers e modelos multimodais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/5-modern-vision-models"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "78b26675823088c90bae4fa0fc55c6e74d94d8a6220519d7d5a7c8185808a6cb"
+    },
+    {
+      "id": "AI901-281",
+      "before": {
+        "id": "AI901-281",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "augmentation",
+          "bounding-boxes"
+        ],
+        "prompt": "A imagem de largura 640 será espelhada horizontalmente. As caixas usam bordas contínuas [x_min, x_max], de 0 a largura. Complete as duas bordas transformadas.",
+        "code": "largura = 640\nx_min, x_max = 100, 220\nnovo_min = largura - {{a}}\nnovo_max = largura - {{b}}",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "x_max"
+              },
+              {
+                "id": "b",
+                "text": "x_min"
+              },
+              {
+                "id": "c",
+                "text": "(x_min + x_max) / 2"
+              },
+              {
+                "id": "d",
+                "text": "x_max - x_min"
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "label": "Lacuna B",
+            "options": [
+              {
+                "id": "a",
+                "text": "x_max"
+              },
+              {
+                "id": "b",
+                "text": "(x_min + x_max) / 2"
+              },
+              {
+                "id": "c",
+                "text": "x_max - x_min"
+              },
+              {
+                "id": "d",
+                "text": "x_min"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "a",
+          "b": "d"
+        },
+        "explanation": "O espelhamento troca a ordem das bordas: o novo mínimo é 640−220 e o máximo é 640−100. Transformar cada borda sem trocar seus papéis produz intervalo invertido. A convenção de bordas contínuas evita a correção de um pixel usada em índices discretos.",
+        "references": [
+          {
+            "title": "Tarefas de visão computacional",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/2-overview"
+          },
+          {
+            "title": "Redes neurais convolucionais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/4-computer-vision-models"
+          },
+          {
+            "title": "Vision transformers e modelos multimodais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/5-modern-vision-models"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "3f9a08e83fe77a12d3f1853c67c214fce0ee09d45462f86c8a6e202d935a4296"
+    },
+    {
+      "id": "AI901-301",
+      "before": {
+        "id": "AI901-301",
+        "domainId": "concepts",
+        "topicId": "responsible-ai",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "fairness",
+          "false-negative-rate"
+        ],
+        "prompt": "Duas populações têm tamanhos diferentes. Compare as taxas de falsos negativos por grupo, usando a definição FN/(TP+FN), sem confundir volume de erros com taxa.",
+        "code": "grupos = {\"A\": {\"tp\": 90, \"fn\": 10}, \"B\": {\"tp\": 18, \"fn\": 12}}\ntaxas = {g: d[\"fn\"] / {{a}} for g, d in grupos.items()}\ndisparidade = {{b}}",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "(d[\"tp\"] + d[\"fn\"])"
+              },
+              {
+                "id": "b",
+                "text": "d[\"tp\"]"
+              },
+              {
+                "id": "c",
+                "text": "(d[\"tp\"] + d[\"fn\"]) * len(grupos)"
+              },
+              {
+                "id": "d",
+                "text": "sum(x[\"tp\"] + x[\"fn\"] for x in grupos.values())"
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "label": "Lacuna B",
+            "options": [
+              {
+                "id": "a",
+                "text": "abs(grupos[\"A\"][\"fn\"] - grupos[\"B\"][\"fn\"])"
+              },
+              {
+                "id": "b",
+                "text": "taxas[\"A\"] / taxas[\"B\"]"
+              },
+              {
+                "id": "c",
+                "text": "(taxas[\"A\"] + taxas[\"B\"]) / 2"
+              },
+              {
+                "id": "d",
+                "text": "abs(taxas[\"A\"] - taxas[\"B\"])"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "a",
+          "b": "d"
+        },
+        "explanation": "O denominador contém os positivos reais de cada grupo. As taxas são 0,10 e 0,40, cuja diferença absoluta é 0,30. Comparar apenas 10 e 12 ignora tamanhos distintos. A métrica mostra uma dimensão de disparidade, não comprova isoladamente equidade completa.",
+        "references": [
+          {
+            "title": "IA responsável para agentes",
+            "url": "https://learn.microsoft.com/en-us/agents/center-of-excellence/responsible-ai"
+          },
+          {
+            "title": "Classificação binária e métricas",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/5-binary-classification"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "367bbbb71f4cab501b440609ebf5865ed72db1524b178ea8727235fd607d53a2"
+    },
+    {
+      "id": "AI901-316",
+      "before": {
+        "id": "AI901-316",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "positional-encoding",
+          "transformer"
+        ],
+        "prompt": "Embeddings de token e posição têm a mesma dimensão. No esquema de posições aditivas deste exercício, complete a entrada do Transformer.",
+        "code": "token = [0.2, 0.5, -0.1]\nposicao = [0.0, 0.1, 0.2]\nentrada = [{{a}} for t, p in zip(token, posicao)]",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "t * p"
+              },
+              {
+                "id": "b",
+                "text": "t + p"
+              },
+              {
+                "id": "c",
+                "text": "t - p"
+              },
+              {
+                "id": "d",
+                "text": "(t + p) / 2"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "b"
+        },
+        "explanation": "O esquema explicitamente aditivo soma componentes de representação do token e da posição. Multiplicar ou substituir pelo vetor posicional perde a operação definida. Existem outras estratégias posicionais, mas sua existência não altera o contrato aditivo apresentado neste trecho.",
+        "references": [
+          {
+            "title": "Attention Is All You Need — artigo original",
+            "url": "https://arxiv.org/abs/1706.03762"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "50f7405ece0e2c15ed9a2c3321e9ae4ad90dd70169d3e72faf9c6183f3471b18"
+    },
+    {
+      "id": "AI901-319",
+      "before": {
+        "id": "AI901-319",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "gradient-descent",
+          "learning-rate"
+        ],
+        "prompt": "Na descida do gradiente, o parâmetro deve se mover contra o gradiente da perda. Complete a atualização para taxa positiva.",
+        "code": "peso, gradiente, taxa = 2.0, 0.5, 0.1\nnovo_peso = {{a}}\nprint(novo_peso)",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "peso - gradiente / taxa"
+              },
+              {
+                "id": "b",
+                "text": "taxa * peso - gradiente"
+              },
+              {
+                "id": "c",
+                "text": "peso - taxa * gradiente"
+              },
+              {
+                "id": "d",
+                "text": "peso + taxa * gradiente"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "c"
+        },
+        "explanation": "A atualização subtrai taxa vezes gradiente e produz 1,95. Somar segue a direção de aumento local da perda, não a descida. Dividir pelo learning rate muda sua função e pode ampliar drasticamente o passo; multiplicar o peso pela taxa não é a regra dada.",
+        "references": [
+          {
+            "title": "Fundamentos de deep learning",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/8-deep-learning"
+          },
+          {
+            "title": "Tipos de aprendizado de máquina",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/3-types-of-machine-learning"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "26026cbdb1ed9b34235b356b13c3a80e2310be29e362e3dd13fd317dd1a8e85e"
+    },
+    {
+      "id": "AI901-323",
+      "before": {
+        "id": "AI901-323",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "recall",
+          "classification"
+        ],
+        "prompt": "A função precisa medir a cobertura dos positivos reais do conjunto. Complete seu numerador e denominador, preservando o tratamento de denominador zero.",
+        "code": "def recall(tp, fp, fn):\n    denominador = {{a}}\n    return {{b}} / denominador if denominador else None",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "fp + fn"
+              },
+              {
+                "id": "b",
+                "text": "tp + fp + fn"
+              },
+              {
+                "id": "c",
+                "text": "tp + fn"
+              },
+              {
+                "id": "d",
+                "text": "tp + fp"
+              }
+            ]
+          },
+          {
+            "id": "b",
+            "label": "Lacuna B",
+            "options": [
+              {
+                "id": "a",
+                "text": "tp + fp"
+              },
+              {
+                "id": "b",
+                "text": "tp"
+              },
+              {
+                "id": "c",
+                "text": "fp"
+              },
+              {
+                "id": "d",
+                "text": "fn"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "c",
+          "b": "b"
+        },
+        "explanation": "Recall divide verdadeiros positivos por todos os positivos reais, TP+FN. A condição evita uma divisão indefinida quando não há positivos reais, sem transformar isso automaticamente em desempenho perfeito. FP compõe a precisão e não o denominador desta métrica.",
+        "references": [
+          {
+            "title": "Classificação binária e métricas",
+            "url": "https://learn.microsoft.com/en-us/training/modules/fundamentals-machine-learning/5-binary-classification"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "dc15f4b845070d549dddb147c2cb34c268f8af496f08e039be01fa9814cd6c24"
+    },
+    {
+      "id": "AI901-383",
+      "before": {
+        "id": "AI901-383",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "supporting",
+        "conceptTags": [
+          "python",
+          "attention-complexity",
+          "vit"
+        ],
+        "prompt": "A atenção completa de uma cabeça sobre N tokens forma uma matriz N×N. Complete a estimativa de posições de score, sem incluir batches ou cabeças extras.",
+        "code": "n_tokens = 196\nposicoes_score = {{a}}\nprint(posicoes_score)",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "n_tokens"
+              },
+              {
+                "id": "b",
+                "text": "n_tokens ** 3"
+              },
+              {
+                "id": "c",
+                "text": "n_tokens ** 2"
+              },
+              {
+                "id": "d",
+                "text": "n_tokens * 2"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "c"
+        },
+        "explanation": "Cada token consulta todos os tokens, gerando 196²=38.416 posições por cabeça. O custo dessa matriz cresce quadraticamente com o comprimento, não linearmente. Batches, cabeças e dimensões dos vetores adicionam outros fatores que o enunciado exclui desta contagem.",
+        "references": [
+          {
+            "title": "Vision transformers e modelos multimodais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/5-modern-vision-models"
+          },
+          {
+            "title": "Redes neurais convolucionais",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/4-computer-vision-models"
+          },
+          {
+            "title": "Attention Is All You Need — artigo original",
+            "url": "https://arxiv.org/abs/1706.03762"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "a7a11455529f6f1e4203c5c4fbd597018a0cf2977d64fffda4df42c465ac4e31"
+    },
+    {
+      "id": "AI901-394",
+      "before": {
+        "id": "AI901-394",
+        "domainId": "foundry",
+        "topicId": "extraction",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "document-coordinates",
+          "units"
+        ],
+        "prompt": "A página OCR tem unidade inch, mas a tela usa pixels a 200 DPI. Complete a conversão de x sem tratá-lo como coordenada já em pixels.",
+        "code": "x_em_polegadas = 1.5\ndpi = 200\nx_pixel = {{a}}\nprint(x_pixel)",
+        "blanks": [
+          {
+            "id": "a",
+            "label": "Lacuna A",
+            "options": [
+              {
+                "id": "a",
+                "text": "x_em_polegadas / dpi"
+              },
+              {
+                "id": "b",
+                "text": "x_em_polegadas * 72"
+              },
+              {
+                "id": "c",
+                "text": "x_em_polegadas * dpi / 72"
+              },
+              {
+                "id": "d",
+                "text": "x_em_polegadas * dpi"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "a": "d"
+        },
+        "explanation": "DPI é pixels por polegada; multiplicar 1,5 por 200 produz 300 pixels. Dividir inverte a unidade e 72 corresponde a outra convenção gráfica. Coordenadas de documentos devem ser convertidas conforme unidade e resolução da imagem exibida, inclusive após redimensionamento.",
+        "references": [
+          {
+            "title": "Análise de documentos",
+            "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/document/overview"
+          },
+          {
+            "title": "Representação e processamento de imagens",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-computer-vision/3-understand-image-processing"
+          },
+          {
+            "title": "Python — referência da linguagem e biblioteca padrão",
+            "url": "https://docs.python.org/3/library/index.html"
+          }
+        ]
+      },
+      "afterSha256": "4244dcef4cf01090dd45a03ef4bf0c4621d055ab7ae8aba76d6737549cc871b1"
+    },
+    {
+      "id": "AI901-401",
+      "before": {
+        "id": "AI901-401",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "coverageLevel": "curriculum",
+        "conceptTags": [
+          "python",
+          "bounding-boxes",
+          "crop",
+          "padding",
+          "inverse-transform",
+          "spatial-grounding"
+        ],
+        "prompt": "Uma aplicação de inspeção precisa desenhar detecções na fotografia original. Seu pré-processador didático realiza, nesta ordem: recorta uma região da foto; multiplica suas dimensões por uma escala uniforme; acrescenta padding à esquerda e acima para posicioná-la em um canvas. Não há rotação, espelhamento ou arredondamento.\n\nO detector devolve caixas no canvas como (x1, y1, x2, y2), usando bordas contínuas, origem superior esquerda e eixos positivos para direita e para baixo. Cada caixa de entrada tem largura e altura positivas, mas pode alcançar o padding. recorte contém (ox, oy, largura, altura) em pixels da foto original; padding contém (px, py) em pixels do canvas. O recorte está dentro da foto, suas dimensões e escala são positivas, e os paddings são não negativos. Todos os números são finitos.\n\nComplete a função para devolver a caixa em coordenadas da foto original, limitada à região efetivamente observada pelo detector. Quando a interseção com essa região não tiver área estritamente positiva, devolva None. A função deve funcionar para quaisquer entradas que atendam ao contrato, inclusive escalas diferentes de 1 e recortes deslocados. O código é Python 3.12+, independente de SDKs e sem chamadas a serviços.",
+        "code": "def restaurar(caixa, recorte, escala, padding):\n    ox, oy, largura, altura = recorte\n    px, py = padding\n    x1, y1, x2, y2 = caixa\n    x1, x2 = max(x1, px), min(x2, px + escala * largura)\n    y1, y2 = max(y1, py), min(y2, py + escala * altura)\n    if {{descartar}}:\n        return None\n    def inverter(v, pad, origem):\n        return {{inversa}}\n    return (inverter(x1, px, ox), inverter(y1, py, oy),\n            inverter(x2, px, ox), inverter(y2, py, oy))",
+        "blanks": [
+          {
+            "id": "descartar",
+            "label": "Condição de descarte após a interseção",
+            "options": [
+              {
+                "id": "a",
+                "text": "x1 >= x2 and y1 >= y2"
+              },
+              {
+                "id": "b",
+                "text": "x1 > x2 or y1 > y2"
+              },
+              {
+                "id": "c",
+                "text": "x1 < x2 and y1 < y2"
+              },
+              {
+                "id": "d",
+                "text": "x1 >= x2 or y1 >= y2"
+              }
+            ]
+          },
+          {
+            "id": "inversa",
+            "label": "Conversão de uma coordenada para a foto original",
+            "options": [
+              {
+                "id": "a",
+                "text": "(v - pad + origem) / escala"
+              },
+              {
+                "id": "b",
+                "text": "v / escala - pad + origem"
+              },
+              {
+                "id": "c",
+                "text": "(v - pad) / escala + origem"
+              },
+              {
+                "id": "d",
+                "text": "(v + pad) / escala + origem"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "descartar": "d",
+          "inversa": "c"
+        },
+        "explanation": "A região observada ocupa, no canvas, os intervalos [px, px + escala * largura] e [py, py + escala * altura]. As linhas anteriores às lacunas intersectam a detecção com essa região. Se qualquer eixo ficar com extensão nula ou negativa, a área não é positiva: por isso o descarte usa >= combinado com or. Usar and deixa passar caixas sem área em apenas um eixo; usar > mantém caixas que somente tocam a borda; testar extensões positivas nesse ramo descarta caixas válidas. Para voltar à foto, primeiro se subtrai o padding, medido no canvas; depois se divide pela escala; por último se soma a origem do recorte, medida na foto. Colocar origem dentro da divisão a reescala indevidamente; subtrair pad depois da divisão mistura unidades; somá-lo desloca a caixa na direção errada. Por exemplo, com recorte (100, 50, 800, 400), escala 0.5 e padding (20, 60), a caixa (10, 50, 120, 160) é intersectada para (20, 60, 120, 160) e retorna (100, 50, 300, 250).",
+        "references": [
+          {
+            "title": "Study guide for Exam AI-901 — computer vision applications",
+            "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-901"
+          },
+          {
+            "title": "Python — ast: Abstract syntax trees",
+            "url": "https://docs.python.org/3/library/ast.html"
+          }
+        ]
+      },
+      "afterSha256": "031061872fed0938ee87d1393748dc406d2a1fbbc28f5e0bbeb8e18110f6f7c4"
+    },
+    {
+      "id": "AI901-412",
+      "before": {
+        "id": "AI901-412",
+        "domainId": "concepts",
+        "topicId": "responsible-ai",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Uma auditoria compara a taxa de falso negativo por grupo. Cada linha tem grupo, real e previsto, com rótulos 0/1. Inclua grupos sem positivos como None, sem tratá-los como taxa zero. Complete as expressões.",
+        "explanation": "Falso negativo é positivo real previsto como negativo. O denominador é o número de positivos reais daquele grupo. Usar todas as linhas mistura prevalência e grupos. Sem positivos, a taxa não é observável: None conserva essa informação, enquanto zero sugere desempenho perfeito.",
+        "conceptTags": [
+          "fairness",
+          "false-negatives",
+          "denominators"
+        ],
+        "coverageLevel": "curriculum",
+        "references": [
+          {
+            "title": "Discover Microsoft's responsible AI principles",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles"
+          }
+        ],
+        "code": "def avaliar(linhas):\n    grupos = sorted({r['grupo'] for r in linhas})\n    saida = {}\n    for g in grupos:\n        positivos = [r for r in linhas if r['grupo'] == g and r['real'] == 1]\n        erros = sum({{erro}} for r in positivos)\n        saida[g] = {{taxa}}\n    return saida",
+        "blanks": [
+          {
+            "id": "erro",
+            "label": "Condição de erro",
+            "options": [
+              {
+                "id": "a",
+                "text": "r[\"previsto\"] == 0"
+              },
+              {
+                "id": "b",
+                "text": "r[\"previsto\"] == 1"
+              },
+              {
+                "id": "c",
+                "text": "r[\"real\"] == 0"
+              }
+            ]
+          },
+          {
+            "id": "taxa",
+            "label": "Agregação da taxa",
+            "options": [
+              {
+                "id": "a",
+                "text": "erros / len(positivos) if positivos else None"
+              },
+              {
+                "id": "b",
+                "text": "erros / len(linhas) if linhas else None"
+              },
+              {
+                "id": "c",
+                "text": "erros / len(positivos) if positivos else 0.0"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "erro": "a",
+          "taxa": "a"
+        }
+      },
+      "afterSha256": "b725c98193c05a0cc6785e6a1999185cc9b88b730c442c0b75acc0e305874241"
+    },
+    {
+      "id": "AI901-553",
+      "before": {
+        "id": "AI901-553",
+        "domainId": "concepts",
+        "topicId": "models",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Uma quantização didática define q=round(x/escala)+zero e limita q a [-128,127]. escala é positiva. Complete a conversão e o limite; use o round padrão do Python.",
+        "explanation": "A escala divide o valor antes do deslocamento inteiro definido. Clipping usa limite inferior -128 e superior 127. Trocar máximo e mínimo ou usar o intervalo simétrico deslocado muda a faixa, e mover zero para antes da divisão altera o contrato.",
+        "conceptTags": [
+          "quantization",
+          "scale",
+          "clipping"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "Quantization — PyTorch 2.14",
+            "url": "https://docs.pytorch.org/docs/2.14/quantization.html"
+          }
+        ],
+        "code": "def quantizar(x, escala, zero):\n    q = {{valor}}\n    return {{limite}}",
+        "blanks": [
+          {
+            "id": "valor",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "round(x / escala) + zero"
+              },
+              {
+                "id": "b",
+                "text": "round(x * escala) + zero"
+              },
+              {
+                "id": "c",
+                "text": "round((x + zero) / escala)"
+              }
+            ]
+          },
+          {
+            "id": "limite",
+            "label": "Etapa 2",
+            "options": [
+              {
+                "id": "a",
+                "text": "min(128, max(-127, q))"
+              },
+              {
+                "id": "b",
+                "text": "max(127, min(-128, q))"
+              },
+              {
+                "id": "c",
+                "text": "min(127, max(-128, q))"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "valor": "a",
+          "limite": "c"
+        }
+      },
+      "afterSha256": "3b68a63a9c1fe51e6f74e94bfb0a01475aa72350b0b6ac814b9fd471f32ce666"
+    },
+    {
+      "id": "AI901-665",
+      "before": {
+        "id": "AI901-665",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Uma máscara binária prevê pixels positivos e há máscara de referência. Dice é 2*interseção/(positivos previstos+positivos reais). Para ambas vazias, o contrato retorna 1.",
+        "explanation": "Dice usa duas vezes a interseção e soma os tamanhos das duas máscaras. Interseção sobre união é outra métrica. O tratamento de vazio foi declarado, permitindo distinguir ausência de positivos de uma divisão indefinida sem mudar a fórmula nos demais casos.",
+        "conceptTags": [
+          "segmentation",
+          "dice",
+          "metrics"
+        ],
+        "coverageLevel": "supporting",
+        "references": [
+          {
+            "title": "How to use vision-enabled chat models",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision"
+          }
+        ],
+        "code": "def dice(previsto, real):\n    inter = sum(p == 1 and r == 1 for p, r in zip(previsto, real))\n    total = sum(previsto) + sum(real)\n    return {{valor}} if total else 1.0",
+        "blanks": [
+          {
+            "id": "valor",
+            "label": "Etapa 1",
+            "options": [
+              {
+                "id": "a",
+                "text": "inter / (total - inter)"
+              },
+              {
+                "id": "b",
+                "text": "inter / total"
+              },
+              {
+                "id": "c",
+                "text": "2 * inter / total"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "valor": "c"
+        }
+      },
+      "afterSha256": "90e32718813d791a9bf148ab69080a3889f969ef4e3f8322c1797836443fe2b4"
+    }
+  ]
+}

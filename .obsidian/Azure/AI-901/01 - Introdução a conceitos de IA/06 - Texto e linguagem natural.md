@@ -11,6 +11,9 @@ nivel: iniciante
 
 # Texto e linguagem natural
 
+![[assets/m01-texto-exclusivo.png|1000]]
+
+
 ### 🧠 Texto e Linguagem Natural (NLP) — Principais Pontos
 
 #### 📌 O que é NLP

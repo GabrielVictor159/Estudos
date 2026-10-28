@@ -1,0 +1,1433 @@
+{
+  "AI901-520": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "grupo": "x",
+              "decisao": "negativa"
+            },
+            {
+              "id": "b",
+              "grupo": "x",
+              "decisao": "positiva"
+            },
+            {
+              "id": "c",
+              "grupo": "y",
+              "decisao": "negativa"
+            }
+          ],
+          "x"
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-521": [
+    "permitido",
+    [
+      [
+        [
+          [
+            "ler",
+            "listar"
+          ],
+          [
+            "ler"
+          ]
+        ],
+        true
+      ],
+      [
+        [
+          [
+            "ler"
+          ],
+          [
+            "apagar",
+            "ler"
+          ]
+        ],
+        false
+      ],
+      [
+        [
+          [
+            "ler"
+          ],
+          []
+        ],
+        true
+      ]
+    ]
+  ],
+  "AI901-522": [
+    "mascarar",
+    [
+      [
+        [
+          "abcdef",
+          [
+            [
+              1,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        ],
+        "a****f"
+      ],
+      [
+        [
+          "abcd",
+          [
+            [
+              0,
+              4
+            ]
+          ]
+        ],
+        "****"
+      ],
+      [
+        [
+          "abc",
+          []
+        ],
+        "abc"
+      ]
+    ]
+  ],
+  "AI901-523": [
+    "manter",
+    [
+      [
+        [
+          5,
+          10,
+          6
+        ],
+        true
+      ],
+      [
+        [
+          6,
+          10,
+          6
+        ],
+        false
+      ],
+      [
+        [
+          8,
+          6,
+          10
+        ],
+        false
+      ],
+      [
+        [
+          6,
+          6,
+          10
+        ],
+        false
+      ]
+    ]
+  ],
+  "AI901-524": [
+    "fila",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "risco": 2,
+              "chegada": 4
+            },
+            {
+              "id": "b",
+              "risco": 3,
+              "chegada": 5
+            },
+            {
+              "id": "c",
+              "risco": 2,
+              "chegada": 1
+            }
+          ]
+        ],
+        [
+          "b",
+          "c",
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-525": [
+    "total_publico",
+    [
+      [
+        [
+          10,
+          [
+            3,
+            null,
+            5
+          ]
+        ],
+        null
+      ],
+      [
+        [
+          10,
+          [
+            3,
+            2,
+            5
+          ]
+        ],
+        10
+      ],
+      [
+        [
+          10,
+          [
+            null,
+            null,
+            5
+          ]
+        ],
+        10
+      ]
+    ]
+  ],
+  "AI901-549": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "nome": "a",
+              "estado": "pronto",
+              "entradas": [
+                "imagem"
+              ]
+            },
+            {
+              "nome": "b",
+              "estado": "criando",
+              "entradas": [
+                "imagem"
+              ]
+            },
+            {
+              "nome": "c",
+              "estado": "pronto",
+              "entradas": [
+                "texto"
+              ]
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-550": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "role": "tool",
+              "content": "dado"
+            },
+            {
+              "role": "assistant",
+              "content": "resposta"
+            },
+            {
+              "role": "user",
+              "content": "pergunta"
+            }
+          ]
+        ],
+        [
+          "resposta"
+        ]
+      ]
+    ]
+  ],
+  "AI901-551": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "texto": "a",
+              "autorizado": true,
+              "uso": "treino"
+            },
+            {
+              "texto": "b",
+              "autorizado": false,
+              "uso": "treino"
+            },
+            {
+              "texto": "c",
+              "autorizado": true,
+              "uso": "avaliacao"
+            }
+          ]
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-552": [
+    "separar",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "pessoa": "p"
+            },
+            {
+              "id": "b",
+              "pessoa": "q"
+            },
+            {
+              "id": "c",
+              "pessoa": "p"
+            }
+          ],
+          {
+            "p": 1,
+            "q": 0
+          },
+          1
+        ],
+        [
+          [
+            "b"
+          ],
+          [
+            "a",
+            "c"
+          ]
+        ]
+      ]
+    ]
+  ],
+  "AI901-553": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "quantizado": "q",
+            "original": "o",
+            "relatorio": "r",
+            "quantizado_aprovado": true
+          }
+        ],
+        "q"
+      ],
+      [
+        [
+          {
+            "quantizado": "q",
+            "original": "o",
+            "relatorio": "r",
+            "quantizado_aprovado": false
+          }
+        ],
+        null
+      ]
+    ]
+  ],
+  "AI901-554": [
+    "resolver",
+    [
+      [
+        [
+          {
+            "temperature": 0.2,
+            "top_p": 0.8,
+            "seed": 4
+          },
+          [
+            "top_p"
+          ]
+        ],
+        {
+          "top_p": 0.8
+        }
+      ]
+    ]
+  ],
+  "AI901-577": [
+    "rotulos",
+    [
+      [
+        [
+          {
+            "a": 0.5,
+            "b": 0.7
+          },
+          {
+            "a": 0.4,
+            "b": 0.8
+          }
+        ],
+        [
+          "a"
+        ]
+      ],
+      [
+        [
+          {
+            "a": 0.2,
+            "b": 0.9
+          },
+          {
+            "a": 0.4,
+            "b": 0.8
+          }
+        ],
+        [
+          "b"
+        ]
+      ],
+      [
+        [
+          {
+            "a": 0.4,
+            "b": 0.8
+          },
+          {
+            "a": 0.4,
+            "b": 0.8
+          }
+        ],
+        [
+          "a",
+          "b"
+        ]
+      ]
+    ]
+  ],
+  "AI901-578": [
+    "diversificar",
+    [
+      [
+        [
+          [
+            {
+              "id": "x",
+              "categoria": "a"
+            },
+            {
+              "id": "y",
+              "categoria": "a"
+            },
+            {
+              "id": "z",
+              "categoria": "b"
+            }
+          ],
+          2
+        ],
+        [
+          "x",
+          "z"
+        ]
+      ],
+      [
+        [
+          [],
+          2
+        ],
+        []
+      ]
+    ]
+  ],
+  "AI901-579": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "fn",
+              "real": "positivo",
+              "previsto": "negativo"
+            },
+            {
+              "id": "fp",
+              "real": "negativo",
+              "previsto": "positivo"
+            },
+            {
+              "id": "tp",
+              "real": "positivo",
+              "previsto": "positivo"
+            }
+          ]
+        ],
+        [
+          "fn"
+        ]
+      ]
+    ]
+  ],
+  "AI901-580": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "cluster": "x"
+            },
+            {
+              "id": "b",
+              "cluster": "y"
+            },
+            {
+              "id": "c",
+              "cluster": null
+            }
+          ],
+          "x"
+        ],
+        [
+          "a"
+        ]
+      ]
+    ]
+  ],
+  "AI901-581": [
+    "indexar",
+    [
+      [
+        [
+          [
+            {
+              "ocorrencia": "a",
+              "modulo": "ocr",
+              "valor": 1
+            },
+            {
+              "ocorrencia": "a",
+              "modulo": "fala",
+              "valor": 2
+            },
+            {
+              "ocorrencia": "b",
+              "modulo": "ocr",
+              "valor": 3
+            }
+          ]
+        ],
+        [
+          [
+            [
+              "a",
+              "fala"
+            ],
+            2
+          ],
+          [
+            [
+              "a",
+              "ocr"
+            ],
+            1
+          ],
+          [
+            [
+              "b",
+              "ocr"
+            ],
+            3
+          ]
+        ]
+      ]
+    ]
+  ],
+  "AI901-606": [
+    "pode_chamar",
+    [
+      [
+        [
+          0,
+          0
+        ],
+        false
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        true
+      ],
+      [
+        [
+          4,
+          4
+        ],
+        false
+      ],
+      [
+        [
+          5,
+          4
+        ],
+        false
+      ]
+    ]
+  ],
+  "AI901-607": [
+    "evidencias",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "equipes": [
+                "x"
+              ]
+            },
+            {
+              "id": "b",
+              "equipes": [
+                "y"
+              ]
+            },
+            {
+              "id": "c",
+              "equipes": []
+            }
+          ],
+          "x"
+        ],
+        [
+          "a"
+        ]
+      ],
+      [
+        [
+          [],
+          "x"
+        ],
+        []
+      ]
+    ]
+  ],
+  "AI901-608": [
+    "validar_nome",
+    [
+      [
+        [
+          "ler",
+          [
+            "ler",
+            "listar"
+          ]
+        ],
+        true
+      ],
+      [
+        [
+          "apagar_ler",
+          [
+            "ler",
+            "listar"
+          ]
+        ],
+        false
+      ],
+      [
+        [
+          "li",
+          [
+            "ler",
+            "listar"
+          ]
+        ],
+        false
+      ]
+    ]
+  ],
+  "AI901-609": [
+    "diferencas",
+    [
+      [
+        [
+          {
+            "a": 2,
+            "b": 4
+          },
+          {
+            "b": 3,
+            "c": 5
+          }
+        ],
+        {
+          "b": -1
+        }
+      ],
+      [
+        [
+          {
+            "x": 1
+          },
+          {
+            "x": 4
+          }
+        ],
+        {
+          "x": 3
+        }
+      ]
+    ]
+  ],
+  "AI901-610": [
+    "citas_validas",
+    [
+      [
+        [
+          [
+            {
+              "fonte": "a",
+              "indice": -1
+            }
+          ],
+          {
+            "a": [
+              "x"
+            ]
+          }
+        ],
+        false
+      ],
+      [
+        [
+          [
+            {
+              "fonte": "a",
+              "indice": 1
+            }
+          ],
+          {
+            "a": [
+              "x"
+            ]
+          }
+        ],
+        false
+      ],
+      [
+        [
+          [
+            {
+              "fonte": "a",
+              "indice": 0
+            }
+          ],
+          {
+            "a": [
+              "x"
+            ]
+          }
+        ],
+        true
+      ]
+    ]
+  ],
+  "AI901-611": [
+    "terminal",
+    [
+      [
+        [
+          [
+            "fila",
+            "andamento",
+            "falhou"
+          ]
+        ],
+        "falhou"
+      ],
+      [
+        [
+          [
+            "fila",
+            "concluido"
+          ]
+        ],
+        "concluido"
+      ],
+      [
+        [
+          [
+            "andamento"
+          ]
+        ],
+        null
+      ]
+    ]
+  ],
+  "AI901-635": [
+    "unir",
+    [
+      [
+        [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              8,
+              9
+            ]
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            8,
+            9
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ]
+        ]
+      ]
+    ]
+  ],
+  "AI901-636": [
+    "instante",
+    [
+      [
+        [
+          8000,
+          16000,
+          16000
+        ],
+        1.5
+      ],
+      [
+        [
+          0,
+          48000,
+          48000
+        ],
+        1.0
+      ]
+    ]
+  ],
+  "AI901-637": [
+    "idioma",
+    [
+      [
+        [
+          [
+            {
+              "idioma": "x",
+              "score": 0.9
+            },
+            {
+              "idioma": "pt",
+              "score": 0.8
+            }
+          ],
+          [
+            "pt"
+          ],
+          0.7
+        ],
+        "pt"
+      ],
+      [
+        [
+          [
+            {
+              "idioma": "pt",
+              "score": 0.5
+            }
+          ],
+          [
+            "pt"
+          ],
+          0.7
+        ],
+        null
+      ]
+    ]
+  ],
+  "AI901-638": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "estado": "canceled",
+              "motivo": "rede"
+            },
+            {
+              "estado": "recognized",
+              "motivo": ""
+            },
+            {
+              "estado": "no_match",
+              "motivo": "silencio"
+            }
+          ]
+        ],
+        [
+          "rede"
+        ]
+      ]
+    ]
+  ],
+  "AI901-639": [
+    "deduplicar",
+    [
+      [
+        [
+          [
+            {
+              "id": "a",
+              "offset": 0,
+              "length": 2,
+              "categoria": "p",
+              "score": 0.7
+            },
+            {
+              "id": "b",
+              "offset": 0,
+              "length": 2,
+              "categoria": "p",
+              "score": 0.9
+            },
+            {
+              "id": "c",
+              "offset": 0,
+              "length": 2,
+              "categoria": "o",
+              "score": 0.8
+            },
+            {
+              "id": "d",
+              "offset": 5,
+              "length": 2,
+              "categoria": "p",
+              "score": 0.8
+            }
+          ]
+        ],
+        [
+          "b",
+          "c",
+          "d"
+        ]
+      ]
+    ]
+  ],
+  "AI901-640": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "participante": "a",
+              "final": true,
+              "texto": "A"
+            },
+            {
+              "participante": "a",
+              "final": false,
+              "texto": "parcial"
+            },
+            {
+              "participante": "b",
+              "final": true,
+              "texto": "B"
+            }
+          ],
+          "a"
+        ],
+        [
+          "A"
+        ]
+      ]
+    ]
+  ],
+  "AI901-664": [
+    "girar",
+    [
+      [
+        [
+          [
+            2,
+            3,
+            4,
+            5
+          ],
+          20,
+          10
+        ],
+        [
+          2,
+          2,
+          5,
+          4
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            0,
+            20,
+            10
+          ],
+          20,
+          10
+        ],
+        [
+          0,
+          0,
+          10,
+          20
+        ]
+      ]
+    ]
+  ],
+  "AI901-665": [
+    "resolver",
+    [
+      [
+        [
+          [
+            {
+              "imagem_id": "a",
+              "mascara": "pa"
+            },
+            {
+              "imagem_id": "b",
+              "mascara": "pb"
+            }
+          ],
+          {
+            "a": "ra"
+          }
+        ],
+        [
+          [
+            "pa",
+            "ra"
+          ]
+        ]
+      ]
+    ]
+  ],
+  "AI901-666": [
+    "indice_patch",
+    [
+      [
+        [
+          1,
+          2,
+          2,
+          3
+        ],
+        6
+      ],
+      [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        2
+      ],
+      [
+        [
+          0,
+          0,
+          2,
+          3
+        ],
+        1
+      ]
+    ]
+  ],
+  "AI901-667": [
+    "suprimir",
+    [
+      [
+        [
+          [
+            "a",
+            "b",
+            "a"
+          ],
+          [
+            [
+              1,
+              0.9,
+              0.8
+            ],
+            [
+              0.9,
+              1,
+              0.1
+            ],
+            [
+              0.8,
+              0.1,
+              1
+            ]
+          ],
+          0.5
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          [
+            "a",
+            "a"
+          ],
+          [
+            [
+              1,
+              0.2
+            ],
+            [
+              0.2,
+              1
+            ]
+          ],
+          0.5
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ]
+  ],
+  "AI901-668": [
+    "acuracia",
+    [
+      [
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        0.5
+      ],
+      [
+        [
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ],
+        null
+      ],
+      [
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        1.0
+      ]
+    ]
+  ],
+  "AI901-669": [
+    "conteudo",
+    [
+      [
+        [
+          "Leia",
+          "https://example.test/a.png"
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Leia"
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": "https://example.test/a.png"
+            }
+          }
+        ]
+      ]
+    ]
+  ],
+  "AI901-692": [
+    "grade",
+    [
+      [
+        [
+          3,
+          2,
+          [
+            {
+              "row": 1,
+              "col": 0,
+              "rowspan": 2,
+              "colspan": 2,
+              "texto": "A"
+            }
+          ]
+        ],
+        [
+          [
+            null,
+            null
+          ],
+          [
+            "A",
+            "A"
+          ],
+          [
+            "A",
+            "A"
+          ]
+        ]
+      ],
+      [
+        [
+          2,
+          2,
+          [
+            {
+              "row": 0,
+              "col": 1,
+              "rowspan": 1,
+              "colspan": 1,
+              "texto": "B"
+            }
+          ]
+        ],
+        [
+          [
+            null,
+            "B"
+          ],
+          [
+            null,
+            null
+          ]
+        ]
+      ]
+    ]
+  ],
+  "AI901-693": [
+    "mesmo_id",
+    [
+      [
+        [
+          " AB-01 ",
+          "ab-01"
+        ],
+        true
+      ],
+      [
+        [
+          "001",
+          "1"
+        ],
+        false
+      ],
+      [
+        [
+          "X-2",
+          "x-2"
+        ],
+        true
+      ]
+    ]
+  ],
+  "AI901-694": [
+    "reconstruir",
+    [
+      [
+        [
+          {
+            "a": "ABCD",
+            "b": "WXYZ"
+          },
+          [
+            {
+              "pagina": "a",
+              "inicio": 1,
+              "fim": 3
+            },
+            {
+              "pagina": "b",
+              "inicio": 0,
+              "fim": 2
+            }
+          ]
+        ],
+        "BC WX"
+      ]
+    ]
+  ],
+  "AI901-695": [
+    "centavos",
+    [
+      [
+        [
+          "1.234,50"
+        ],
+        123450
+      ],
+      [
+        [
+          "0,75"
+        ],
+        75
+      ],
+      [
+        [
+          "12,00"
+        ],
+        1200
+      ]
+    ]
+  ],
+  "AI901-696": [
+    "pronto",
+    [
+      [
+        [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "a"
+          ]
+        ],
+        false
+      ],
+      [
+        [
+          [
+            "a",
+            "b"
+          ],
+          [
+            "a",
+            "b",
+            "extra"
+          ]
+        ],
+        true
+      ],
+      [
+        [
+          [],
+          []
+        ],
+        true
+      ]
+    ]
+  ]
+}

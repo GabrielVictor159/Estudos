@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Tarefas e técnicas de visão computacional
 
+![[assets/m02-tarefas.png|1000]]
+
+*Classificação descreve a imagem; detecção localiza objetos; segmentação atribui classes ou instâncias aos pixels.*
+
+
 **Visão computacional** transforma imagens, vídeos ou streams em **informação acionável** por meio de técnicas que extraem rótulos, localizações, contornos e relações semânticas entre objetos.
 
 ##### Classificação de imagens

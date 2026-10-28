@@ -11,6 +11,11 @@ nivel: iniciante
 
 # OCR (reconhecimento óptico de caracteres)
 
+![[assets/m05-ocr.png|1000]]
+
+*O OCR reconhece caracteres; a qualidade e a orientação da imagem influenciam o resultado.*
+
+
 **OCR** converte automaticamente texto visual em imagens — de documentos digitalizados, fotos, PDFs ou capturas de tela — em **texto editável e pesquisável**, permitindo extração automatizada de faturas, recibos, formulários e anotações.
 
 ##### Pipeline do OCR — estágios e o que cada um faz

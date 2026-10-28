@@ -11,6 +11,11 @@ nivel: iniciante
 
 # IA Responsável
 
+![[assets/m01-responsavel.png|1000]]
+
+*Os princípios orientam o planejamento, a implementação e o acompanhamento da solução.*
+
+
 Consiste em criar sistemas de inteligência artificial com **proteções, princípios éticos e governança** para evitar danos, injustiças ou uso indevido. Ela destaca que IA responsável não é apenas um filtro final, mas algo que deve ser considerado **desde o design até a operação** de qualquer solução de IA.
 
 ## 🧩 **1. O que é IA responsável**

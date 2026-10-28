@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Módulo 07 — Introdução à IA no Azure
 
+![[assets/m07-arquitetura.png|1000]]
+
+*O aplicativo reúne interface, lógica, dados e telemetria e acessa o modelo por uma API autenticada.*
+
+
 Nota de entrada do módulo 07. Apresenta o que compõe um aplicativo de IA e como o Azure oferece uma plataforma e infraestrutura para desenvolver, conectar e operar essas soluções.
 
 ## Mapa visual do módulo

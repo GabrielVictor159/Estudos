@@ -12,6 +12,11 @@ nivel: iniciante
 
 # Azure como Plataforma para Aplicativos de IA
 
+![[assets/m07-nuvem-exclusiva.png|1000]]
+
+
+
+
 **Microsoft Azure** é a plataforma de computação em nuvem da Microsoft. Ela reúne serviços que permitem criar e executar soluções, desde aplicações Web simples até sistemas que precisam de computação virtualizada, bancos de dados, armazenamento remoto, identidade centralizada e recursos de IA.
 
 ## 1. O que significa usar uma plataforma de nuvem

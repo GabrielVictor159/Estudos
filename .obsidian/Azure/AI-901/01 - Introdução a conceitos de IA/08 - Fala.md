@@ -11,6 +11,9 @@ nivel: iniciante
 
 # Fala
 
+![[assets/m01-fala-exclusiva.png|1000]]
+
+
 #### 🧠 1. O que é tecnologia de fala
 
 A tecnologia de fala permite que sistemas de IA **entendam áudio humano** e **gerem voz artificial**. Ela inclui dois processos principais:

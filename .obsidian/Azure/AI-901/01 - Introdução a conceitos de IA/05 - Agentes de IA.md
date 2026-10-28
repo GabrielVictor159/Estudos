@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Agentes de IA
 
+![[assets/m01-agente.png|1000]]
+
+*O agente combina modelo, instruções e ferramentas para consultar informações ou executar ações permitidas.*
+
+
 ### 📌 1. O que são agentes de IA
 
 Agentes de IA são aplicações baseadas em modelos generativos capazes de **raciocinar**, **entender linguagem natural**, **tomar decisões contextuais** e **executar ações reais** usando ferramentas externas. Eles vão além de responder perguntas: **realizam tarefas**, automatizam fluxos de trabalho e interagem com sistemas.

@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Avaliar uma solução RAG
 
+![[assets/m06-avaliacao.png|1000]]
+
+*Avaliar a recuperação e a geração separadamente ajuda a localizar a origem das falhas.*
+
+
 Uma solução RAG deve ser avaliada para verificar se recupera informações úteis e se o LLM produz respostas fundamentadas e relevantes. Examinar apenas a resposta final dificulta descobrir em qual etapa ocorreu uma falha.
 
 ##### O que avaliar

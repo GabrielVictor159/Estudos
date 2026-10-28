@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Recuperar informações e gerar uma resposta
 
+![[assets/m06-rag.png|1000]]
+
+*A aplicação acrescenta evidências ao contexto do modelo; uma consulta RAG não altera seus parâmetros.*
+
+
 Quando o usuário faz uma pergunta, a solução RAG procura conteúdo relacionado no índice. Depois, combina os trechos recuperados com a pergunta e envia esse contexto ao LLM para gerar uma resposta.
 
 ##### Recuperação de informações

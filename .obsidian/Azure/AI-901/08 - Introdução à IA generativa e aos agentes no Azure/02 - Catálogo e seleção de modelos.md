@@ -8,7 +8,7 @@ modulo: "08"
 titulo: "Catálogo e seleção de modelos"
 nivel: iniciante
 ---
-
+	
 # Catálogo e seleção de modelos
 
 O **catálogo de modelos do Microsoft Foundry** permite descobrir modelos generativos de diferentes provedores, filtrá-los por capacidade ou tarefa, compará-los e iniciar testes. As informações podem incluir capacidades, tarefas compatíveis, benchmarks, opções de personalização e documentação de uso responsável.

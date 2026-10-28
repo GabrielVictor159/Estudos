@@ -11,6 +11,11 @@ nivel: iniciante
 
 # IA e agentes generativos
 
+![[assets/m01-geracao-exclusiva.png|1000]]
+
+
+
+
 ### 🧠 IA Generativa — Pontos Essenciais
 
 #### **O que é IA generativa**

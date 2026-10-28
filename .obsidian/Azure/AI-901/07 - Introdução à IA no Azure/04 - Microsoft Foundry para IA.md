@@ -12,6 +12,11 @@ nivel: iniciante
 
 # Microsoft Foundry para IA
 
+![[assets/m07-organizacao.png|1000]]
+
+*Um recurso do Foundry organiza projetos; escala horizontal altera instâncias e escala vertical altera recursos por instância.*
+
+
 O **Microsoft Foundry** é uma plataforma como serviço (PaaS) para criar, implantar e gerenciar aplicativos e agentes de IA no Azure. Ele reúne modelos, ferramentas e recursos de desenvolvimento em projetos, apoiados por infraestrutura e controles de segurança do Azure.
 
 ## 1. O que a plataforma reúne
@@ -34,7 +39,7 @@ O **Foundry IQ** é apresentado como uma camada de conhecimento que pode conecta
 
 **Regra de leitura:** recurso é a base de plataforma no Azure; projeto é o espaço de trabalho para organizar uma solução.
 
-![[assets/m07-organizacao-foundry.svg]]
+![[assets/m07-organizacao-foundry.svg|636]]
 
 *O recurso contém projetos; cada projeto reúne os ativos de uma solução.*
 

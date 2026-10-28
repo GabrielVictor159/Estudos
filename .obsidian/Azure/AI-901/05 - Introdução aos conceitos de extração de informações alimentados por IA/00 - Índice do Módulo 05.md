@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Módulo 05 — Introdução aos conceitos de extração de informações alimentados por IA
 
+![[assets/m05-panorama-exclusivo.png|1000]]
+
+
+
+
 Conversão de documentos e outras mídias em texto e campos estruturados por meio de OCR e extração.
 
 ## Páginas deste módulo

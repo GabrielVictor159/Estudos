@@ -1,0 +1,344 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai901.local/question-bank.schema.json",
+  "title": "Banco de questões AI-901",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "examId",
+    "blueprintVersion",
+    "questions"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "examId": {
+      "const": "AI-901"
+    },
+    "blueprintVersion": {
+      "const": "2026-04-15"
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/question"
+      }
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "item": {
+      "type": "object",
+      "required": [
+        "id",
+        "text"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/text"
+        },
+        "text": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "question": {
+      "type": "object",
+      "required": [
+        "id",
+        "domainId",
+        "topicId",
+        "type",
+        "difficulty",
+        "prompt",
+        "answer",
+        "explanation",
+        "references"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/text"
+        },
+        "domainId": {
+          "enum": [
+            "concepts",
+            "foundry"
+          ]
+        },
+        "topicId": {
+          "enum": [
+            "responsible-ai",
+            "models",
+            "workloads",
+            "generative-agents",
+            "text-speech",
+            "vision",
+            "extraction"
+          ]
+        },
+        "type": {
+          "enum": [
+            "single",
+            "multiple",
+            "matching",
+            "case",
+            "code"
+          ]
+        },
+        "difficulty": {
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "prompt": {
+          "$ref": "#/$defs/text"
+        },
+        "context": {
+          "$ref": "#/$defs/text"
+        },
+        "explanation": {
+          "$ref": "#/$defs/text"
+        },
+        "options": {
+          "$ref": "#/$defs/items"
+        },
+        "left": {
+          "$ref": "#/$defs/items"
+        },
+        "right": {
+          "$ref": "#/$defs/items"
+        },
+        "selectCount": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "references": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "title",
+              "url"
+            ],
+            "properties": {
+              "title": {
+                "$ref": "#/$defs/text"
+              },
+              "url": {
+                "type": "string",
+                "pattern": "^https://"
+              }
+            }
+          }
+        },
+        "code": {
+          "$ref": "#/$defs/text"
+        },
+        "blanks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "label",
+              "options"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_]*$"
+              },
+              "label": {
+                "$ref": "#/$defs/text"
+              },
+              "options": {
+                "$ref": "#/$defs/items"
+              }
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "domainId": {
+                "const": "concepts"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "topicId": {
+                "enum": [
+                  "responsible-ai",
+                  "models",
+                  "workloads"
+                ]
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "topicId": {
+                "enum": [
+                  "generative-agents",
+                  "text-speech",
+                  "vision",
+                  "extraction"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "matching"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "left",
+              "right"
+            ],
+            "properties": {
+              "answer": {
+                "type": "object",
+                "minProperties": 2,
+                "additionalProperties": {
+                  "$ref": "#/$defs/text"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "single",
+                  "case"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "answer": {
+                "maxItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "multiple"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "selectCount"
+            ],
+            "properties": {
+              "answer": {
+                "minItems": 2
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "case"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "context"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "single",
+                  "multiple",
+                  "case"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "options"
+            ],
+            "properties": {
+              "answer": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "$ref": "#/$defs/text"
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "code"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "code",
+              "blanks"
+            ],
+            "properties": {
+              "answer": {
+                "type": "object",
+                "minProperties": 1,
+                "additionalProperties": {
+                  "$ref": "#/$defs/text"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

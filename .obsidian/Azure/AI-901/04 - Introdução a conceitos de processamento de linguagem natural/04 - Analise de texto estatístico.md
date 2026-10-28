@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Analise de texto estatístico
 
+![[assets/m04-estatistica-exclusiva.png|1000]]
+
+
+
+
 **Análise estatística de texto** transforma um corpus tokenizado e normalizado em sinais quantitativos que ajudam a inferir tópicos, termos relevantes e estruturas informacionais. Técnicas simples (contagem de termos) até algoritmos mais sofisticados (TF‑IDF, modelos de aprendizado e algoritmos baseados em grafos) são usadas para identificar temas, diferenciar documentos e extrair resumos ou palavras‑chave.
 
 #### Contagem de frequência

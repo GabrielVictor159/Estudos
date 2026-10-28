@@ -1,0 +1,12 @@
+{
+  "provider": "Sites",
+  "project_id": "appgprj_6ad428a56f6c8191bc26a2ae5c1d11c6",
+  "version_id": "appgprj_6ad428a56f6c8191bc26a2ae5c1d11c6~appgver_c187c8c173d881919c6a9c692e7dacb0",
+  "deployment_id": "appgdep_6ad4311682f08191a63b676a5e185ee5",
+  "url": "https://ai901-lab-simulador.lofty-fairy-5584.chatgpt.site",
+  "access_mode": "public",
+  "status": "succeeded",
+  "commit_sha": "bc9b1b2074c5abff54841038ea496b74e62e88b4",
+  "updated_at": "2026-10-18T02:38:28.969074+00:00",
+  "feature": "Pausar e retomar o cronômetro com persistência da pausa."
+}

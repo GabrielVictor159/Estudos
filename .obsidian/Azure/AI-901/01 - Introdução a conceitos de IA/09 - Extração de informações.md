@@ -11,6 +11,9 @@ nivel: iniciante
 
 # Extração de informações
 
+![[assets/m01-extracao-exclusiva.png|1000]]
+
+
 ### 🧠 1. O que é extração de informações
 
 A IA é amplamente usada para **encontrar dados relevantes e gerar insights** a partir de **fontes não estruturadas**, como:

@@ -11,6 +11,11 @@ nivel: iniciante
 
 # LLMs
 
+![[assets/m01-llm.png|1000]]
+
+*Exemplo simplificado de geração por tokens e da diferença entre treinamento e inferência.*
+
+
 ### 📌 1. O papel dos LLMs na IA generativa
 
 LLMs são modelos treinados para **entender relações linguísticas e semânticas** entre palavras, frases e conceitos. Eles funcionam prevendo o **próximo token** em uma sequência, o que permite:

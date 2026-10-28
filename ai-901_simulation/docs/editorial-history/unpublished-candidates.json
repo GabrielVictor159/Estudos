@@ -1,0 +1,973 @@
+{
+  "status": "Rascunhos não incorporados; geração cancelada a pedido do usuário.",
+  "proposals": [
+    {
+      "question": {
+        "id": "AI901-403",
+        "domainId": "foundry",
+        "topicId": "extraction",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Uma aplicação recebe um identificador de operação de análise de documentos. Complete o acompanhamento sem confundir aceitação com conclusão. Neste adaptador didático, consultar(op_id) retorna um dicionário com status igual a queued, running, succeeded, failed ou canceled; somente succeeded contém result. consultar e aguardar não lançam exceções neste exercício. A operação eventualmente alcança um estado terminal. O primeiro snapshot já pode ser terminal. A função deve retornar result exclusivamente no sucesso e lançar RuntimeError nos demais estados terminais. O adaptador não representa nomes de métodos do SDK Azure.",
+        "code": "def obter_resultado(op_id, consultar, aguardar):\n    snapshot = consultar(op_id)\n    while {{continuar}}:\n        aguardar()\n        snapshot = consultar(op_id)\n    if {{recusar}}:\n        raise RuntimeError(snapshot['status'])\n    return snapshot['result']",
+        "blanks": [
+          {
+            "id": "continuar",
+            "label": "Condição de acompanhamento",
+            "options": [
+              {
+                "id": "a",
+                "text": "snapshot['status'] == 'running'"
+              },
+              {
+                "id": "b",
+                "text": "snapshot['status'] in ('queued', 'running')"
+              },
+              {
+                "id": "c",
+                "text": "snapshot['status'] != 'failed'"
+              }
+            ]
+          },
+          {
+            "id": "recusar",
+            "label": "Condição de encerramento sem resultado",
+            "options": [
+              {
+                "id": "a",
+                "text": "snapshot['status'] == 'failed'"
+              },
+              {
+                "id": "b",
+                "text": "snapshot['status'] in ('queued', 'running')"
+              },
+              {
+                "id": "c",
+                "text": "snapshot['status'] != 'succeeded'"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "continuar": "b",
+          "recusar": "c"
+        },
+        "explanation": "O acompanhamento precisa abranger os dois estados transitórios declarados. Ao sair do laço, o teste deve permitir somente succeeded, recusando tanto falha quanto cancelamento. Se a primeira consulta já indicar sucesso, o resultado é devolvido imediatamente; se indicar cancelamento, ocorre a exceção. Esperar apenas running abandona queued cedo demais. Esperar enquanto não houver failed mantém o laço até mesmo depois de sucesso ou cancelamento. Recusar apenas failed deixa canceled avançar para um result inexistente. Testar estados transitórios depois do laço não identifica nenhum dos dois encerramentos malsucedidos. No serviço real, um poller e seu identificador de operação também têm funções distintas do resultado final; os estados e helpers usados aqui pertencem ao contrato didático explícito.",
+        "references": [
+          {
+            "title": "ContentUnderstandingClient — begin_analyze e retorno AnalyzeLROPoller",
+            "url": "https://learn.microsoft.com/en-us/python/api/azure-ai-contentunderstanding/azure.ai.contentunderstanding.contentunderstandingclient?view=azure-python"
+          }
+        ],
+        "conceptTags": [
+          "python",
+          "long-running-operation",
+          "terminal-states",
+          "cancellation",
+          "analysis-result"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "cu-client",
+          "url": "https://learn.microsoft.com/en-us/python/api/azure-ai-contentunderstanding/azure.ai.contentunderstanding.contentunderstandingclient?view=azure-python",
+          "claim": "begin_analyze retorna AnalyzeLROPoller de AnalysisResult; operation_id é uma propriedade do poller, distinta do resultado analisado.",
+          "location": "begin_analyze, Returns; apresentação da classe",
+          "verification": "Referência oficial consultada nesta chamada. Os estados e helpers do exercício são premissas didáticas, não uma assinatura atribuída ao SDK."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "continuar/a",
+          "reason": "Não acompanha uma operação que ainda esteja em queued."
+        },
+        {
+          "itemId": "continuar/b",
+          "reason": "Acompanha exatamente os dois estados transitórios declarados."
+        },
+        {
+          "itemId": "continuar/c",
+          "reason": "Continua consultando mesmo depois de succeeded ou canceled."
+        },
+        {
+          "itemId": "recusar/a",
+          "reason": "Não recusa o encerramento canceled."
+        },
+        {
+          "itemId": "recusar/b",
+          "reason": "Verifica estados já excluídos pela condição correta do laço."
+        },
+        {
+          "itemId": "recusar/c",
+          "reason": "Libera result apenas no único estado que o contém pelo contrato."
+        }
+      ],
+      "difficultyRationale": "Exige combinar acompanhamento e pós-condição, considerando sucesso imediato, fila e cancelamento.",
+      "cognitiveSteps": [
+        "Separar estados transitórios dos estados terminais.",
+        "Aplicar a pós-condição de sucesso antes de acessar o resultado."
+      ],
+      "changeLog": []
+    },
+    {
+      "question": {
+        "id": "AI901-404",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "Um aplicativo usa um deployment de chat com visão cujo contrato documenta image_url.detail com low e high. Ele recebe 40 fotografias e precisa ler um código pequeno em cada uma. O piloto com low deixou 12 códigos ambíguos; os outros 28 foram conferidos e estão corretos. As fotografias originais das 12 exceções têm o código legível por uma pessoa. Há orçamento para reprocessar essas 12 imagens em high, mas não para reprocessar as 40. A política proíbe registrar códigos sem confirmação. Qual alteração aproveita a capacidade visual disponível e respeita as condições?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Reenviar as 12 exceções em low com maior limite de saída e registrar a leitura que aparecer com mais frequência."
+          },
+          {
+            "id": "b",
+            "text": "Reenviar as 40 imagens em low com um exemplo de código e registrar a leitura de cada imagem após essa orientação."
+          },
+          {
+            "id": "c",
+            "text": "Reenviar as 12 exceções em high e encaminhar para conferência as leituras que ainda não puderem ser confirmadas."
+          },
+          {
+            "id": "d",
+            "text": "Reenviar as 12 exceções em low com pedido de análise detalhada e usar o texto da justificativa como confirmação."
+          }
+        ],
+        "answer": [
+          "c"
+        ],
+        "explanation": "A intervenção deve atingir as exceções e a forma de processamento visual: high permite processamento com mais detalhe no contrato indicado. Isso não assegura que todo código será lido corretamente; por isso permanece a conferência das pendências. Aumentar o limite de saída altera espaço para a resposta, sem configurar o detalhe da entrada visual. Exemplos podem orientar o formato esperado, mas não estabelecem que as letras pequenas foram reconhecidas. Pedir uma justificativa também não equivale a mudar image_url.detail nem cria confirmação independente. As 28 leituras já verificadas não precisam consumir o orçamento reservado às exceções.",
+        "references": [
+          {
+            "title": "Use vision-enabled chat models — Configure image detail level",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision"
+          }
+        ],
+        "conceptTags": [
+          "vision-input",
+          "image-detail",
+          "selective-reprocessing",
+          "visual-verification"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "vision-chat",
+          "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+          "claim": "image_url.detail controla o processamento visual; low pode prejudicar reconhecimento de detalhes e texto em comparação com processamento de maior resolução.",
+          "location": "Configure image detail level; Input limitations — Image support",
+          "verification": "Seções oficiais consultadas nesta chamada. Quantidades, orçamento e confirmação são premissas do cenário; não se afirma garantia de acerto em high."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "a",
+          "reason": "Mais saída e frequência de respostas não confirmam que os detalhes visuais foram lidos."
+        },
+        {
+          "itemId": "b",
+          "reason": "Reprocessa itens já confirmados sem alterar a configuração que limita o detalhe visual."
+        },
+        {
+          "itemId": "c",
+          "reason": "Aplica o orçamento às exceções e preserva a conferência quando necessário."
+        },
+        {
+          "itemId": "d",
+          "reason": "Uma instrução textual de detalhamento não substitui a propriedade visual nem uma confirmação."
+        }
+      ],
+      "difficultyRationale": "Requer distinguir detalhe da entrada, tamanho da saída e evidência de correção sob orçamento limitado.",
+      "cognitiveSteps": [
+        "Localizar a limitação observada no processamento da imagem.",
+        "Selecionar a intervenção que atende ao orçamento e à regra de confirmação."
+      ],
+      "changeLog": []
+    },
+    {
+      "question": {
+        "id": "AI901-405",
+        "domainId": "concepts",
+        "topicId": "responsible-ai",
+        "type": "multiple",
+        "difficulty": "hard",
+        "prompt": "Um sistema recomenda quais solicitações elegíveis receberão uma entrevista. Em um conjunto de avaliação com elegibilidade conferida independentemente, o grupo A tem 800 pessoas elegíveis e 80 delas não são recomendadas; o grupo B tem 100 pessoas elegíveis e 30 delas não são recomendadas. A aplicação utiliza bairro, mas não recebe o atributo de grupo na inferência. Os grupos são conhecidos apenas no ambiente autorizado de avaliação. A investigação deve priorizar a perda de oportunidades entre pessoas elegíveis, sem presumir sua causa. Selecione DUAS conclusões ou ações sustentadas pelos dados.",
+        "selectCount": 2,
+        "options": [
+          {
+            "id": "a",
+            "text": "Usar 110/900 como evidência suficiente de desempenho semelhante entre grupos, pois todos os elegíveis entram no denominador."
+          },
+          {
+            "id": "b",
+            "text": "Investigar a diferença entre 80/800 e 30/100, pois ela mostra taxas distintas de exclusão entre pessoas elegíveis."
+          },
+          {
+            "id": "c",
+            "text": "Encerrar a análise do uso de bairro, pois a ausência do atributo de grupo na inferência impede que esse campo se associe ao grupo."
+          },
+          {
+            "id": "d",
+            "text": "Comparar versões com e sem bairro em dados separados dos usados no ajuste, medindo erros por grupo e outras mudanças de desempenho."
+          },
+          {
+            "id": "e",
+            "text": "Interpretar 80/110 e 30/110 como taxas de exclusão de cada grupo, pois os dois valores descrevem a composição dos erros."
+          }
+        ],
+        "answer": [
+          "b",
+          "d"
+        ],
+        "explanation": "Para o problema especificado, a taxa relevante divide os elegíveis excluídos pelos elegíveis de cada grupo: 10% em A e 30% em B. O agregado de aproximadamente 12,2% não revela sozinho essa diferença. Dividir por 110 descreve a participação de cada grupo nos erros observados, outra pergunta estatística. A associação entre bairro e grupo precisa ser investigada mesmo sem o atributo explícito na inferência. Comparar versões em dados reservados ajuda a avaliar a hipótese sobre bairro e seus efeitos, sem prometer que remover o campo resolverá o problema. Os números sustentam uma disparidade observada; não identificam isoladamente sua causa nem impõem uma solução automática.",
+        "references": [
+          {
+            "title": "Discover Microsoft's responsible AI principles",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles"
+          }
+        ],
+        "conceptTags": [
+          "fairness",
+          "false-negative-rate",
+          "proxy-investigation",
+          "evaluation-denominators"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "rai",
+          "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles",
+          "claim": "Equidade integra os princípios de IA responsável da Microsoft.",
+          "location": "Discover Microsoft's responsible AI principles, parágrafo introdutório",
+          "verification": "Página oficial consultada nesta chamada. Taxas, hipótese sobre bairro e desenho da comparação são análise do cenário autoral, não resultados atribuídos à fonte."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "a",
+          "reason": "O agregado não demonstra semelhança das taxas entre grupos."
+        },
+        {
+          "itemId": "b",
+          "reason": "Usa o denominador pertinente à exclusão entre pessoas elegíveis de cada grupo."
+        },
+        {
+          "itemId": "c",
+          "reason": "Não receber o atributo explícito não exclui uma associação com outro campo."
+        },
+        {
+          "itemId": "d",
+          "reason": "Investiga a hipótese com avaliação separada, sem assumir o efeito da remoção."
+        },
+        {
+          "itemId": "e",
+          "reason": "Mede composição dos erros, não risco de exclusão dentro de cada grupo."
+        }
+      ],
+      "difficultyRationale": "Combina escolha do denominador, limites de inferência causal e investigação de um possível proxy.",
+      "cognitiveSteps": [
+        "Traduzir perda de oportunidade entre elegíveis em uma taxa por grupo.",
+        "Distinguir disparidade observada de explicação causal e selecionar uma investigação compatível."
+      ],
+      "changeLog": []
+    },
+    {
+      "question": {
+        "id": "AI901-406",
+        "domainId": "foundry",
+        "topicId": "extraction",
+        "type": "case",
+        "difficulty": "hard",
+        "context": "Uma equipe usa Azure Content Understanding para extrair transcrições e campos de gravações de manutenção. Cada gravação recebe um identificador imutável e é armazenada com seu próprio início temporal. Para reduzir o volume analisado, um pré-processador cria clipes sem alterar a velocidade, sem inserir silêncio e sem modificar a ordem interna do áudio. O manifesto de cada clipe contém recording_id, clip_id e start_ms, medido na gravação original. As gravações R1 e R2 são arquivos independentes; seus relógios não foram sincronizados e não existe uma linha do tempo compartilhada.\n\nNo contrato interno fornecido à aplicação, cada trecho transcrito contém start_ms e end_ms relativos ao início do clipe. Esse formato é um adaptador da equipe, não uma declaração sobre nomes de propriedades de todas as versões da API. O clipe C7, de R1, começa em 480000 ms e contém uma instrução entre 12000 e 17000 ms. O clipe C9, de R2, começa em 90000 ms e contém outra instrução entre 3000 e 8000 ms. Um campo estruturado referencia a instrução de C7. Os revisores precisam abrir o áudio original no intervalo correto e identificar sua origem. Eles não precisam ordenar eventos entre gravações. A transcrição pode ser corrigida por pessoas, mas o vínculo temporal não pode depender da posição das palavras no texto corrigido.",
+        "prompt": "Qual representação atende ao vínculo exigido para o campo referenciado, sem criar uma cronologia que os dados não sustentam?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Guardar R1, C7 e o intervalo 492000–497000 ms em R1; conservar o manifesto e o trecho que sustenta o campo."
+          },
+          {
+            "id": "b",
+            "text": "Guardar R1, C7 e o intervalo 12000–17000 ms em R1; conservar o manifesto e o trecho que sustenta o campo."
+          },
+          {
+            "id": "c",
+            "text": "Guardar R1, C7 e o intervalo 468000–463000 ms em R1; conservar o manifesto e o trecho que sustenta o campo."
+          },
+          {
+            "id": "d",
+            "text": "Guardar R1, C7 e o intervalo 492000–497000 ms em uma linha do tempo global; ordenar também R2 por seus offsets locais."
+          }
+        ],
+        "answer": [
+          "a"
+        ],
+        "explanation": "Como o clipe preserva velocidade e ordem, a conversão soma o início do clipe aos dois limites: 480000 + 12000 e 480000 + 17000. O identificador R1 define em qual arquivo esses tempos têm significado; C7 e o manifesto preservam a transformação realizada. A alternativa B trata tempos do clipe como tempos do original. C subtrai na direção errada e produz até um intervalo invertido. D calcula o trecho de R1 corretamente, mas inventa uma referência temporal comum a arquivos independentes. Alterar palavras da transcrição não deve recalcular essa origem por índices textuais. A questão utiliza o contrato temporal declarado do adaptador, sem pressupor o formato de timestamps de uma API específica.",
+        "references": [
+          {
+            "title": "What is a Content Understanding analyzer? — modalidades e elementos extraídos",
+            "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference"
+          }
+        ],
+        "conceptTags": [
+          "audio-extraction",
+          "clip-offsets",
+          "temporal-provenance",
+          "recording-identity"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "analyzer",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference",
+          "claim": "Analyzers configuram a modalidade processada e os elementos extraídos, incluindo transcrições; há uma base específica para áudio.",
+          "location": "Introdução; Analyzer types; Configuration by content type — Audio analyzers",
+          "verification": "Referência oficial consultada nesta chamada. Manifesto, intervalos e nomes de propriedades pertencem ao adaptador explicitado no caso; a soma de offsets é dedução dessas premissas."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "a",
+          "reason": "Soma o deslocamento e mantém a identidade do arquivo que define o referencial temporal."
+        },
+        {
+          "itemId": "b",
+          "reason": "Aplica diretamente à gravação um intervalo relativo ao clipe."
+        },
+        {
+          "itemId": "c",
+          "reason": "Inverte a transformação temporal e a ordem dos limites."
+        },
+        {
+          "itemId": "d",
+          "reason": "Acrescenta uma cronologia global sem sincronização entre gravações."
+        }
+      ],
+      "difficultyRationale": "Exige compor referenciais temporais e reconhecer o limite da evidência entre arquivos independentes.",
+      "cognitiveSteps": [
+        "Converter o intervalo local para o arquivo original usando o manifesto.",
+        "Preservar identidade e evidência sem extrapolar uma ordenação entre gravações."
+      ],
+      "changeLog": []
+    },
+    {
+      "question": {
+        "id": "AI901-407",
+        "domainId": "concepts",
+        "topicId": "responsible-ai",
+        "type": "matching",
+        "difficulty": "hard",
+        "prompt": "Associe cada intervenção ao princípio de IA responsável que corresponde ao problema prioritário declarado. Os destinos podem se repetir; nem todos precisam ser usados. Considere o objetivo expresso em cada intervenção, mesmo quando ela também possa beneficiar outro princípio.",
+        "left": [
+          {
+            "id": "l1",
+            "text": "O assistente já é operável por teclado, mas usuários confundem sugestões com decisões oficiais. A intervenção prioritária explica seu papel, limites e significado da saída na tela de resposta."
+          },
+          {
+            "id": "l2",
+            "text": "O significado da resposta já está compreensível, mas pessoas que não podem usar o mouse não conseguem acionar a revisão. A intervenção prioritária permite concluir esse percurso por teclado."
+          },
+          {
+            "id": "l3",
+            "text": "O percurso de revisão já funciona, mas solicitações ficam sem decisão porque duas áreas recusam a atribuição. A intervenção prioritária nomeia quem decide e quem pode interromper o uso."
+          },
+          {
+            "id": "l4",
+            "text": "Os responsáveis já foram definidos, mas o modelo continua emitindo orientações após detectar uma condição operacional fora da faixa validada. A intervenção prioritária implementa uma interrupção segura nesse estado."
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "text": "Transparência"
+          },
+          {
+            "id": "r2",
+            "text": "Inclusão"
+          },
+          {
+            "id": "r3",
+            "text": "Responsabilização"
+          },
+          {
+            "id": "r4",
+            "text": "Confiabilidade e segurança"
+          },
+          {
+            "id": "r5",
+            "text": "Equidade"
+          },
+          {
+            "id": "r6",
+            "text": "Privacidade e segurança"
+          }
+        ],
+        "answer": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        },
+        "explanation": "Em l1, a lacuna é compreender a função e os limites da resposta: transparência. Em l2, a barreira está na possibilidade de usar o percurso: inclusão. Em l3, falta atribuição efetiva para decidir e interromper: responsabilização. Em l4, a prioridade é o comportamento seguro em uma condição operacional inadequada: confiabilidade e segurança. Equidade seria diretamente relevante para diferenças injustificadas de tratamento ou resultados entre pessoas; o caso não apresenta essa comparação como prioridade. Privacidade e segurança trataria a proteção de dados e acesso. A associação expressa o foco pedido, sem tornar os princípios mutuamente exclusivos.",
+        "references": [
+          {
+            "title": "Discover Microsoft's responsible AI principles",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles"
+          },
+          {
+            "title": "Responsible AI Principles and Approach — definições dos princípios",
+            "url": "https://www.microsoft.com/en-us/ai/principles-and-approach"
+          }
+        ],
+        "conceptTags": [
+          "responsible-ai",
+          "dominant-principle",
+          "accessibility",
+          "human-oversight",
+          "safe-operation"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "rai",
+          "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles",
+          "claim": "O material apresenta os seis princípios usados como destinos da associação.",
+          "location": "Discover Microsoft's responsible AI principles, parágrafo introdutório",
+          "verification": "Página oficial consultada nesta chamada."
+        },
+        {
+          "sourceId": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+          "url": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+          "claim": "As definições relacionam compreensão a transparência, capacidades de uso a inclusão, controle humano a responsabilização e funcionamento seguro a confiabilidade e segurança.",
+          "location": "Defining what’s important — Transparency, Inclusiveness, Accountability, Reliability and safety",
+          "verification": "Página primária adicional consultada nesta chamada para conferir as distinções; intervenções são cenários autorais."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "r1",
+          "reason": "É o destino de l1, cujo foco é o entendimento da saída."
+        },
+        {
+          "itemId": "r2",
+          "reason": "É o destino de l2, cujo foco é remover uma barreira de interação."
+        },
+        {
+          "itemId": "r3",
+          "reason": "É o destino de l3, cujo foco é atribuir poder e dever de decisão."
+        },
+        {
+          "itemId": "r4",
+          "reason": "É o destino de l4, cujo foco é interromper uma operação insegura."
+        },
+        {
+          "itemId": "r5",
+          "reason": "Nenhuma intervenção tem como prioridade comparar ou corrigir tratamento entre grupos."
+        },
+        {
+          "itemId": "r6",
+          "reason": "Nenhuma intervenção prioriza proteção de dados ou controle de acesso."
+        }
+      ],
+      "difficultyRationale": "Exige separar compreensão, acessibilidade, governança e comportamento operacional em etapas próximas do mesmo fluxo.",
+      "cognitiveSteps": [
+        "Identificar a lacuna prioritária de cada intervenção.",
+        "Associar essa lacuna ao princípio, reconhecendo benefícios secundários possíveis."
+      ],
+      "changeLog": []
+    },
+    {
+      "question": {
+        "id": "AI901-408",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Complete um construtor de conteúdo multimodal para o formato de mensagens de Chat Completions documentado na referência. Ele apenas monta dados Python; não faz chamada de rede nem usa o formato de Responses. A instrução em texto deve vir primeiro, seguida por uma parte de imagem para cada URL, preservando a ordem recebida. urls contém de uma a quatro URLs HTTPS de imagens já autorizadas. Cada imagem deve usar detail igual a high. O deployment consumidor aceita exatamente esse contrato; não é necessário escolher modelo, credencial ou versão de SDK.",
+        "code": "def criar_mensagem(urls):\n    partes = [{'type': 'text', 'text': 'Compare as imagens na ordem apresentada.'}]\n    for url in urls:\n        partes.append({\n            'type': {{tipo}},\n            'image_url': {{imagem}}\n        })\n    return {'role': 'user', 'content': partes}",
+        "blanks": [
+          {
+            "id": "tipo",
+            "label": "Tipo da parte visual",
+            "options": [
+              {
+                "id": "a",
+                "text": "'input_image'"
+              },
+              {
+                "id": "b",
+                "text": "'image_url'"
+              },
+              {
+                "id": "c",
+                "text": "'text'"
+              }
+            ]
+          },
+          {
+            "id": "imagem",
+            "label": "Objeto da imagem",
+            "options": [
+              {
+                "id": "a",
+                "text": "{'url': url, 'detail': 'high'}"
+              },
+              {
+                "id": "b",
+                "text": "{'url': urls[0], 'detail': 'high'}"
+              },
+              {
+                "id": "c",
+                "text": "{'url': url, 'detail': 'low'}"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "tipo": "b",
+          "imagem": "a"
+        },
+        "explanation": "O formato escolhido representa cada imagem com type igual a image_url e um objeto image_url que contém url e detail. A variável url acompanha o elemento atual do laço, mantendo a correspondência com a sequência recebida. input_image pertence a outro contrato de partes e não deve ser transplantado para este. text não identifica a parte como imagem. Reutilizar urls[0] pode parecer correto com uma única imagem, mas repete a primeira quando houver várias. low preserva a URL, porém viola a configuração solicitada. A função constrói uma mensagem com múltiplas partes; ela não concatena URLs como se fossem conteúdo textual a ser interpretado como imagem.",
+        "references": [
+          {
+            "title": "Use vision-enabled chat models — conteúdo de mensagens e image_url.detail",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision"
+          }
+        ],
+        "conceptTags": [
+          "python",
+          "chat-completions",
+          "multimodal-message",
+          "ordered-images",
+          "endpoint-contract"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "vision-chat",
+          "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+          "claim": "Os exemplos de Chat Completions usam partes text e image_url; o objeto image_url aceita url e detail.",
+          "location": "Create a new Python application, exemplo de messages; Configure image detail level",
+          "verification": "Exemplos oficiais consultados nesta chamada. A função é um construtor local, sem chamada ou assinatura de SDK a validar."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "tipo/a",
+          "reason": "Não é o discriminador da parte visual no contrato de Chat Completions escolhido."
+        },
+        {
+          "itemId": "tipo/b",
+          "reason": "Identifica a parte visual no formato documentado."
+        },
+        {
+          "itemId": "tipo/c",
+          "reason": "Declara uma parte textual enquanto fornece o objeto de imagem."
+        },
+        {
+          "itemId": "imagem/a",
+          "reason": "Usa a URL atual com o detalhe exigido."
+        },
+        {
+          "itemId": "imagem/b",
+          "reason": "Repete a primeira imagem e falha no caso de múltiplas entradas distintas."
+        },
+        {
+          "itemId": "imagem/c",
+          "reason": "Mantém a sequência, mas configura um nível de detalhe diferente do solicitado."
+        }
+      ],
+      "difficultyRationale": "Combina contrato multimodal com preservação da associação entre imagens e posições, incluindo um erro que passa no caso unitário.",
+      "cognitiveSteps": [
+        "Selecionar o discriminador e o objeto da família de mensagens especificada.",
+        "Verificar o comportamento do laço com mais de uma imagem."
+      ],
+      "changeLog": []
+    },
+    {
+      "question": {
+        "id": "AI901-409",
+        "domainId": "concepts",
+        "topicId": "responsible-ai",
+        "type": "single",
+        "difficulty": "hard",
+        "prompt": "Um sistema de IA sugere cortes em pedidos de reembolso. Todas as decisões já exibem motivo, limitações do modelo e um botão de contestação acessível. Uma auditoria encontra 60 contestações vencidas: os analistas recebem os pedidos, mas não podem alterar o resultado; a área que poderia fazê-lo afirma que apenas fornece o modelo. A prioridade é tornar efetiva a responsabilização por decisões contestadas. Qual mudança enfrenta diretamente a lacuna identificada?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Publicar a taxa de contestações vencidas e acrescentar ao motivo exibido uma explicação mais detalhada da recomendação."
+          },
+          {
+            "id": "b",
+            "text": "Exigir confirmação de leitura dos analistas e manter a alteração do resultado vinculada à recomendação original do modelo."
+          },
+          {
+            "id": "c",
+            "text": "Retreinar o modelo com os pedidos contestados e reabrir a fila quando uma versão apresentar maior acurácia agregada."
+          },
+          {
+            "id": "d",
+            "text": "Designar uma área com autoridade para rever os cortes, prazo de decisão e escalonamento para pendências sem resolução."
+          }
+        ],
+        "answer": [
+          "d"
+        ],
+        "explanation": "O gargalo declarado é a falta de autoridade e atribuição para resolver a contestação. A alternativa D cria uma instância que pode decidir e um percurso para pendências, tornando a revisão operacional. Publicar métricas e explicar melhor pode apoiar compreensão, mas deixa a autoridade indefinida. Confirmar leitura comprova recebimento, sem permitir revisão efetiva. Retreinar pode ser útil em outra frente, porém acurácia agregada futura não resolve quem decide sobre os 60 casos existentes. Nenhuma dessas medidas exige inferir uma obrigação legal: a prioridade e o problema foram estabelecidos no cenário.",
+        "references": [
+          {
+            "title": "Responsible AI Principles and Approach — Accountability",
+            "url": "https://www.microsoft.com/en-us/ai/principles-and-approach"
+          },
+          {
+            "title": "Discover Microsoft's responsible AI principles",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles"
+          }
+        ],
+        "conceptTags": [
+          "accountability",
+          "appeals",
+          "decision-authority",
+          "effective-human-review"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+          "url": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+          "claim": "Responsabilização envolve pessoas responsáveis e supervisão que permita controle humano.",
+          "location": "Defining what’s important — Accountability",
+          "verification": "Definição oficial consultada nesta chamada. A escolha de autoridade, prazo e escalonamento aplica essa definição ao gargalo explicitado, sem alegação normativa."
+        },
+        {
+          "sourceId": "rai",
+          "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles",
+          "claim": "Responsabilização integra os princípios de IA responsável apresentados pela Microsoft.",
+          "location": "Discover Microsoft's responsible AI principles, parágrafo introdutório",
+          "verification": "Página oficial consultada nesta chamada."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "a",
+          "reason": "Amplia a informação pública, mas não atribui poder para decidir os casos."
+        },
+        {
+          "itemId": "b",
+          "reason": "Registra ciência sem remover a impossibilidade de alterar a decisão."
+        },
+        {
+          "itemId": "c",
+          "reason": "Condiciona a solução a um modelo futuro e mantém a responsabilidade indefinida."
+        },
+        {
+          "itemId": "d",
+          "reason": "Atribui autoridade de revisão e tratamento das pendências à instância responsável."
+        }
+      ],
+      "difficultyRationale": "Distingue revisão humana nominal de autoridade efetiva em um fluxo que já possui explicação e acessibilidade.",
+      "cognitiveSteps": [
+        "Identificar por que a contestação existente não produz decisão.",
+        "Selecionar a medida que torna a responsabilidade exercitável."
+      ],
+      "changeLog": []
+    },
+    {
+      "question": {
+        "id": "AI901-410",
+        "domainId": "foundry",
+        "topicId": "extraction",
+        "type": "multiple",
+        "difficulty": "hard",
+        "prompt": "Uma equipe configura um analyzer documental personalizado em Azure Content Understanding. O ambiente homologado aceita somente a API GA 2025-11-01. A referência consultada informa que baseAnalyzerId escolhe a base e fieldSchema define campos; também identifica config.workflow com valor agentic como recurso que exige 2026-06-01-preview. A necessidade atual é extrair campos de formulários digitalizados e permitir que revisores confiram as evidências disponíveis. Não há autorização para mudar a versão homologada. Selecione DUAS decisões tecnicamente justificadas.",
+        "selectCount": 2,
+        "options": [
+          {
+            "id": "a",
+            "text": "Enviar config.workflow igual a agentic pela API 2025-11-01, pois o valor de uma propriedade de JSON independe da versão do endpoint."
+          },
+          {
+            "id": "b",
+            "text": "Usar prebuilt-document como base e definir os campos desejados em fieldSchema, mantendo a configuração compatível com a API homologada."
+          },
+          {
+            "id": "c",
+            "text": "Configurar as opções documentadas de origem e confiança para campos e validar o retorno; encaminhar para conferência quando a evidência necessária faltar."
+          },
+          {
+            "id": "d",
+            "text": "Tratar a ausência de confiança em um campo como confiança máxima, pois um schema de saída já estabelece que a interpretação foi validada."
+          },
+          {
+            "id": "e",
+            "text": "Trocar a base por prebuilt-image para eliminar a necessidade de conferir suporte de propriedades documentais, preservando os mesmos campos sem nova validação."
+          }
+        ],
+        "answer": [
+          "b",
+          "c"
+        ],
+        "explanation": "A base documental e um esquema de campos atendem ao tipo de entrada e à extração pedida. A referência distingue recursos GA e preview; uma propriedade serializável em JSON ainda depende do contrato do endpoint. Opções documentadas podem disponibilizar origem e confiança, mas a aplicação deve conferir o que recebeu e tratar lacunas conforme a necessidade do fluxo. Confiança ausente não é uma avaliação positiva, e estrutura válida não prova interpretação correta. Alterar a base para imagem também não dispensa conferir os recursos compatíveis nem validar a configuração. O cenário não permite adotar a versão preview como solução implícita.",
+        "references": [
+          {
+            "title": "What is a Content Understanding analyzer? — configuração, versões e opções de campos",
+            "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference"
+          }
+        ],
+        "conceptTags": [
+          "analyzer-configuration",
+          "ga-preview",
+          "field-schema",
+          "field-evidence",
+          "document-extraction"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "analyzer",
+          "url": "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference",
+          "claim": "A referência distingue GA 2025-11-01 de preview 2026-06-01-preview, documenta baseAnalyzerId e fieldSchema, limita workflow agentic à preview e descreve opções de detalhes e estimativa de origem/confiança.",
+          "location": "Introdução; Analyzer configuration structure; Processing configuration — workflow, returnDetails e estimateFieldSourceAndConfidence",
+          "verification": "Trechos oficiais consultados nesta chamada. Não se presume disponibilidade universal de evidência ou confiança em qualquer retorno."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "a",
+          "reason": "Confunde possibilidade de serialização com suporte da versão da API."
+        },
+        {
+          "itemId": "b",
+          "reason": "Combina base documental e esquema sem exigir o recurso preview mencionado."
+        },
+        {
+          "itemId": "c",
+          "reason": "Solicita evidência por opções documentadas e verifica sua disponibilidade antes do uso."
+        },
+        {
+          "itemId": "d",
+          "reason": "Transforma ausência de um sinal em aprovação e confunde forma com significado."
+        },
+        {
+          "itemId": "e",
+          "reason": "Muda a modalidade base sem justificar compatibilidade das propriedades e da extração."
+        }
+      ],
+      "difficultyRationale": "Exige conciliar modalidade, contrato de versão e limites de confiança sem usar uma migração não autorizada.",
+      "cognitiveSteps": [
+        "Eliminar configurações incompatíveis com a versão fixada.",
+        "Separar definição de campos de comprovação da correção dos valores extraídos."
+      ],
+      "changeLog": []
+    },
+    {
+      "question": {
+        "id": "AI901-411",
+        "domainId": "concepts",
+        "topicId": "responsible-ai",
+        "type": "code",
+        "difficulty": "hard",
+        "prompt": "Um assistente prepara recomendações que só podem ser aplicadas após revisão humana. A política local exige parecer favorável de pelo menos um revisor autorizado sobre a combinação exata de caso, revisão do conteúdo e versão do modelo atual. Pareceres sobre revisões anteriores não são reaproveitáveis; o número da revisão não é uma relação de compatibilidade. pareceres contém dicionários completos com caso_id, revisao, modelo, revisor_id e decisao; decisao é aprovar ou recusar. autorizados é um conjunto confiável de IDs. Não há revogações nem pareceres contraditórios para a mesma combinação neste exercício. Complete o filtro e a redução para que a lista vazia nunca libere a aplicação.",
+        "code": "def pode_aplicar(atual, pareceres, autorizados):\n    validos = [\n        p for p in pareceres\n        if p['revisor_id'] in autorizados\n        and {{corresponde}}\n    ]\n    return {{liberar}}",
+        "blanks": [
+          {
+            "id": "corresponde",
+            "label": "Vínculo do parecer à recomendação atual",
+            "options": [
+              {
+                "id": "a",
+                "text": "p['caso_id'] == atual['caso_id'] and p['revisao'] <= atual['revisao'] and p['modelo'] == atual['modelo']"
+              },
+              {
+                "id": "b",
+                "text": "p['caso_id'] == atual['caso_id'] and p['revisao'] == atual['revisao']"
+              },
+              {
+                "id": "c",
+                "text": "(p['caso_id'], p['revisao'], p['modelo']) == (atual['caso_id'], atual['revisao'], atual['modelo'])"
+              }
+            ]
+          },
+          {
+            "id": "liberar",
+            "label": "Decisão a partir dos pareceres válidos",
+            "options": [
+              {
+                "id": "a",
+                "text": "all(p['decisao'] == 'aprovar' for p in validos)"
+              },
+              {
+                "id": "b",
+                "text": "any(p['decisao'] == 'aprovar' for p in validos)"
+              },
+              {
+                "id": "c",
+                "text": "any(p['decisao'] == 'aprovar' for p in pareceres)"
+              }
+            ]
+          }
+        ],
+        "answer": {
+          "corresponde": "c",
+          "liberar": "b"
+        },
+        "explanation": "O parecer deve corresponder aos três componentes da recomendação atual. Aceitar uma revisão menor ou igual inclui conteúdos já alterados; omitir modelo admite parecer sobre outra versão. Depois do filtro de correspondência e autorização, any exige a existência de uma aprovação válida e retorna False quando não há pareceres válidos. all retorna True para um iterável vazio, liberando justamente a ausência de revisão. Aplicar any à lista original ignora o filtro e pode aproveitar aprovação de outro caso, versão ou revisor. A política é uma premissa explícita do exercício: o princípio geral de controle humano não estabelece sozinho esse formato de registro ou essa regra de decisão.",
+        "references": [
+          {
+            "title": "Responsible AI Principles and Approach — Accountability",
+            "url": "https://www.microsoft.com/en-us/ai/principles-and-approach"
+          },
+          {
+            "title": "Discover Microsoft's responsible AI principles",
+            "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles"
+          }
+        ],
+        "conceptTags": [
+          "python",
+          "human-review",
+          "approval-scope",
+          "stale-review",
+          "empty-collection"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+          "url": "https://www.microsoft.com/en-us/ai/principles-and-approach",
+          "claim": "O princípio de responsabilização contempla supervisão e controle humano.",
+          "location": "Defining what’s important — Accountability",
+          "verification": "Definição oficial consultada nesta chamada. Chave de correspondência, autorização e regra de aprovação são contratos locais declarados; o código não foi executado."
+        },
+        {
+          "sourceId": "rai",
+          "url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles",
+          "claim": "Responsabilização é um dos princípios de IA responsável apresentados.",
+          "location": "Discover Microsoft's responsible AI principles, parágrafo introdutório",
+          "verification": "Página oficial consultada nesta chamada."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "corresponde/a",
+          "reason": "Reaproveita pareceres de revisões anteriores, contrariando a política."
+        },
+        {
+          "itemId": "corresponde/b",
+          "reason": "Não distingue a versão do modelo usada na recomendação."
+        },
+        {
+          "itemId": "corresponde/c",
+          "reason": "Exige igualdade da combinação completa à qual o parecer se aplica."
+        },
+        {
+          "itemId": "liberar/a",
+          "reason": "Libera indevidamente quando validos está vazio."
+        },
+        {
+          "itemId": "liberar/b",
+          "reason": "Exige pelo menos uma aprovação após todos os filtros."
+        },
+        {
+          "itemId": "liberar/c",
+          "reason": "Procura aprovação na coleção não filtrada."
+        }
+      ],
+      "difficultyRationale": "Exige verificar escopo temporal e de versão do parecer, além do comportamento de quantificadores em coleção vazia.",
+      "cognitiveSteps": [
+        "Construir a identidade exata da recomendação revisada.",
+        "Escolher uma condição existencial aplicada exclusivamente aos pareceres válidos."
+      ],
+      "changeLog": []
+    },
+    {
+      "question": {
+        "id": "AI901-412",
+        "domainId": "foundry",
+        "topicId": "vision",
+        "type": "case",
+        "difficulty": "hard",
+        "context": "Uma empresa de aluguel usa um aplicativo de chat com visão para preparar relatórios de devolução de equipamentos. O deployment contratado recebe imagens e produz texto; esse contrato não inclui geração nem edição de imagens. O relatório precisa associar a condição observada a um item identificado pelo número de série. Durante o piloto, o aplicativo recebe duas fotografias sem metadados de identificação: uma mostra de perto a etiqueta de série, mas não mostra a área onde costuma haver avarias; a outra mostra uma avaria na carcaça, mas a etiqueta fica fora do enquadramento. Há vários equipamentos do mesmo modelo na bancada. O operador não registrou qual item corresponde a cada foto.\n\nUma pessoa consegue ler a etiqueta na primeira imagem e descrever a avaria na segunda. Portanto, a dificuldade não é falta de resolução desses detalhes visíveis. A política de aceitação exige evidência que vincule o identificador à área inspecionada, sem usar aparência genérica do modelo como identificação individual. O aplicativo pode solicitar uma nova fotografia ao operador. É viável obter uma imagem em que a etiqueta legível e a área de interesse apareçam no mesmo equipamento, com detalhe suficiente para conferência. O objetivo desta etapa é documentar o estado visível, não estimar defeitos internos nem criar uma ilustração comercial. O relatório só pode ser finalizado quando o vínculo exigido puder ser conferido.",
+        "prompt": "Qual próxima ação resolve a lacuna de evidência dentro do contrato e da política apresentados?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Analisar as duas fotos em high e vincular o dano à série quando ambas forem reconhecidas como o mesmo modelo de equipamento."
+          },
+          {
+            "id": "b",
+            "text": "Solicitar uma imagem conjunta com série e área inspecionada legíveis, conferir o vínculo e então preparar a descrição do estado visível."
+          },
+          {
+            "id": "c",
+            "text": "Pedir ao deployment que gere uma montagem com a etiqueta sobre a região avariada e usar a composição como registro do item devolvido."
+          },
+          {
+            "id": "d",
+            "text": "Manter as duas fotos e pedir ao modelo que atribua uma confiança numérica à correspondência, aceitando o vínculo acima de 0,95."
+          }
+        ],
+        "answer": [
+          "b"
+        ],
+        "explanation": "O dado ausente é o vínculo entre identificador e área avariada. A nova captura prevista no caso fornece ambos no mesmo equipamento e permite conferir essa associação. Reconhecer o mesmo modelo não individualiza itens quando há vários semelhantes; maior detalhe das fotos existentes não recupera uma relação que não foi registrada. Uma montagem acrescentaria uma associação produzida, além de exigir uma capacidade ausente do contrato do deployment. Um número de confiança solicitado no texto não substitui a evidência exigida pela política, mesmo que pareça alto. Depois de conferir a nova imagem, a saída continua limitada ao estado visível; o caso não autoriza deduzir defeitos internos.",
+        "references": [
+          {
+            "title": "Use vision-enabled chat models — análise de imagens e resposta textual",
+            "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision"
+          }
+        ],
+        "conceptTags": [
+          "visual-evidence",
+          "item-identity",
+          "missing-association",
+          "image-understanding",
+          "modality-contract"
+        ],
+        "coverageLevel": "curriculum"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "vision-chat",
+          "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+          "claim": "Modelos de chat com visão podem analisar imagens e responder em texto; essa capacidade fundamenta a descrição visual usada no caso.",
+          "location": "Introdução de Use vision-enabled chat models; Start a chat session to analyze images",
+          "verification": "Página oficial consultada nesta chamada. A ausência de geração no deployment e a política de identificação são premissas do caso; a impossibilidade de deduzir o vínculo decorre dos dados apresentados."
+        }
+      ],
+      "optionRationales": [
+        {
+          "itemId": "a",
+          "reason": "Semelhança de modelo não demonstra identidade individual entre as fotografias."
+        },
+        {
+          "itemId": "b",
+          "reason": "Obtém a associação visual que falta e permite a conferência exigida."
+        },
+        {
+          "itemId": "c",
+          "reason": "Produz uma associação artificial e demanda geração de imagem fora do contrato."
+        },
+        {
+          "itemId": "d",
+          "reason": "Substitui evidência de identidade por uma estimativa textual sem sustentação no caso."
+        }
+      ],
+      "difficultyRationale": "Exige diagnosticar ausência de associação entre observações, distinguindo-a de baixa resolução e de capacidade de geração.",
+      "cognitiveSteps": [
+        "Separar os fatos visíveis da relação de identidade ainda não demonstrada.",
+        "Escolher a aquisição de evidência que satisfaz a política e a modalidade contratada."
+      ],
+      "changeLog": []
+    }
+  ]
+}

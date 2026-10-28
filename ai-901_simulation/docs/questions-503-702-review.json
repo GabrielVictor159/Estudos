@@ -1,0 +1,1542 @@
+{
+  "batch": "AI901-503–AI901-702",
+  "date": "2026-10-17",
+  "authoring": "Criação e revisão direta pelo assistente, sem agentes ou alegação de revisão independente.",
+  "count": 200,
+  "preservedPreviousQuestions": 502,
+  "types": {
+    "single": 40,
+    "multiple": 40,
+    "matching": 40,
+    "code": 40,
+    "case": 40
+  },
+  "topics": {
+    "responsible-ai": 28,
+    "models": 29,
+    "workloads": 28,
+    "generative-agents": 30,
+    "text-speech": 29,
+    "vision": 29,
+    "extraction": 27
+  },
+  "domains": {
+    "concepts": 85,
+    "foundry": 115
+  },
+  "minimumCaseWords": 162,
+  "caseStudyGroups": {
+    "4c4f4710eee9": [
+      "AI901-526",
+      "AI901-527",
+      "AI901-528"
+    ],
+    "67b1c827c08f": [
+      "AI901-529",
+      "AI901-530"
+    ],
+    "882873563874": [
+      "AI901-555",
+      "AI901-556",
+      "AI901-557"
+    ],
+    "43bc8595a09b": [
+      "AI901-558",
+      "AI901-559"
+    ],
+    "94b03f58e541": [
+      "AI901-582",
+      "AI901-583",
+      "AI901-584"
+    ],
+    "0a4d5d9ae409": [
+      "AI901-585",
+      "AI901-586",
+      "AI901-587"
+    ],
+    "ad7438a74aec": [
+      "AI901-612",
+      "AI901-613",
+      "AI901-614"
+    ],
+    "5f14d9142c51": [
+      "AI901-615",
+      "AI901-616",
+      "AI901-617"
+    ],
+    "a89cb3d4e50f": [
+      "AI901-641",
+      "AI901-642",
+      "AI901-643"
+    ],
+    "141bd5d94e98": [
+      "AI901-644",
+      "AI901-645",
+      "AI901-646"
+    ],
+    "af8c28c3f198": [
+      "AI901-670",
+      "AI901-671",
+      "AI901-672"
+    ],
+    "6e66bd011d0d": [
+      "AI901-673",
+      "AI901-674",
+      "AI901-675"
+    ],
+    "5228a2281502": [
+      "AI901-697",
+      "AI901-698",
+      "AI901-699"
+    ],
+    "5161edf93fd2": [
+      "AI901-700",
+      "AI901-701",
+      "AI901-702"
+    ]
+  },
+  "correctSoleLongest": 18,
+  "codeVerification": {
+    "exercises": 40,
+    "combinations": 138,
+    "localExecutions": 351,
+    "networkOrAzureCalls": 0,
+    "fixtures": "tests/fixtures/code-503-702.json",
+    "scope": "Os casos não são prova exaustiva de correção para toda entrada possível."
+  },
+  "editorialActions": [
+    "Revisão dos gabaritos e das premissas por leitura direta.",
+    "Substituição de distratores deslocados nos estudos de caso por falhas próximas ao objetivo.",
+    "Remoção de pistas artificiais de extensão e absolutos em alternativas selecionadas.",
+    "Correção de uma alternativa que também descrevia violação do limite por unidade.",
+    "Reformulação de associações para reduzir repetição de tarefas já presentes.",
+    "Separação de aprofundamento arquitetural e conteúdo curricular."
+  ],
+  "questions": [
+    {
+      "id": "AI901-503",
+      "type": "single",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-504",
+      "type": "single",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-505",
+      "type": "single",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-506",
+      "type": "single",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-507",
+      "type": "single",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-508",
+      "type": "multiple",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-509",
+      "type": "multiple",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-510",
+      "type": "multiple",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-511",
+      "type": "multiple",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-512",
+      "type": "multiple",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-513",
+      "type": "multiple",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-514",
+      "type": "matching",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-515",
+      "type": "matching",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-516",
+      "type": "matching",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-517",
+      "type": "matching",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-518",
+      "type": "matching",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-519",
+      "type": "matching",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-520",
+      "type": "code",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-521",
+      "type": "code",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-522",
+      "type": "code",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-523",
+      "type": "code",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-524",
+      "type": "code",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-525",
+      "type": "code",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-526",
+      "type": "case",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-527",
+      "type": "case",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-528",
+      "type": "case",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-529",
+      "type": "case",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-530",
+      "type": "case",
+      "topicId": "responsible-ai",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-531",
+      "type": "single",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-532",
+      "type": "single",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-533",
+      "type": "single",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-534",
+      "type": "single",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-535",
+      "type": "single",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-536",
+      "type": "single",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-537",
+      "type": "multiple",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-538",
+      "type": "multiple",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-539",
+      "type": "multiple",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-540",
+      "type": "multiple",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-541",
+      "type": "multiple",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-542",
+      "type": "multiple",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-543",
+      "type": "matching",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-544",
+      "type": "matching",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-545",
+      "type": "matching",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-546",
+      "type": "matching",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-547",
+      "type": "matching",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-548",
+      "type": "matching",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-549",
+      "type": "code",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-550",
+      "type": "code",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-551",
+      "type": "code",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-552",
+      "type": "code",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-553",
+      "type": "code",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-554",
+      "type": "code",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-555",
+      "type": "case",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-556",
+      "type": "case",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-557",
+      "type": "case",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-558",
+      "type": "case",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-559",
+      "type": "case",
+      "topicId": "models",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-560",
+      "type": "single",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-561",
+      "type": "single",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-562",
+      "type": "single",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-563",
+      "type": "single",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-564",
+      "type": "single",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-565",
+      "type": "single",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-566",
+      "type": "multiple",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-567",
+      "type": "multiple",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-568",
+      "type": "multiple",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-569",
+      "type": "multiple",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-570",
+      "type": "multiple",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-571",
+      "type": "matching",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-572",
+      "type": "matching",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-573",
+      "type": "matching",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-574",
+      "type": "matching",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-575",
+      "type": "matching",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-576",
+      "type": "matching",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-577",
+      "type": "code",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-578",
+      "type": "code",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-579",
+      "type": "code",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-580",
+      "type": "code",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-581",
+      "type": "code",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-582",
+      "type": "case",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-583",
+      "type": "case",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-584",
+      "type": "case",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-585",
+      "type": "case",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-586",
+      "type": "case",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-587",
+      "type": "case",
+      "topicId": "workloads",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-588",
+      "type": "single",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-589",
+      "type": "single",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-590",
+      "type": "single",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-591",
+      "type": "single",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-592",
+      "type": "single",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-593",
+      "type": "single",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-594",
+      "type": "multiple",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-595",
+      "type": "multiple",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-596",
+      "type": "multiple",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-597",
+      "type": "multiple",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-598",
+      "type": "multiple",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-599",
+      "type": "multiple",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-600",
+      "type": "matching",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-601",
+      "type": "matching",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-602",
+      "type": "matching",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-603",
+      "type": "matching",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-604",
+      "type": "matching",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-605",
+      "type": "matching",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-606",
+      "type": "code",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-607",
+      "type": "code",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-608",
+      "type": "code",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-609",
+      "type": "code",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-610",
+      "type": "code",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-611",
+      "type": "code",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-612",
+      "type": "case",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-613",
+      "type": "case",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-614",
+      "type": "case",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-615",
+      "type": "case",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-616",
+      "type": "case",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-617",
+      "type": "case",
+      "topicId": "generative-agents",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-618",
+      "type": "single",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-619",
+      "type": "single",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-620",
+      "type": "single",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-621",
+      "type": "single",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-622",
+      "type": "single",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-623",
+      "type": "single",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-624",
+      "type": "multiple",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-625",
+      "type": "multiple",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-626",
+      "type": "multiple",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-627",
+      "type": "multiple",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-628",
+      "type": "multiple",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-629",
+      "type": "multiple",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-630",
+      "type": "matching",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-631",
+      "type": "matching",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-632",
+      "type": "matching",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-633",
+      "type": "matching",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-634",
+      "type": "matching",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-635",
+      "type": "code",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-636",
+      "type": "code",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-637",
+      "type": "code",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-638",
+      "type": "code",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-639",
+      "type": "code",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-640",
+      "type": "code",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-641",
+      "type": "case",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-642",
+      "type": "case",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-643",
+      "type": "case",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-644",
+      "type": "case",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-645",
+      "type": "case",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-646",
+      "type": "case",
+      "topicId": "text-speech",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-647",
+      "type": "single",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-648",
+      "type": "single",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-649",
+      "type": "single",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-650",
+      "type": "single",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-651",
+      "type": "single",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-652",
+      "type": "single",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-653",
+      "type": "multiple",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-654",
+      "type": "multiple",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-655",
+      "type": "multiple",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-656",
+      "type": "multiple",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-657",
+      "type": "multiple",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-658",
+      "type": "matching",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-659",
+      "type": "matching",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-660",
+      "type": "matching",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-661",
+      "type": "matching",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-662",
+      "type": "matching",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-663",
+      "type": "matching",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-664",
+      "type": "code",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-665",
+      "type": "code",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-666",
+      "type": "code",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-667",
+      "type": "code",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-668",
+      "type": "code",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-669",
+      "type": "code",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-670",
+      "type": "case",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-671",
+      "type": "case",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-672",
+      "type": "case",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-673",
+      "type": "case",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-674",
+      "type": "case",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "supporting"
+    },
+    {
+      "id": "AI901-675",
+      "type": "case",
+      "topicId": "vision",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-676",
+      "type": "single",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-677",
+      "type": "single",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-678",
+      "type": "single",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-679",
+      "type": "single",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-680",
+      "type": "single",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-681",
+      "type": "multiple",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-682",
+      "type": "multiple",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-683",
+      "type": "multiple",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-684",
+      "type": "multiple",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-685",
+      "type": "multiple",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-686",
+      "type": "multiple",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-687",
+      "type": "matching",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-688",
+      "type": "matching",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-689",
+      "type": "matching",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-690",
+      "type": "matching",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-691",
+      "type": "matching",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-692",
+      "type": "code",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-693",
+      "type": "code",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-694",
+      "type": "code",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-695",
+      "type": "code",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-696",
+      "type": "code",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-697",
+      "type": "case",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-698",
+      "type": "case",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-699",
+      "type": "case",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-700",
+      "type": "case",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-701",
+      "type": "case",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    },
+    {
+      "id": "AI901-702",
+      "type": "case",
+      "topicId": "extraction",
+      "reviewedBy": "author",
+      "coverageLevel": "curriculum"
+    }
+  ],
+  "sources": [
+    "https://arxiv.org/abs/1406.2661",
+    "https://arxiv.org/abs/1503.02531",
+    "https://arxiv.org/abs/1701.06538",
+    "https://arxiv.org/abs/1706.03762",
+    "https://arxiv.org/abs/2006.11239",
+    "https://arxiv.org/abs/2010.11929",
+    "https://arxiv.org/abs/2106.09685",
+    "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Conv2d.html",
+    "https://docs.pytorch.org/docs/2.14/generated/torch.nn.GRU.html",
+    "https://docs.pytorch.org/docs/2.14/generated/torch.nn.LSTM.html",
+    "https://docs.pytorch.org/docs/2.14/quantization.html",
+    "https://learn.microsoft.com/en-us/azure/ai-services/content-understanding/concepts/analyzer-reference",
+    "https://learn.microsoft.com/en-us/azure/ai-services/language-service/overview",
+    "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-speech-to-text",
+    "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/get-started-text-to-speech",
+    "https://learn.microsoft.com/en-us/azure/ai-services/speech-service/speech-synthesis-markup",
+    "https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/function-calling",
+    "https://learn.microsoft.com/en-us/azure/foundry/concepts/observability",
+    "https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/sdk-overview",
+    "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/gpt-with-vision",
+    "https://learn.microsoft.com/en-us/azure/search/vector-search-overview",
+    "https://learn.microsoft.com/en-us/training/modules/introduction-to-microsofts-responsible-ai-approach/2-discover-microsofts-responsible-ai-principles",
+    "https://learn.microsoft.com/en-us/training/paths/ai-concepts/"
+  ]
+}

@@ -12,6 +12,8 @@ nivel: iniciante
 
 # Endpoints e Integração com Aplicativos
 
+
+
 Um modelo ou projeto do Foundry é hospedado na nuvem e pode ser consumido por um aplicativo cliente por meio de um **endpoint de API**. O endpoint é o endereço de rede que recebe solicitações programáticas e devolve respostas; ele não é uma página Web para navegação humana.
 
 ## 1. Cliente, endpoint e servidor
@@ -58,7 +60,7 @@ Um **SDK** oferece bibliotecas para uma linguagem de programação e abstrai par
 4. Enviar uma entrada/prompt no formato esperado.
 5. Interpretar e apresentar a resposta retornada.
 
-![[assets/m07-endpoint-fluxo.svg]]
+![[assets/m07-endpoint-fluxo.svg|700]]
 
 *REST e SDKs são formas de enviar uma solicitação autenticada ao endpoint e receber a resposta do modelo.*
 

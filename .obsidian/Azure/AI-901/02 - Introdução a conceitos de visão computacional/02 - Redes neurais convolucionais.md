@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Redes neurais convolucionais
 
+![[assets/m02-cnn.png|1000]]
+
+*Pixels são transformados em características visuais; a ilustração simplifica uma CNN.*
+
+
 **Redes neurais convolucionais (CNNs)** são arquiteturas de aprendizado profundo que aprendem **filtros** para extrair **mapas de características** de imagens e usam essas características para prever rótulos ou realizar outras tarefas de visão.
 
 ##### Pipeline conceitual (etapas principais)

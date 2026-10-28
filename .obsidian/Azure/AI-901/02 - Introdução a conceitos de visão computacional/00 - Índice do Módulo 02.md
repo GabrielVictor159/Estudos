@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Módulo 02 — Introdução a conceitos de visão computacional
 
+![[assets/m02-panorama-exclusivo.png|1000]]
+
+
+
+
 Representação de imagens, processamento visual, redes convolucionais e tarefas de visão.
 
 ## Páginas deste módulo

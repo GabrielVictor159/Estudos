@@ -11,6 +11,11 @@ nivel: iniciante
 
 # Preparar dados para recuperação
 
+![[assets/m06-preparo.png|1000]]
+
+*A preparação mantém texto, representações vetoriais e metadados associados aos trechos.*
+
+
 Para que uma solução RAG encontre informações úteis, os documentos precisam ser transformados em conteúdo pesquisável que possa ser recuperado como contexto. A preparação organiza as fontes antes da consulta do usuário.
 
 ##### Pipeline de preparação
